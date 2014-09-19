@@ -1,0 +1,73 @@
+
+
+/**!
+ * Variables
+ *
+ * System based off http://mediatemple.net methods
+ * Built by the mad genius Ara Abcarians @itsmeaara http://itsmeara.com/
+ * ========================================================================== */ 
+
+// Media Queries
+// --------------------------------------------------------------------------
+
+// EXAMPLE:
+
+// .logo {
+//     background: url(/static/images/logo.png) no-repeat 0 0;
+ 
+//     @media @retina, @mobile {
+//         background-image: url(/static/images/logo@2x.png);
+//         background-size: contain;
+//     }
+// }
+
+@mobileNavBreakpoint: ~"(max-width: 985px)";
+@mobileNav: ~"(max-width: 985px)";
+
+@desktopXLarge: ~"(min-width: 1920px)";
+@desktopLarge: ~"(max-width: 1919px)";
+@desktopMedium: ~"(max-width: 1600px)";
+@desktopSmall: ~"(max-width: 1224px)";
+@desktop: ~"(min-width: 960px)";
+@tablet: ~"(min-width: 768px) and (max-width: 1095px)";
+@tabletToMobile: ~"(max-width: 1095px)";
+@mobile: ~"(max-width: 767px)";
+@mobileLarge: ~"(min-width: 481px) and (max-width: 767px)";
+@mobileSmall: ~"(max-width: 480px)";
+
+@large: ~"(min-width: 1200px)";
+@xxLarge: ~"(min-width: 1900px)";
+@xLarge: ~"(min-width: 1500px)";
+@medium: ~"(min-width: 768px) and (max-width: 1199px)";
+@small: ~"(max-width: 767px)";
+@xSmall: ~"(max-width: 480px)";
+@xxSmall: ~"(max-width: 320px)";
+
+@retina: ~"(-webkit-min-device-pixel-ratio: 1.5)",
+          ~"(min--moz-device-pixel-ratio: 1.5)",
+          ~"(-o-min-device-pixel-ratio: 3/2)",
+          ~"(min-device-pixel-ratio: 1.5)";
+
+// Spacing units
+// ---------------------------------------------------------
+
+@baseSpacingUnit:               30px;
+@smallSpacingUnit:              5px;
+@halfSpacingUnit:               (@baseSpacingUnit / 2);
+@doubleSpacingUnit:             (@baseSpacingUnit * 2);
+@trippleSpacingUnit:            (@baseSpacingUnit * 3);
+
+// Grid settings
+// ---------------------------------------------------------
+
+// Combined padding on both right and left sides of the grid
+@gridPadding:               40;
+
+@gridColumns:               12;
+@gridColumnWidth:           80;
+@gridGutterWidth:           20;
+
+// No need to change this. 
+@gridFluidGutterWidth:      round( (@gridGutterWidth / @gridTotalWidth) * 100, 4 );
+@gridTotalWidth:            @gridColumns * (@gridColumnWidth + @gridGutterWidth) * 1px; 
+

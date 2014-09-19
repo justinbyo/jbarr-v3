@@ -1,0 +1,23 @@
+/* main.less
+ * This is the main LESS doc
+ * It imports all component LESS files and compiles to main.css
+ * ____________________________________________________________ */
+
+@import "_core/reset.less";
+@import "_core/remixins.less";
+@import "_core/custom.less";
+
+// These are based off Novastrap
+// Required for Grid system and Novastrap mixins
+@import "_core/variables.less";
+@import "_core/grid.less";
+
+// Site-wide stuff
+// General layout and page structure, fonts, text
+@import "project/style.less";
+
+// Components
+@import "project/header.less";
+
+// Individual pages
+@import "project/home.less";

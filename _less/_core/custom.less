@@ -1,0 +1,102 @@
+/* This is a list of custom class and mixins I use.
+* Does not support IE < 10
+* -------------------------------------------------*/
+
+.border-box {
+	-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+			box-sizing:border-box;
+}
+
+.border-radius (@radius) {
+	-webkit-border-radius: @radius;
+		-moz-border-radius: @radius;
+			-o-border-radius: @radius;
+				border-radius: @radius;
+}
+
+.box-shadow (@shadow) {
+	-moz-box-shadow:@shadow;
+		-webkit-box-shadow:@shadow;
+			box-shadow:@shadow;
+}
+
+.standard-background (@background-image) {
+	background:url(@background-image) center center no-repeat transparent;
+}
+
+.transition (@transition) {
+	-webkit-transition:@transition;
+		-moz-transition:@transition;
+			-o-transition:@transition;
+				transition:@transition;
+}
+
+.transition-delay(@transitionDelay) {
+	-webkit-transition-delay:@transitionDelay;
+		-moz-transition-delay:@transitionDelay;
+			-ms-transition-delay:@transitionDelay;
+				-o-transition-delay:@transitionDelay;
+					transition-delay:@transitionDelay;
+}
+
+.animation-delay(@animationDelay) {
+	-webkit-animation-delay:@animationDelay;
+		-moz-animation-delay:@animationDelay;
+			-o-animation-delay:@animationDelay;
+				animation-delay:@animationDelay;
+}
+
+.animation-fill-mode(@animationFill){
+	-webkit-animation-fill-mode: @animationFill;
+		-moz-animation-fill-mode: @animationFill;
+			-o-animation-fill-mode: @animationFill;
+				animation-fill-mode: @animationFill;
+}
+
+.transform(@transformation){
+	-webkit-transform:@transformation;
+		-moz-transform:@transformation;
+			-o-transform:@transformation;
+				-ms-transform:@transformation;
+					transform:@transformation;
+}
+
+.animation(@animation){
+	-webkit-animation:@animation;
+		-moz-animation:@animation;
+			-o-animation:@animation;
+				animation:@animation;
+}
+
+.transform-origin(@transformOrigin){
+	-webkit-transform-origin:@transformOrigin;
+		-moz-transform-origin:@transformOrigin;
+			-o-transform-origin:@transformOrigin;
+				-ms-transform-origin:@transformOrigin;
+					transform-origin:@transformOrigin;
+}
+
+.standard-transition {
+	.transition(all .15s linear);
+}
+
+.hand {
+	cursor:pointer;
+	cursor:hand;
+}
+
+.clearfix {
+	// clear:both;
+	// Clearfix hack
+	// http://nicolasgallagher.com/micro-clearfix-hack/
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	*zoom:1;
+}

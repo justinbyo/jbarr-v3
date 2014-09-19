@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+    <title>icons 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M8,10 L8,9.00125865 C8,6.23337654 10.2411445,4 13.0057363,4 L74.9942637,4 C77.7662306,4 80,6.23913977 80,9.00125865 L80,74.9987413 C80,76.3824525 79.4399,77.6325816 78.5343053,78.5368757 C77.6271814,79.4431228 76.3767479,80 74.9956417,80 L5.00435829,80 C2.24422058,80 0,77.7586768 0,74.9938646 L0,15.0061354 C0,12.2301197 2.24052752,10 5.00435829,10 L8,10 Z" id="Rectangle-56" fill="#343333" sketch:type="MSShapeGroup"></path>
+        <path d="M12,14 L12,9.99828427 C12,8.897203 12.8969073,8 14.0032986,8 L73.9967014,8 C75.0952759,8 76,8.89466234 76,9.99828427 L76,74.0017157 C76,75.102797 75.1030927,76 73.9967014,76 L40,76 L6.00329863,76 C4.90472412,76 4,75.1078691 4,74.0073698 L4,15.9926302 C4,14.900351 4.89690735,14 6.00329863,14 L12,14 Z" id="Rectangle-57" fill="#FF9900" sketch:type="MSShapeGroup"></path>
+        <path d="M32.0042577,0 C29.7927672,0 28,1.79542698 28,4.00629539 L28,65.2236328 L44,70.8945312 L60,65.1914062 L60,4.0043159 C60,1.7927933 58.2109725,0 55.9957423,0 L32.0042577,0 Z" id="Rectangle-38" fill="#343333" sketch:type="MSShapeGroup"></path>
+        <rect id="Rectangle-36" fill="#343333" sketch:type="MSShapeGroup" x="41" y="21" width="24" height="11" rx="2"></rect>
+        <rect id="Rectangle-37" fill="#FFFFFF" sketch:type="MSShapeGroup" x="44" y="24" width="18" height="5"></rect>
+        <rect id="Rectangle-43" fill="#343333" sketch:type="MSShapeGroup" x="8" y="13" width="4" height="58" rx="3"></rect>
+        <path d="M6,14 L6,67.0429688 C6,67.0429688 6,69 8,69 C8.00000009,69 8,14 8,14 L6,14 Z" id="Rectangle-46" fill="#E66705" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

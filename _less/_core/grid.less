@@ -1,0 +1,573 @@
+/**!
+ * (mt) CSS Grid System
+ *
+ * Custom CSS grid solution built with LESS
+ * Built by the mad genius Ara Abcarians @itsmeaara http://itsmeara.com/
+ * ========================================================================== */ 
+
+
+/* ==========================================================================
+   Mixins that build columns and rows
+   Note: Grid variables located in variables.less
+   ========================================================================== */
+
+/**
+ * Clearfix
+ */
+
+.clearfix(){
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	*zoom:1;
+}
+
+
+/**
+ * Make grid columns
+ */
+
+.column( @index ) {
+    width: 0% + round( ((((@index * @gridColumnWidth) + (@index * @gridGutterWidth)) - @gridGutterWidth) / @gridTotalWidth) * 100, 3 );
+}
+
+
+/**
+ * Make push columns
+ */
+
+.push( @index ) {
+    margin-left: 0% + round( (((@index * @gridColumnWidth + @gridGutterWidth/2) + (@index * @gridGutterWidth)) / @gridTotalWidth) * 100, 4 );
+}
+
+
+.pull( @index ) {
+    margin-right: 0% + round( (((@index * @gridColumnWidth + @gridGutterWidth/2) + (@index * @gridGutterWidth)) / @gridTotalWidth) * 100, 4 );
+    float: right;
+}
+
+
+/**
+ * Make row inside grid container
+ */
+
+.make-row() {
+    // margin-left: -(0% + @gridFluidGutterWidth/2);
+    //margin-right: -(0% + @gridFluidGutterWidth/2);
+    //max-width: @gridTotalWidth;
+    // add some breathing room
+    // padding-left: @gridPadding / 2;
+    // padding-right: @gridPadding / 2;
+
+    // overflow: hidden;
+
+    // .clearfix();
+    .grid-floated(); 
+}
+
+
+/**
+ * Grid/Columns based on `display: inline-block;` divs
+ */
+
+.grid-inline() {
+    text-align: left;
+    letter-spacing: -0.28em;
+    //word-spacing: -0.43em;
+    //font-size: 0;
+    text-rendering: optimizespeed; 
+    // -moz-box-sizing: border-box; 
+    // -webkit-box-sizing: border-box; 
+    // box-sizing: border-box;     
+}
+
+.columns-inline() {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-rendering: auto;  
+    margin: 0 0% + @gridFluidGutterWidth/2;
+}
+
+
+/**
+ * Grid/Columns based on `float: left;` divs
+ */
+
+.grid-floated() {
+    .clearfix(); 
+}
+
+.columns-floated() {
+    float: left;
+    display: inline;
+    margin-left: 0% + @gridFluidGutterWidth/2;
+    margin-right: 0% + @gridFluidGutterWidth/2;
+    .clearfix();
+}
+
+
+/**
+ * Stacked grid columns for mobile view
+ */
+
+.columns-stacked() {
+    display: block;
+    float: none;
+    width: 100%;
+    // max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+            
+
+/* ==========================================================================
+   Grid system classes
+   ========================================================================== */
+
+/**
+ * The grid container
+ * Anytime you use the grid there should be a grid container.
+
+<div class="grid">
+   [...]
+</div>
+
+ */
+
+.grid {
+    margin: 0 auto;
+    // margin-left: auto;
+    // margin-right: auto;
+    max-width: @gridTotalWidth + @gridPadding;
+    padding-left: @gridPadding / 2 * 1px; // add some breathing room
+    padding-right: @gridPadding / 2 * 1px; // add some breathing room
+
+    // overflow:hidden;
+
+    .clearfix();
+    .grid-floated(); 
+}
+
+// .wrapper .grid {
+//     padding-left: 0;
+//     padding-right: 0;
+// }
+
+
+/**
+ * Use a row inside of a grid or grid column.
+
+<div class="grid">
+   <div class="row">
+       [...]  
+   </div>
+</div>
+
+ */
+
+.grid-row { .make-row(); clear:both; }
+
+
+/**
+ * I think you know how columns work.
+ * Each grid column should have a class of `grid-col`.
+ * Note: You __DONT__ need to add a class of `last` or anything to the last column.
+
+<div class="grid">
+    <div class="grid-col  span6">
+        [...]
+    </div>
+    <div class="grid-col  span6">
+        [...]
+    </div>
+</div>
+
+ */
+
+.grid-col { 
+    // margin: 0 0% + @gridFluidGutterWidth/2;
+
+    //.clearfix(); // in case you float anything inside a column
+    .columns-floated(); 
+} 
+
+// .grid-col--noMargin {
+//     margin: 0 !important;
+// }
+
+// .grid-col--pinned {
+//     position: absolute;
+//     height: 100%;
+//     top: 0;
+//     bottom: 0;
+//     left: 0% + @gridFluidGutterWidth/2;
+//     width: 25% !important;
+//     @media @small {
+//         display: none;
+//     }
+// }
+
+// .grid-col--pullRight {
+//     margin-right: -10px;
+// }
+
+// Fix grid inception
+.grid-col .grid,
+.grid-col .grid-row {
+    margin-left: -(0% + @gridFluidGutterWidth/2);
+    margin-right: -(0% + @gridFluidGutterWidth/2);
+}
+
+@media @small {
+    .grid-col--spaced {
+        margin-bottom: @baseSpacingUnit;
+    }
+
+    .grid-col--spaced--sm {
+        margin-bottom: @halfSpacingUnit;
+    }
+
+    .grid-col--spaced--lg {
+        margin-bottom: @doubleSpacingUnit;
+    }    
+}
+
+
+/* Grid Modifiers
+   -------------------------------------------------------------------------- */
+
+/**
+ * Grid that spans the length of the browser.
+ */
+
+.grid--wide { 
+    max-width: 100%; 
+
+    // margin-left: 0; padding-left: 0;
+    // .grid-col {
+    //     margin-left: 0;
+    //     margin-right: 0;
+    // }
+
+}
+
+
+// /**
+//  * Grid that centers it's columns.
+//  * This only works for inline grid columns, not floated columns.
+//  */
+
+// .grid--centered {
+//     text-align: center;
+
+//     .grid-row { text-align: center; }
+
+//     // Remove `text-align: center;` for content inside columns
+//     .grid-col {
+//         text-align: left;
+//     }
+// }
+
+
+// Grid that creates 50/50 columns with no margins
+.grid--split {
+    max-width: 100%;
+    width: 100%;
+
+    > .grid-col {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+// @media @desktopSmall {
+//     .grid--split {
+//         > .grid__col {
+//             width: 100%;
+//             margin: 0;
+//         }
+//     }    
+// }
+
+
+
+
+
+/* Grid column widths
+   -------------------------------------------------------------------------- */
+// .grid {
+
+    .span1 { .column(1); }
+    .span2 { .column(2); }
+    .span3 { .column(3); }
+    .oneFourth { .column(3); }
+    .span4 { .column(4); }
+    .oneThird { .column(4); }
+    .span5 { .column(5); }
+    .span6 { .column(6); }
+    .oneHalf { .column(6); }
+    .span7 { .column(7); }
+    .span8 { .column(8); }
+    .span9 { .column(9); }
+    .span10 { .column(10); }
+    .span11 { .column(11); }
+    .span12 {  
+        float: none;
+        clear: both;
+        display: block;
+
+        .column(12);
+        // .clearfix(); 
+    }
+
+    .push1 { .push(1); }
+    .push1--half { margin-left: 13.1667%; }
+    .push2 { .push(2); }
+    .push3 { .push(3); }
+    .push4 { .push(4); }
+    .push5 { .push(5); }
+    .push6 { .push(6); }
+    .push7 { .push(7); }
+    .push8 { .push(8); }
+    .push9 { .push(9); }
+    .push10 { .push(10); }
+    .push11 { .push(11); }
+    .push12 { .push(12); }
+
+    .pull1 { .pull(1); }
+    .pull1--half { margin-right: 13.1667%; }
+    .pull2 { .pull(2); }
+    .pull3 { .pull(3); }
+    .pull4 { .pull(4); }
+    .pull5 { .pull(5); }
+    .pull6 { .pull(6); }
+    .pull7 { .pull(7); }
+    .pull8 { .pull(8); }
+    .pull9 { .pull(9); }
+    .pull10 { .pull(10); }
+    .pull11 { .pull(11); }
+    .pull12 { .pull(12); }
+
+// }
+
+
+
+/* ==========================================================================
+   Grid system media query adjustments.
+   ========================================================================== */
+
+/// Medium size
+// (min-width: 768px) and (max-width: 1100px)
+// --------------------------------------------------------------------------
+
+@media @medium {
+    html {
+        font-size: 95%;
+    }
+
+    // This will be depricated soon in favor of "med-" sizes
+    // .lap-span1 { .column(1); }
+    // .lap-span2 { .column(2); }
+    // .lap-span3 { .column(3); }
+    // .lap-oneFourth { .column(3); }
+    // .lap-span4 { .column(4); }
+    // .lap-oneThird { .column(4); }
+    // .lap-span5 { .column(5); }
+    // .lap-span6 { .column(6); }
+    // .lap-oneHalf { .column(6); }
+    // .lap-span7 { .column(7); }
+    // .lap-span8 { .column(8); }
+    // .lap-span9 { .column(9); }
+    // .lap-span10 { .column(10); }
+    // .lap-span11 { .column(11); }
+    // .lap-span12 { 
+    //     float: none;
+    //     clear: both;
+    //     display: block;
+    //     .column(12); 
+    // }
+
+    // .lap-push1 { .push(1); }
+    // .lap-push1--half { margin-left: 13.1667%; }
+    // .lap-push2 { .push(2); }
+    // .lap-push3 { .push(3); }
+    // .lap-push4 { .push(4); }
+    // .lap-push5 { .push(5); }
+    // .lap-push6 { .push(6); }
+    // .lap-push7 { .push(7); }
+    // .lap-push8 { .push(8); }
+    // .lap-push9 { .push(9); }
+    // .lap-push10 { .push(10); }
+    // .lap-push11 { .push(11); }
+    // .lap-push12 { .push(12); }
+
+    // .grid {
+        .med-span1 { .column(1); }
+        .medium-span1 { .column(1); }
+        .med-span2 { .column(2); }
+        .medium-span2 { .column(2); }
+        .med-span3 { .column(3); }
+        .medium-span3 { .column(3); }
+        .med-oneFourth { .column(3); }
+        .medium-oneFourth { .column(3); }
+        .med-span4 { .column(4); }
+        .medium-span4 { .column(4); }
+        .med-oneThird { .column(4); }
+        .medium-oneThird { .column(4); }
+        .med-span5 { .column(5); }
+        .medium-span5 { .column(5); }
+        .med-span6 { .column(6); }
+        .medium-span6 { .column(6); }
+        .med-oneHalf { .column(6); }
+        .medium-oneHalf { .column(6); }
+        .med-span7 { .column(7); }
+        .medium-span7 { .column(7); }
+        .med-span8 { .column(8); }
+        .medium-span8 { .column(8); }
+        .med-span9 { .column(9); }
+        .medium-span9 { .column(9); }
+        .med-span10 { .column(10); }
+        .medium-span10 { .column(10); }
+        .med-span11 { .column(11); }
+        .medium-span11 { .column(11); }
+        .med-span12,
+        .medium-span12 { 
+            float: none;
+            clear: both;
+            display: block;
+            .column(12); 
+        }
+
+        .med-push1 { .push(1); }
+        .medium-push1 { .push(1); }
+        .med-push1--half { margin-left: 13.1667%; }
+        .medium-push1--half { margin-left: 13.1667%; }
+        .med-push2 { .push(2); }
+        .medium-push2 { .push(2); }
+        .med-push3 { .push(3); }
+        .medium-push3 { .push(3); }
+        .med-push4 { .push(4); }
+        .medium-push4 { .push(4); }
+        .med-push5 { .push(5); }
+        .medium-push5 { .push(5); }
+        .med-push6 { .push(6); }
+        .medium-push6 { .push(6); }
+        .med-push7 { .push(7); }
+        .medium-push7 { .push(7); }
+        .med-push8 { .push(8); }
+        .medium-push8 { .push(8); }
+        .med-push9 { .push(9); }
+        .medium-push9 { .push(9); }
+        .med-push10 { .push(10); }
+        .medium-push10 { .push(10); }
+        .med-push11 { .push(11); }
+        .medium-push11 { .push(11); }
+        .med-push12 { .push(12); }    
+        .medium-push12 { .push(12); }    
+    // }
+}
+
+
+// Tablet (portrait) and down to phones of all sizes.
+// only screen and (max-width: 767px)
+// --------------------------------------------------------------------------
+
+@media @small {
+    html {
+        font-size: 90%;
+    }
+
+    // stack columns
+    .grid-col {
+        .columns-stacked();
+    }
+
+    // unless they use these classes
+    // Use these!
+    // .grid {
+        .small-span1 { .columns-floated(); .column(1); }
+        .sm-span1 { .columns-floated(); .column(1); }
+        .small-span2 { .columns-floated(); .column(2); }
+        .sm-span2 { .columns-floated(); .column(2); }
+        .small-span3 { .columns-floated(); .column(3); }
+        .sm-span3 { .columns-floated(); .column(3); }
+        .small-oneFourth { .columns-floated(); .column(3); }
+        .sm-oneFourth { .columns-floated(); .column(3); }
+        .small-span4 { .columns-floated(); .column(4); }
+        .sm-span4 { .columns-floated(); .column(4); }
+        .small-oneThird { .columns-floated(); .column(4); }
+        .sm-oneThird { .columns-floated(); .column(4); }
+        .small-span5 { .columns-floated(); .column(5); }
+        .sm-span5 { .columns-floated(); .column(5); }
+        .small-span6 { .columns-floated(); .column(6); }
+        .sm-span6 { .columns-floated(); .column(6); }
+        .small-oneHalf { .columns-floated(); .column(6); }
+        .sm-oneHalf { .columns-floated(); .column(6); }
+        .small-span7 { .columns-floated(); .column(7); }
+        .sm-span7 { .columns-floated(); .column(7); }
+        .small-span8 { .columns-floated(); .column(8); }
+        .sm-span8 { .columns-floated(); .column(8); }
+        .small-span9 { .columns-floated(); .column(9); }
+        .sm-span9 { .columns-floated(); .column(9); }
+        .small-span10 { .columns-floated(); .column(10); }
+        .sm-span10 { .columns-floated(); .column(10); }
+        .small-span11 { .columns-floated(); .column(11); }
+        .sm-span11 { .columns-floated(); .column(11); }
+        .small-span12, 
+        .sm-span12 { 
+            float: none;
+            clear: both;
+            display: block;
+            .columns-floated(); .column(12);  
+        }
+
+        .small-push1 { .columns-floated(); .push(1); }
+        .sm-push1 { .columns-floated(); .push(1); }
+        .small-push1--half { margin-left: 13.1667%; }
+        .sm-push1--half { margin-left: 13.1667%; }
+        .small-push2 { .columns-floated(); .push(2); }
+        .sm-push2 { .columns-floated(); .push(2); }
+        .small-push3 { .columns-floated(); .push(3); }
+        .sm-push3 { .columns-floated(); .push(3); }
+        .small-push4 { .columns-floated(); .push(4); }
+        .sm-push4 { .columns-floated(); .push(4); }
+        .small-push5 { .columns-floated(); .push(5); }
+        .sm-push5 { .columns-floated(); .push(5); }
+        .small-push6 { .columns-floated(); .push(6); }
+        .sm-push6 { .columns-floated(); .push(6); }
+        .small-push7 { .columns-floated(); .push(7); }
+        .sm-push7 { .columns-floated(); .push(7); }
+        .small-push8 { .columns-floated(); .push(8); }
+        .sm-push8 { .columns-floated(); .push(8); }
+        .small-push9 { .columns-floated(); .push(9); }
+        .sm-push9 { .columns-floated(); .push(9); }
+        .small-push10 { .columns-floated(); .push(10); }
+        .sm-push10 { .columns-floated(); .push(10); }
+        .small-push11 { .columns-floated(); .push(11); }
+        .sm-push11 { .columns-floated(); .push(11); }
+        .small-push12 { .columns-floated(); .push(12); }
+        .sm-push12 { .columns-floated(); .push(12); }
+    // }
+}
+
+
+@media @xSmall {
+    // html {
+    //     font-size: 90%;
+    // }
+
+    .grid .grid-col {
+        .columns-stacked();
+    }   
+}
