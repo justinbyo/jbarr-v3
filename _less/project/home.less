@@ -311,6 +311,10 @@
 		.linkedin {
 			.icon {
 				.standard-background("../img/2012/linkedin.png");
+				@media @retina {
+					background-image:url("../img/2012/retina/linkedin-2x.png");
+					background-size:80px;
+				}
 				// .standard-background("../img/linkedin-fancy.svg");
 
 			}
@@ -319,6 +323,10 @@
 		.dribbble {
 			.icon {
 				.standard-background("../img/2012/dribbble.png");
+				@media @retina {
+					background-image:url("../img/2012/retina/dribbble-2x.png");
+					background-size:80px;
+				}
 			}
 		}
 		
@@ -333,12 +341,22 @@
 				}
 				.back { // used to be back-top
 					.standard-background("../img/2012/github-back.png");
+					@media @retina {
+						background-image:url("../img/2012/retina/github-back-2x.png");
+						background-size:80px;
+					}
+					
 					background-position:center top;
 					height:104px;
 					// height:77px;
 				}
 				.bubbles {
 					.standard-background("../img/2012/github-bubbles.png");
+					@media @retina {
+						background-image:url("../img/2012/retina/github-bubbles-2x.png");
+						background-size:80px;
+					}
+					
 					background-position:center top;
 					height:77px;
 					// .standard-transition;
@@ -360,6 +378,11 @@
 	*/
 				.front {
 					.standard-background("../img/2012/github-front.png");
+					@media @retina {
+						background-image:url("../img/2012/retina/github-front-2x.png");
+						background-size:80px;
+					}
+					
 					height:104px;
 				}
 			}
@@ -367,6 +390,13 @@
 		}
 		
 		.projects {
+		
+			// Under construction
+		
+			@media (max-width:530px){
+				.margin-bottom(50px);
+			}
+		
 			.icon {
 				
 			
@@ -380,13 +410,25 @@
 				}
 				.back {
 					.standard-background("../img/2012/projects-back.png");
+					@media @retina {
+						background-image:url("../img/2012/retina/projects-back-2x.png");
+						background-size:80px;
+					}
 				}
 				.paper {
 					.standard-background("../img/2012/projects-paper.png");
+					@media @retina {
+						background-image:url("../img/2012/retina/projects-paper-2x.png");
+						background-size:80px;
+					}
 					.standard-transition;
 				}
 				.front {
 					.standard-background("../img/2012/projects-front.png");
+					@media @retina {
+						background-image:url("../img/2012/retina/projects-front-2x.png");
+						background-size:80px;
+					}
 				}
 				
 				.grayscale {
@@ -397,6 +439,7 @@
 					filter: grayscale(100%);
 					filter: gray;
 					filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+					-webkit-transform: translateZ(0); /* Fix blurry issue */
 				}
 				
 				.grayscale;
@@ -407,6 +450,10 @@
 		.contact {
 			.icon {
 				.standard-background("../img/2012/contact.png");
+				@media @retina {
+					background-image:url("../img/2012/retina/contact-2x.png");
+					background-size:80px;
+				}
 				// .standard-background("../img/contact-fancy.svg");
 			}
 		}

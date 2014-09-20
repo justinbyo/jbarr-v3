@@ -2425,8 +2425,20 @@ header.strip ul li a:hover {
 .page--home .icon--container .linkedin .icon {
   background: url("../img/2012/linkedin.png") center center no-repeat transparent;
 }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5) {
+  .page--home .icon--container .linkedin .icon {
+    background-image: url("../img/2012/retina/linkedin-2x.png");
+    background-size: 80px;
+  }
+}
 .page--home .icon--container .dribbble .icon {
   background: url("../img/2012/dribbble.png") center center no-repeat transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5) {
+  .page--home .icon--container .dribbble .icon {
+    background-image: url("../img/2012/retina/dribbble-2x.png");
+    background-size: 80px;
+  }
 }
 .page--home .icon--container .github .icon {
   height: 104px;
@@ -2452,21 +2464,47 @@ header.strip ul li a:hover {
   background-position: center top;
   height: 104px;
 }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5) {
+  .page--home .icon--container .github .icon .back {
+    background-image: url("../img/2012/retina/github-back-2x.png");
+    background-size: 80px;
+  }
+}
 .page--home .icon--container .github .icon .bubbles {
   background: url("../img/2012/github-bubbles.png") center center no-repeat transparent;
   background-position: center top;
   height: 77px;
   transition: all .07s linear;
 }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5) {
+  .page--home .icon--container .github .icon .bubbles {
+    background-image: url("../img/2012/retina/github-bubbles-2x.png");
+    background-size: 80px;
+  }
+}
 .page--home .icon--container .github .icon .front {
   background: url("../img/2012/github-front.png") center center no-repeat transparent;
   height: 104px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5) {
+  .page--home .icon--container .github .icon .front {
+    background-image: url("../img/2012/retina/github-front-2x.png");
+    background-size: 80px;
+  }
+}
+@media (max-width: 530px) {
+  .page--home .icon--container .projects {
+    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
+  }
 }
 .page--home .icon--container .projects .icon {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   filter: gray;
   filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+  -webkit-transform: translateZ(0);
+  /* Fix blurry issue */
 }
 .page--home .icon--container .projects .icon div {
   position: absolute;
@@ -2478,6 +2516,12 @@ header.strip ul li a:hover {
 .page--home .icon--container .projects .icon .back {
   background: url("../img/2012/projects-back.png") center center no-repeat transparent;
 }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5) {
+  .page--home .icon--container .projects .icon .back {
+    background-image: url("../img/2012/retina/projects-back-2x.png");
+    background-size: 80px;
+  }
+}
 .page--home .icon--container .projects .icon .paper {
   background: url("../img/2012/projects-paper.png") center center no-repeat transparent;
   -webkit-transition: all 0.15s linear;
@@ -2485,17 +2529,37 @@ header.strip ul li a:hover {
   -o-transition: all 0.15s linear;
   transition: all 0.15s linear;
 }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5) {
+  .page--home .icon--container .projects .icon .paper {
+    background-image: url("../img/2012/retina/projects-paper-2x.png");
+    background-size: 80px;
+  }
+}
 .page--home .icon--container .projects .icon .front {
   background: url("../img/2012/projects-front.png") center center no-repeat transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5) {
+  .page--home .icon--container .projects .icon .front {
+    background-image: url("../img/2012/retina/projects-front-2x.png");
+    background-size: 80px;
+  }
 }
 .page--home .icon--container .projects .icon .grayscale {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   filter: gray;
   filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+  -webkit-transform: translateZ(0);
+  /* Fix blurry issue */
 }
 .page--home .icon--container .contact .icon {
   background: url("../img/2012/contact.png") center center no-repeat transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5) {
+  .page--home .icon--container .contact .icon {
+    background-image: url("../img/2012/retina/contact-2x.png");
+    background-size: 80px;
+  }
 }
 @media (min-width: 531px) {
   .page--home .icon--container .icon--unit:hover p {
