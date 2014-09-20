@@ -28,7 +28,7 @@
 	
 	.home--above-fold {	
 		position:relative;
-		.padding-top(200px);
+		.padding-top(60px);
 		height:100%;
 		.margin-bottom(0);
 		.border-box;
@@ -38,6 +38,27 @@
 			
 		}
 		
+	}
+	
+	// Controlled with JS to make better on laptops, etc.
+	
+	.js-bigPadding {
+		@media (min-width: 531px) {
+			.padding-top(200px);
+		}
+		@media (max-width: 880px) {
+			.padding-top(60px);
+		}
+		
+	}
+	
+	.js-mediumPadding {
+		@media (min-width: 531px) {
+			.padding-top(100px);
+		}
+		@media (max-width: 880px) {
+			.padding-top(60px);
+		}
 	}
 	
 	.strip--hero {

@@ -2162,8 +2162,8 @@ header.strip ul li a:hover {
 }
 .page--home .home--above-fold {
   position: relative;
-  padding-top: 200px;
-  padding-top: 12.5rem;
+  padding-top: 60px;
+  padding-top: 3.75rem;
   height: 100%;
   margin-bottom: 0;
   -webkit-box-sizing: border-box;
@@ -2172,6 +2172,30 @@ header.strip ul li a:hover {
 }
 @media (max-width: 880px) {
   .page--home .home--above-fold {
+    padding-top: 60px;
+    padding-top: 3.75rem;
+  }
+}
+@media (min-width: 531px) {
+  .page--home .js-bigPadding {
+    padding-top: 200px;
+    padding-top: 12.5rem;
+  }
+}
+@media (max-width: 880px) {
+  .page--home .js-bigPadding {
+    padding-top: 60px;
+    padding-top: 3.75rem;
+  }
+}
+@media (min-width: 531px) {
+  .page--home .js-mediumPadding {
+    padding-top: 100px;
+    padding-top: 6.25rem;
+  }
+}
+@media (max-width: 880px) {
+  .page--home .js-mediumPadding {
     padding-top: 60px;
     padding-top: 3.75rem;
   }
