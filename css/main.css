@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Arimo:400,700|Droid+Serif:400,700|Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Arimo:400,700|Droid+Serif:400,700|Roboto+Slab|Merriweather:400italic,400,700,700italic);
 /* main.less
  * This is the main LESS doc
  * It imports all component LESS files and compiles to main.css
@@ -2031,6 +2031,9 @@ textarea {
 .droid-serif {
   font-family: 'Droid Serif', serif;
 }
+.merriweather {
+  font-family: 'Merriweather', serif;
+}
 .futura-pt {
   font-family: "futura-pt", helvetica, arial, sans-serif;
 }
@@ -2066,9 +2069,6 @@ body {
   width: 100%;
   height: 100%;
 }
-body {
-  background-color: #ffffff;
-}
 .strip {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -2099,7 +2099,10 @@ header.strip {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: #ffffff;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 header.strip .logo {
   float: left;
@@ -2121,8 +2124,8 @@ header.strip ul li:last-child {
   margin-right: 0;
 }
 header.strip ul li a {
-  font-size: 19px;
-  font-weight: 300;
+  font-size: 12px;
+  font-weight: 700;
   padding: 15px 0;
   color: #888888;
   text-decoration: none;
@@ -2137,7 +2140,56 @@ header.strip ul li a:hover {
   color: #222222;
 }
 .page--home header ul li:first-child a {
+  color: #222222;
   border-bottom: 6px solid #ff9900;
+}
+.page--blog header ul li:nth-child(2) a {
+  color: #222222;
+  border-bottom: 6px solid #ff9900;
+}
+/* Blog-specific styles
+ * Everything blog related goes here
+ * ____________________________________________________________ */
+.page--blog {
+  background-color: #f9f9f9;
+  padding-top: 200px;
+  padding-top: 12.5rem;
+}
+.page--blog .strip--article-list {
+  padding: 60px 0;
+}
+.page--blog .post-meta {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #666666;
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+}
+.page--blog .post-title {
+  font-family: 'Lato', sans-serif;
+}
+.page--blog .post-title a {
+  display: inline-block;
+  color: #222222;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+  font-size: 36px;
+  font-size: 2.25rem;
+  padding-bottom: 15px;
+  padding-bottom: 0.9375rem;
+  border-bottom: 6px solid #989898;
+}
+.page--blog .post-title a:hover {
+  color: #ff9900;
+  border-bottom: 6px solid #ff9900;
+}
+.page--blog .post-description {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  font-family: 'Merriweather', serif;
 }
 /* Styles for home page
  * ____________________________________________________________ */
@@ -2152,6 +2204,9 @@ header.strip ul li a:hover {
 		.font-size(24px);
 	}
 */
+}
+.page--home body {
+  background-color: #ffffff;
 }
 .page--home .strip {
   margin-bottom: 60px;
