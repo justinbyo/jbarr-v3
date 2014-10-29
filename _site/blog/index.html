@@ -32,34 +32,58 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 		
-		<header class="strip">
+	    <header class="strip">
 
-	<div class="wrapper">
-		<a href="/" class="logo"></a>
-		
-		<ul class="menu--main">
-			<li><a href="/">About</a></li>
-			<li><a href="/blog/">Blog</a></li>
-		</ul>
+	<div class="stripes">
+	<!-- Six of these divs. Can't have any whitespace because of inline-block bug -->
+	<div></div><div></div><div></div><div></div><div></div><div></div>
+</div>
+
+	<div class="strip">
+		<div class="wrapper  grid">
+			<div class="grid-col  span12">
+				<h1><a href="/blog" onclick="_gaq.push(['_trackEvent', 'blog--header-home-link', 'clicked'])">Justin Barr Young <span>Blog</span></a></h1>
+			</div>
+		</div>
 	</div>	
+	
  	
 </header>
 		
+		<div class="strip  strip--blog-hero">
+	<div class="wrapper  grid">
+		<div class="grid-col  span12">
+			<p class="hero-description"></p>
+			<!-- <h1>Justin Barr Young <span>Blog</span></h1> -->
+		</div>
 		
+		
+		
+	</div>
+</div>
 
+
+
+
+	
 	<div class="strip  strip--article-list">
 		
-		<div class="wrapper">
+		<div class="wrapper grid">
 			
-			<p class="post-meta">Jul 18, 2014</p>
-
-	        <h2 class="post-title">
-	          <a class="post-link" href="/jekyll/update/welcome-to-jekyll-2.html">Welcome to Jekyll 2!</a>
-	          
-	        </h2>
-	        
-	        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="grid-col  span12">
 			
+				<p class="post-meta">Jul 18, 2014</p>
+	
+		        <h2 class="post-title">
+		          <a class="post-link" href="/jekyll/update/welcome-to-jekyll-2.html">Welcome to Jekyll 2!</a>
+		          
+		        </h2>
+		        
+		        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		        
+		        <p class="read-more"><a href="/jekyll/update/welcome-to-jekyll-2.html">Read more &rarr;</a></p>
+		        
+			</div>
 			
 		</div>
 		
@@ -68,19 +92,25 @@
 
 
 
+	
 	<div class="strip  strip--article-list">
 		
-		<div class="wrapper">
+		<div class="wrapper grid">
 			
-			<p class="post-meta">Jul 18, 2014</p>
-
-	        <h2 class="post-title">
-	          <a class="post-link" href="/jekyll/update/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-	          
-	        </h2>
-	        
-	        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="grid-col  span12">
 			
+				<p class="post-meta">Jul 18, 2014</p>
+	
+		        <h2 class="post-title">
+		          <a class="post-link" href="/jekyll/update/welcome-to-jekyll.html">Welcome to Jekyll!</a>
+		          
+		        </h2>
+		        
+		        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		        
+		        <p class="read-more"><a href="/jekyll/update/welcome-to-jekyll.html">Read more &rarr;</a></p>
+		        
+			</div>
 			
 		</div>
 		
@@ -88,6 +118,45 @@
 	</div>
 
 
+	    
+	    <!-- Send the user to the top -->
+<!-- Style's in blog.less -->
+
+<a class="strip  strip--footer" id="scroll-top" onclick="_gaq.push(['_trackEvent', 'blog--scroll-to-top', 'clicked'])">
+	<p>Back to top</p>
+</a>
+
+<!-- Begin footer -->
+
+<footer class="strip">
+	<div class="wrapper  grid">
+		<div class="grid-col  span6  bio">
+			<h3>About</h3>
+			<p>
+				Justin Barr Young designs and develops user experiences for web and mobile products.
+			</p>
+			<p>
+				He's the principal UX designer and information architect (and occasional front-end developer) at <a href="http://mediatemple.net" title="Media Temple">Media Temple</a>, a webhosting and support provider. He designs and guides the creation of user experiences that make Media Temple's products easy and valuable for users. On the side, he designs and develops <a href="http://twowordsfor.com" title="Two Words For">Two Words For</a>, an online arts and literary magazine (and a constantly-changing work in progress).
+			</p>
+		</div>
+		<div class="grid-col  span1  push1  contact">
+			<h3>Contact</h3>
+			<p>
+				<a href="http://twitter.com/theJayBeeWhy" onclick="_gaq.push(['_trackEvent', 'blog--twitter-footer', 'clicked'])">Twitter</a><br />
+				<a href="mailto:justin@jay-bee-why.com"  onclick="_gaq.push(['_trackEvent', 'blog--email-footer', 'clicked'])">Email</a>
+			</p>
+		</div>
+		<div class="grid-col  span1  push1  contact">
+			<h3>Links</h3>
+			<p>
+				<a href="http://www.linkedin.com/in/justinbarryoung" onclick="_gaq.push(['_trackEvent', 'blog--linkedin-footer', 'clicked'])">LinkedIn</a><br />
+				<a href="https://dribbble.com/jay-bee-why" onclick="_gaq.push(['_trackEvent', 'blog--dribbble-footer', 'clicked'])">dribbble</a><br />
+				<a href="https://github.com/jay-bee-why" onclick="_gaq.push(['_trackEvent', 'blog--github-footer', 'clicked'])">Github</a><br />
+				<a href="http://codepen.io/jay-bee-why/" onclick="_gaq.push(['_trackEvent', 'blog--codepen-footer', 'clicked'])">CodePen</a>
+			</p>
+		</div>
+	</div>
+</footer>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
