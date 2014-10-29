@@ -1,0 +1,57 @@
+/* Styles for header
+ * ____________________________________________________________ */
+
+footer.strip {
+	
+	background-color:#333333;	
+	
+	.padding(60px 0);
+	
+	h3, .h3 {
+		text-transform: uppercase;
+		color:@light-blue;
+		.font-size(12px);
+		.lato;
+		.margin-bottom(20px);
+	}
+	
+	.wrapper {
+		div {
+			@media @small {
+				.margin-bottom(20px);
+			}
+		}
+	}
+	
+	p {
+		color:@white;
+		.merriweather;
+		font-weight:500;
+		.font-size(12px);
+		.margin-bottom(20px);
+		line-height:1.5;
+		
+		a {
+			text-decoration:none;
+			color:@aqua;
+			
+			&:hover {
+				color:@light-blue;
+			}
+		}
+		
+		&:last-child {
+			.margin-bottom(0);
+		}
+	}
+	
+	.contact {
+		p {
+			a {
+				display:inline-block;
+				.margin-bottom(10px);
+			}
+		}
+	}
+	
+}
