@@ -11,6 +11,8 @@ pagetype: blog
 		
 			<!-- <p class="read-more"><a href="/blog">&larr; Back to blog</a></p> -->
 		
+			<a href="/blog" class="post-meta">&#8592; Back to Work</a>
+		
 			<p class="post-meta">{{ page.date | date_to_string }}</p>
 
 	        <h2 class="post  post-title">
@@ -18,6 +20,20 @@ pagetype: blog
 	        </h2>
 	        
 	        <div class="content">{{ content }}</div>
+	        
+	        
+	        <!-- Found this online -->
+	        <!-- https://groups.google.com/forum/#!topic/jekyll-rb/W8gP94wV0jU -->
+	        <p class="related-article-link">
+		        {% if page.previous.url %} 
+		                <a href="{{page.previous.url}}" title="Next case study: 
+		{{page.previous.title}}" onclick="_gaq.push(['_trackEvent', 'next-case-study', 'clicked'])">Read the next case study <span>&#8594;</span></a> 
+		        {% endif %} 
+	        </p>
+	        
+	        <p class="cta">
+		        <a href="/blog" onclick="_gaq.push(['_trackEvent', 'back-to-work', 'clicked'])"><span>&#8592;</span> Back to Work</a>
+	        </p>
 	        
 		</div>
 		

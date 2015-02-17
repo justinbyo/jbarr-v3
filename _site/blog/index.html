@@ -36,12 +36,14 @@
 
 	<div class="strip">
 		<div class="wrapper  grid">
-			<div class="grid-col  span6">
-				<h1><a href="/blog" onclick="_gaq.push(['_trackEvent', 'blog--header-home-link', 'clicked'])">Work <span>Justin Barr Young</span></a></h1>
+			<div class="grid-col  span10  grid-col--nav">
+				<h1><a href="/" onclick="_gaq.push(['_trackEvent', 'blog--header-home-link', 'clicked'])">Full-stack Design <span>Justin Barr Young</span></a></h1>
 			</div>
-			<div class="grid-col  span6">
-				<a class="nav-link">About</a>
-				<a class="nav-link">Work</a>
+			<div class="grid-col  span1  grid-col--nav  nav-link  nav-link--about">
+				<a href="/" class="">About</a>
+			</div>
+			<div class="grid-col  span1  grid-col--nav  nav-link  nav-link--work">
+				<a href="/blog" class="">Work</a>
 			</div>
 		</div>
 	</div>	
@@ -121,8 +123,8 @@
 	    <!-- Send the user to the top -->
 <!-- Style's in blog.less -->
 
-<a class="strip  strip--footer" id="scroll-top" onclick="_gaq.push(['_trackEvent', 'blog--scroll-to-top', 'clicked'])">
-	<p>Back to top</p>
+<a class="strip  strip--footer" id="scroll-top" onclick="_gaq.push(['_trackEvent', 'scroll-to-top', 'clicked'])">
+	<p>Scroll to top &#8593;</p>
 </a>
 
 <!-- Begin footer -->
@@ -141,17 +143,17 @@
 		<div class="grid-col  span1  push1  contact">
 			<h3>Contact</h3>
 			<p>
-				<a href="http://twitter.com/theJayBeeWhy" onclick="_gaq.push(['_trackEvent', 'blog--twitter-footer', 'clicked'])">Twitter</a><br />
-				<a href="mailto:justin@jay-bee-why.com"  onclick="_gaq.push(['_trackEvent', 'blog--email-footer', 'clicked'])">Email</a>
+				<a href="http://twitter.com/theJayBeeWhy" onclick="_gaq.push(['_trackEvent', 'twitter-footer', 'clicked'])">Twitter</a><br />
+				<a href="mailto:justin@jay-bee-why.com"  onclick="_gaq.push(['_trackEvent', 'email-footer', 'clicked'])">Email</a>
 			</p>
 		</div>
 		<div class="grid-col  span1  push1  contact">
 			<h3>Links</h3>
 			<p>
-				<a href="http://www.linkedin.com/in/justinbarryoung" onclick="_gaq.push(['_trackEvent', 'blog--linkedin-footer', 'clicked'])">LinkedIn</a><br />
-				<a href="https://dribbble.com/jay-bee-why" onclick="_gaq.push(['_trackEvent', 'blog--dribbble-footer', 'clicked'])">dribbble</a><br />
-				<a href="https://github.com/jay-bee-why" onclick="_gaq.push(['_trackEvent', 'blog--github-footer', 'clicked'])">Github</a><br />
-				<a href="http://codepen.io/jay-bee-why/" onclick="_gaq.push(['_trackEvent', 'blog--codepen-footer', 'clicked'])">CodePen</a>
+				<a href="http://www.linkedin.com/in/justinbarryoung" onclick="_gaq.push(['_trackEvent', 'linkedin-footer', 'clicked'])">LinkedIn</a><br />
+				<a href="https://dribbble.com/jay-bee-why" onclick="_gaq.push(['_trackEvent', 'dribbble-footer', 'clicked'])">dribbble</a><br />
+				<a href="https://github.com/jay-bee-why" onclick="_gaq.push(['_trackEvent', 'github-footer', 'clicked'])">Github</a><br />
+				<a href="http://codepen.io/jay-bee-why/" onclick="_gaq.push(['_trackEvent', 'codepen-footer', 'clicked'])">CodePen</a>
 			</p>
 		</div>
 	</div>
