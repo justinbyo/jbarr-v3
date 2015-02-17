@@ -1,0 +1,60 @@
+/* Styles for header
+ * ____________________________________________________________ */
+
+header.strip {
+	
+	background-color:transparent;
+	border-bottom:@standard-border-size solid @aqua;
+	
+	.strip {
+		// .height(60px);
+		.padding(20px 0);
+	}
+	
+	
+	p {
+		color:@white;
+		.lato;
+		font-weight:700;
+		.font-size(12px);
+		text-transform:uppercase;
+	}
+
+
+	.h1, h1 {
+		.font-size(24px);
+	}
+	
+}
+
+.page--blog {
+	
+	.small-header-text {
+		
+		.font-size(18px);
+		color:@dark-grey;
+		font-weight:500;
+		.lato;
+	}
+	
+	h1, .h1, h1 > a, .h1 > a {
+		.lato;
+		color:@black;
+		font-weight:900;
+		text-decoration:none;
+		
+		
+		span {
+			.small-header-text;
+			.margin-left(10px);
+			display:inline-block;
+		}
+	}
+	
+	a.nav-link {
+		.small-header-text;
+		text-decoration:none;
+		vertical-align:bottom;
+	}
+
+}

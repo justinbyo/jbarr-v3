@@ -55,3 +55,44 @@ footer.strip {
 	}
 	
 }
+
+// Sitwide footer
+
+.strip--footer { // it's a link... I know, I know
+	@media (min-width:530px){
+		display:none;
+	}
+	bottom:0;
+	display:block;
+	.padding(30px);
+	p {
+		.roboto-slab;
+		.font-size(16px);
+		.padding(0);
+		width:100%;
+		color:#989898;
+		text-align:center;
+	}
+	&:active {
+		background-color:@aqua;
+		p {
+			color:@white;
+		}
+	}
+}
+
+ .page--blog {
+	 .strip--footer {
+		 background-color:@aqua;
+		 p {
+			 color:@white;
+			 .lato;
+		 }
+		 &:active {
+			background-color:@light-blue;
+			p {
+				color:@aqua;
+			}
+		}
+	 }
+ }
