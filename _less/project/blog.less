@@ -49,7 +49,7 @@
 		.margin-bottom(15px);
 		.font-size(30px);
 		.padding-bottom(15px);
-		border-bottom:@standard-border-size solid @orange;
+		// border-bottom:@standard-border-size solid @orange;
 		.lato;
 	}
 	
@@ -108,7 +108,7 @@
 		.content {
 			p {
 				.font-size(16px);
-				line-height:1.5;
+				line-height:1.75;
 				.merriweather;
 				.margin-bottom(30px);
 				
@@ -117,10 +117,19 @@
 				}
 				
 				a {
-					color:@aqua;
-					text-decoration:none;
+					/*
+color:@dark-aqua;
+					text-decoration:underline;
 					&:hover {
-						text-decoration:underline;
+						color:@aqua;
+					}
+*/
+					border-bottom: 3px solid @orange;
+					display: inline;
+					text-decoration:none;
+					color:@black;
+					&:hover {
+						color:@orange;
 					}
 				}
 			}
@@ -164,41 +173,5 @@
 	
 	
 	
-	// Blog specific footer
-	// ------------------------------------------------------
-	
-	.strip--footer { // it's a link... I know, I know
-		/*
-@media (min-width:530px){
-			display:none;
-		}
-*/
-		bottom:0;
-		display:block;
-		.padding(30px);
-		.hand;
-		background-color:@dark-aqua;
-		.standard-transition;
-		p {
-			.lato;
-			.font-size(16px);
-			.padding(0);
-			width:100%;
-			color:@white;
-			text-align:center;
-		}
-		&:hover {
-			background-color:lighten(@dark-aqua, 10%);
-			p{
-				// text-decoration: underline;
-			}
-		}
-		&:active {
-			background-color:lighten(@dark-aqua, 20%);
-			p {
-				color:@white;
-			}
-		}
-	}
-	 
+		 
  }
