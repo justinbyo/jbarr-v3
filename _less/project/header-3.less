@@ -1,7 +1,18 @@
 /* Styles for header
  * ____________________________________________________________ */
 
+.active-nav-link {
+	// color:@black;
+	// border-bottom:@standard-border-size solid @light-blue;
+	color:@dark-orange;
+}
+
 header.strip {
+	
+	.grid-col--nav{
+		height:24px;
+		position:relative;
+	}
 	
 	background-color:transparent;
 	border-bottom:@standard-border-size solid @aqua;
@@ -25,13 +36,10 @@ header.strip {
 		.font-size(24px);
 	}
 	
-}
-
-.page--blog {
 	
 	.small-header-text {
 		
-		.font-size(18px);
+		//.font-size(18px);
 		color:@dark-grey;
 		font-weight:500;
 		.lato;
@@ -46,15 +54,61 @@ header.strip {
 		
 		span {
 			.small-header-text;
+			.font-size(18px);
 			.margin-left(10px);
 			display:inline-block;
 		}
 	}
 	
-	a.nav-link {
+	
+	.nav-link a {
 		.small-header-text;
+		.font-size(16px);
 		text-decoration:none;
 		vertical-align:bottom;
+		// bottom:0;
+		position:relative;
+		.top(8px);
+		.padding-bottom(20px);
+		// float:right;
+		text-align:right;
+		display:inline-block;
+		// border-bottom:@standard-border-size solid @aqua;
+		
+		&:hover {
+			.active-nav-link;
+		}
+	}
+	
+	@media @mobile {
+		.nav-link a {
+			display:block;
+			text-align:center;
+		}
+	}
+	
+}
+
+.page--home {
+	
+	header.strip {
+	
+		.nav-link--about a {
+			.active-nav-link;
+		}
+		
+	}
+
+}
+
+.page--blog {
+	
+	header.strip {
+	
+		.nav-link--work a {
+			.active-nav-link;
+		}
+		
 	}
 
 }

@@ -36,12 +36,14 @@
 
 	<div class="strip">
 		<div class="wrapper  grid">
-			<div class="grid-col  span6">
-				<h1><a href="/blog" onclick="_gaq.push(['_trackEvent', 'blog--header-home-link', 'clicked'])">Work <span>Justin Barr Young</span></a></h1>
+			<div class="grid-col  span10  grid-col--nav">
+				<h1><a href="/" onclick="_gaq.push(['_trackEvent', 'blog--header-home-link', 'clicked'])">Full-stack Design <span>Justin Barr Young</span></a></h1>
 			</div>
-			<div class="grid-col  span6">
-				<a class="nav-link">About</a>
-				<a class="nav-link">Work</a>
+			<div class="grid-col  span1  grid-col--nav  nav-link  nav-link--about">
+				<a href="/" class="">About</a>
+			</div>
+			<div class="grid-col  span1  grid-col--nav  nav-link  nav-link--work">
+				<a href="/blog" class="">Work</a>
 			</div>
 		</div>
 	</div>	
@@ -56,6 +58,8 @@
 		<div class="grid-col  span12">
 		
 			<!-- <p class="read-more"><a href="/blog">&larr; Back to blog</a></p> -->
+		
+			<a href="/blog" class="post-meta">&#8592; Back to Work</a>
 		
 			<p class="post-meta">18 Jul 2014</p>
 
@@ -78,19 +82,32 @@
 <p>Flexitarian locavore small batch, food truck mixtape Shoreditch listicle <a href="https://github.com/mojombo/jekyll">Jekyll&#39;s GitHub repo</a> sustainable trust fund flannel Tumblr. Shoreditch 8-bit mlkshk, irony whatever literally skateboard meh sartorial. Beard Banksy single-origin coffee, letterpress organic YOLO banjo before they sold out farm-to-table <a href="https://github.com/mojombo/jekyll">Jekyll&#39;s GitHub repo</a> put a bird on it cardigan. Keffiyeh salvia irony, cliche hella Wes Anderson XOXO. Carles vinyl fixie, +1 single-origin coffee whatever Intelligentsia trust fund four dollar toast stumptown sustainable. Next level PBR YOLO 90&#39;s, post-ironic Godard PBR&amp;B bicycle rights. Art <a href="https://github.com/mojombo/jekyll">Jekyll&#39;s GitHub repo</a> YOLO gentrify drinking vinegar, Carles narwhal lumbersexual twee trust fund.</p>
 </div>
 	        
+	        
+	        <!-- Found this online -->
+	        <!-- https://groups.google.com/forum/#!topic/jekyll-rb/W8gP94wV0jU -->
+	        <p class="related-article-link">
+		         
+		                <a href="/jekyll/update/welcome-to-jekyll.html" title="Next case study: 
+		Welcome to Jekyll!" onclick="_gaq.push(['_trackEvent', 'next-case-study', 'clicked'])">Read the next case study <span>&#8594;</span></a> 
+		         
+	        </p>
+	        
+	        <p class="cta">
+		        <a href="/blog" onclick="_gaq.push(['_trackEvent', 'back-to-work', 'clicked'])"><span>&#8592;</span> Back to Work</a>
+	        </p>
+	        
 		</div>
 		
 	</div>
 	
 	
 </div>
-
 	    
 	    <!-- Send the user to the top -->
 <!-- Style's in blog.less -->
 
-<a class="strip  strip--footer" id="scroll-top" onclick="_gaq.push(['_trackEvent', 'blog--scroll-to-top', 'clicked'])">
-	<p>Back to top</p>
+<a class="strip  strip--footer" id="scroll-top" onclick="_gaq.push(['_trackEvent', 'scroll-to-top', 'clicked'])">
+	<p>Scroll to top &#8593;</p>
 </a>
 
 <!-- Begin footer -->
@@ -109,17 +126,17 @@
 		<div class="grid-col  span1  push1  contact">
 			<h3>Contact</h3>
 			<p>
-				<a href="http://twitter.com/theJayBeeWhy" onclick="_gaq.push(['_trackEvent', 'blog--twitter-footer', 'clicked'])">Twitter</a><br />
-				<a href="mailto:justin@jay-bee-why.com"  onclick="_gaq.push(['_trackEvent', 'blog--email-footer', 'clicked'])">Email</a>
+				<a href="http://twitter.com/theJayBeeWhy" onclick="_gaq.push(['_trackEvent', 'twitter-footer', 'clicked'])">Twitter</a><br />
+				<a href="mailto:justin@jay-bee-why.com"  onclick="_gaq.push(['_trackEvent', 'email-footer', 'clicked'])">Email</a>
 			</p>
 		</div>
 		<div class="grid-col  span1  push1  contact">
 			<h3>Links</h3>
 			<p>
-				<a href="http://www.linkedin.com/in/justinbarryoung" onclick="_gaq.push(['_trackEvent', 'blog--linkedin-footer', 'clicked'])">LinkedIn</a><br />
-				<a href="https://dribbble.com/jay-bee-why" onclick="_gaq.push(['_trackEvent', 'blog--dribbble-footer', 'clicked'])">dribbble</a><br />
-				<a href="https://github.com/jay-bee-why" onclick="_gaq.push(['_trackEvent', 'blog--github-footer', 'clicked'])">Github</a><br />
-				<a href="http://codepen.io/jay-bee-why/" onclick="_gaq.push(['_trackEvent', 'blog--codepen-footer', 'clicked'])">CodePen</a>
+				<a href="http://www.linkedin.com/in/justinbarryoung" onclick="_gaq.push(['_trackEvent', 'linkedin-footer', 'clicked'])">LinkedIn</a><br />
+				<a href="https://dribbble.com/jay-bee-why" onclick="_gaq.push(['_trackEvent', 'dribbble-footer', 'clicked'])">dribbble</a><br />
+				<a href="https://github.com/jay-bee-why" onclick="_gaq.push(['_trackEvent', 'github-footer', 'clicked'])">Github</a><br />
+				<a href="http://codepen.io/jay-bee-why/" onclick="_gaq.push(['_trackEvent', 'codepen-footer', 'clicked'])">CodePen</a>
 			</p>
 		</div>
 	</div>
