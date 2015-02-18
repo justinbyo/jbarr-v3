@@ -1,1 +1,1 @@
-function resizeWindow(){windowHeight=$(window).height(),fullHeightContainer.css("min-height",windowHeight)}var fullHeightContainer=$(".js-fullHeight"),windowHeight="",fullHeightContainer="";$(document).ready(resizeWindow),$(window).resize(resizeWindow);
+var fullHeightContainer="",windowHeight="";$(document).ready(function(){var o=$(".home--below-fold"),t=$(".projects"),c=$(".contact"),l=$("#scroll-top");l.click(function(){$("html, body").animate({scrollTop:0},500)})});

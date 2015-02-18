@@ -60,6 +60,9 @@ header.strip {
 		}
 	}
 	
+	.nav-link {
+		text-align:right;
+	}
 	
 	.nav-link a {
 		.small-header-text;
@@ -81,12 +84,16 @@ header.strip {
 	}
 	
 	@media @mobile {
-		.nav-link a {
-			display:block;
-			text-align:center;
+		
+		.nav-link {
+			width: 50%;
+			float: left;
+			a {
+				display:block;
+				text-align:center;
+			}
 		}
 	}
-	
 }
 
 .page--home {
