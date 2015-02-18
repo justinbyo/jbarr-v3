@@ -1,11 +1,13 @@
 var fullHeightContainer = '';
 var windowHeight = '';
 
+// I'm hiding this for a bit
+
+/*
 function resizeWindow() {
 
 	fullHeightContainer = $('.js-fullHeight');
     windowHeight = $(window).height();
-    // fullHeightContainer.css('min-height', windowHeight);
     
     if (windowHeight > 1000 && windowHeight > 800){
 	    $('.js-fullHeight').removeClass('js-mediumPadding');
@@ -20,9 +22,10 @@ function resizeWindow() {
 	    $('.js-fullHeight').removeClass('js-mediumPadding');
     }
 }
+*/
 
-$(document).ready(resizeWindow);
-$(window).resize(resizeWindow);
+// $(document).ready(resizeWindow);
+// $(window).resize(resizeWindow);
 
 $(document).ready(function(){
 	
