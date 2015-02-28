@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18493",
+"creatorBuild": "18270",
 "files": {
 	"\/_includes\/footer.html": {
 		"fileType": 8192,
@@ -437,6 +437,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/fonts\/museosans_300_macroman\/MuseoSans_300-demo.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/fonts\/museosans_300_macroman\/MuseoSans_300-demo.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/images\/test-dashboard.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -444,6 +453,94 @@
 		"initialSize": 206867,
 		"inputAbbreviatedPath": "\/_site\/images\/test-dashboard.jpg",
 		"outputAbbreviatedPath": "\/_site\/images\/test-dashboard.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/wordpress-all-sites-ui.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 146126,
+		"inputAbbreviatedPath": "\/_site\/images\/wordpress-all-sites-ui.png",
+		"outputAbbreviatedPath": "\/_site\/images\/wordpress-all-sites-ui.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/wordpress-mind-mapping.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 99969,
+		"inputAbbreviatedPath": "\/_site\/images\/wordpress-mind-mapping.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/wordpress-mind-mapping.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/wordpress-my-site-control-panel.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 38470,
+		"inputAbbreviatedPath": "\/_site\/images\/wordpress-my-site-control-panel.png",
+		"outputAbbreviatedPath": "\/_site\/images\/wordpress-my-site-control-panel.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/wordpress-my-site-ui.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 70352,
+		"inputAbbreviatedPath": "\/_site\/images\/wordpress-my-site-ui.png",
+		"outputAbbreviatedPath": "\/_site\/images\/wordpress-my-site-ui.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/wordpress-onboard-ui.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25880,
+		"inputAbbreviatedPath": "\/_site\/images\/wordpress-onboard-ui.png",
+		"outputAbbreviatedPath": "\/_site\/images\/wordpress-onboard-ui.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/wordpress-onboard-wireframes.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36219,
+		"inputAbbreviatedPath": "\/_site\/images\/wordpress-onboard-wireframes.png",
+		"outputAbbreviatedPath": "\/_site\/images\/wordpress-onboard-wireframes.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/wordpress-panel-sketch.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 175699,
+		"inputAbbreviatedPath": "\/_site\/images\/wordpress-panel-sketch.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/wordpress-panel-sketch.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/wordpress-user-flow-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5778,
+		"inputAbbreviatedPath": "\/_site\/images\/wordpress-user-flow-small.png",
+		"outputAbbreviatedPath": "\/_site\/images\/wordpress-user-flow-small.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -666,41 +763,41 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-<<<<<<< HEAD
-	"\/_site\/jekyll\/update\/case-study-wordpress-hosting.html": {
+	"\/_site\/jekyll\/update\/case-study-google-apps-reselling.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/jekyll\/update\/case-study-wordpress-hosting.html",
+		"inputAbbreviatedPath": "\/_site\/jekyll\/update\/case-study-google-apps-reselling.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/jekyll\/update\/case-study-wordpress-hosting copy.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/jekyll\/update\/case-study-wordpress-hosting copy.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/_site\/jekyll\/update\/welcome-to-jekyll-2.html": {
 		"fileType": 8192,
-=======
-	"\/_site\/js\/main.js": {
-		"fileType": 64,
->>>>>>> 7e455acac2ffa63834cadea413347cc56127f85e
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/js\/main.js",
-		"outputAbbreviatedPath": "\/_site\/js\/min\/main-min.js",
+		"inputAbbreviatedPath": "\/_site\/jekyll\/update\/welcome-to-jekyll-2.html",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/js\/main.min.js": {
-		"fileType": 64,
+	"\/_site\/jekyll\/update\/welcome-to-jekyll.html": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/js\/main.min.js",
-		"outputAbbreviatedPath": "\/_site\/js\/min\/main.min-min.js",
+		"inputAbbreviatedPath": "\/_site\/jekyll\/update\/welcome-to-jekyll.html",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/_site\/js\/main.js": {
 		"fileType": 64,
@@ -827,6 +924,94 @@
 		"initialSize": 206867,
 		"inputAbbreviatedPath": "\/images\/test-dashboard.jpg",
 		"outputAbbreviatedPath": "\/images\/test-dashboard.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wordpress-all-sites-ui.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 146126,
+		"inputAbbreviatedPath": "\/images\/wordpress-all-sites-ui.png",
+		"outputAbbreviatedPath": "\/images\/wordpress-all-sites-ui.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wordpress-mind-mapping.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 99969,
+		"inputAbbreviatedPath": "\/images\/wordpress-mind-mapping.jpg",
+		"outputAbbreviatedPath": "\/images\/wordpress-mind-mapping.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wordpress-my-site-control-panel.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 38470,
+		"inputAbbreviatedPath": "\/images\/wordpress-my-site-control-panel.png",
+		"outputAbbreviatedPath": "\/images\/wordpress-my-site-control-panel.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wordpress-my-site-ui.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 70352,
+		"inputAbbreviatedPath": "\/images\/wordpress-my-site-ui.png",
+		"outputAbbreviatedPath": "\/images\/wordpress-my-site-ui.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wordpress-onboard-ui.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25880,
+		"inputAbbreviatedPath": "\/images\/wordpress-onboard-ui.png",
+		"outputAbbreviatedPath": "\/images\/wordpress-onboard-ui.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wordpress-onboard-wireframes.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36219,
+		"inputAbbreviatedPath": "\/images\/wordpress-onboard-wireframes.png",
+		"outputAbbreviatedPath": "\/images\/wordpress-onboard-wireframes.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wordpress-panel-sketch.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 175699,
+		"inputAbbreviatedPath": "\/images\/wordpress-panel-sketch.jpg",
+		"outputAbbreviatedPath": "\/images\/wordpress-panel-sketch.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wordpress-user-flow-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5778,
+		"inputAbbreviatedPath": "\/images\/wordpress-user-flow-small.png",
+		"outputAbbreviatedPath": "\/images\/wordpress-user-flow-small.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1054,15 +1239,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/main.js",
-		"outputAbbreviatedPath": "\/js\/min\/main-min.js",
+		"outputAbbreviatedPath": "\/js\/main.min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/main.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/main.min.js",
 		"outputAbbreviatedPath": "\/js\/min\/main.min-min.js",
@@ -1153,10 +1338,6 @@
 			},
 		"empty_constructor_needs_parens": {
 			"active": 0,
-			"flagValue": -1
-			},
-		"ensure_comprehensions": {
-			"active": 1,
 			"flagValue": -1
 			},
 		"indentation": {
@@ -1250,10 +1431,6 @@
 		"space_operators": {
 			"active": 0,
 			"flagValue": -1
-			},
-		"spacing_after_comma": {
-			"active": 1,
-			"flagValue": -1
 			}
 		},
 	"coffeeMinifyOutput": 1,
@@ -1310,10 +1487,6 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"browserify": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"camelcase": {
 			"active": 0,
 			"flagValue": -1
@@ -1336,10 +1509,6 @@
 			},
 		"dojo": {
 			"active": 0,
-			"flagValue": -1
-			},
-		"elision": {
-			"active": 1,
 			"flagValue": -1
 			},
 		"eqeqeq": {
@@ -1394,10 +1563,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"jasmine": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"jquery": {
 			"active": 1,
 			"flagValue": -1
@@ -1441,10 +1606,6 @@
 		"maxstatements": {
 			"active": 0,
 			"flagValue": 4
-			},
-		"mocha": {
-			"active": 0,
-			"flagValue": -1
 			},
 		"mootools": {
 			"active": 0,
@@ -1511,10 +1672,6 @@
 			"flagValue": -1
 			},
 		"prototypejs": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"qunit": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1728,12 +1885,12 @@
 	"sassAutoOutputPathStyle": 2,
 	"sassCreateSourceMap": 0,
 	"sassDebugStyle": 0,
-	"sassDecimalPrecision": 5,
+	"sassDecimalPrecision": 10,
 	"sassOutputStyle": 0,
 	"sassUseLibsass": 0,
 	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
-	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs",
+	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules",
 	"slimAutoOutputPathEnabled": 1,
 	"slimAutoOutputPathFilenamePattern": "*.html",
 	"slimAutoOutputPathRelativePath": "",
@@ -1742,7 +1899,6 @@
 	"slimAutoOutputPathStyle": 0,
 	"slimCompileOnly": 0,
 	"slimLogicless": 0,
-	"slimOutputFormat": 0,
 	"slimOutputStyle": 1,
 	"slimRailsCompatible": 0,
 	"stylusAutoOutputPathEnabled": 1,
@@ -1767,9 +1923,8 @@
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
-	"typescriptPreserveConstEnums": 0,
+	"typescriptNoResolve": 0,
 	"typescriptRemoveComments": 0,
-	"typescriptSuppressImplicitAnyIndexErrors": 0,
 	"typescriptTargetECMAVersion": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
@@ -1806,10 +1961,6 @@
 			"flagValue": -1
 			},
 		"dead_code": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"drop_console": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1853,10 +2004,6 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"keep_fargs": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -1869,16 +2016,8 @@
 			"active": 1,
 			"flagValue": 32000
 			},
-		"negate_iife": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"properties": {
 			"active": 1,
-			"flagValue": -1
-			},
-		"pure_getters": {
-			"active": 0,
 			"flagValue": -1
 			},
 		"quote-keys": {

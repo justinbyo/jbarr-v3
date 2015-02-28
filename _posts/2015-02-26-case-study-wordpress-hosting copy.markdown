@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Case study: WordPress Hosting"
+title:  "WordPress Hosting case study"
 date:   2015-02-26 17:39:21
 categories: jekyll update
 ---
