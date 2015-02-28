@@ -2381,6 +2381,7 @@ footer.strip .contact p a {
   margin-bottom: 15px;
   margin-bottom: 0.9375rem;
   font-family: 'Lato', sans-serif;
+  display: block;
 }
 .page--blog a.post-meta {
   color: #989898;
@@ -2481,6 +2482,13 @@ footer.strip .contact p a {
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
 }
+.page--blog .strip--article-content .content {
+  /*
+img.wordpress-user-flow {
+				.margin(0 auto);
+			}
+*/
+}
 .page--blog .strip--article-content .content p {
   font-size: 16px;
   font-size: 1rem;
@@ -2521,8 +2529,7 @@ color:@dark-aqua;
 .page--blog .strip--article-content .content img {
   max-width: 100%;
   text-align: center;
-  margin-bottom: -15px;
-  margin-bottom: -0.9375rem;
+  display: block;
 }
 @media (min-width: 1200px) {
   .page--blog .strip--article-content .content img.large {
