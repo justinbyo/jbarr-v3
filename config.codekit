@@ -448,6 +448,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_site\/images\/wordpress-user-flow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 141632,
+		"inputAbbreviatedPath": "\/_site\/images\/wordpress-user-flow.png",
+		"outputAbbreviatedPath": "\/_site\/images\/wordpress-user-flow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/2012\/contact.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -655,6 +666,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/jekyll\/update\/case-study-wordpress-hosting.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/jekyll\/update\/case-study-wordpress-hosting.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/jekyll\/update\/welcome-to-jekyll-2.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -672,6 +692,28 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/js\/main.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/js\/main.js",
+		"outputAbbreviatedPath": "\/_site\/js\/min\/main-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/js\/main.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/js\/main.min.js",
+		"outputAbbreviatedPath": "\/_site\/js\/min\/main.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/_site\/js\/min\/main-min.js": {
 		"fileType": 64,
@@ -776,6 +818,17 @@
 		"initialSize": 206867,
 		"inputAbbreviatedPath": "\/images\/test-dashboard.jpg",
 		"outputAbbreviatedPath": "\/images\/test-dashboard.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wordpress-user-flow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 141632,
+		"inputAbbreviatedPath": "\/images\/wordpress-user-flow.png",
+		"outputAbbreviatedPath": "\/images\/wordpress-user-flow.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

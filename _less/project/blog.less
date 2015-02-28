@@ -27,7 +27,9 @@
 		
 		.padding(60px 0);
 		
-		
+		@media @mobile {
+			.padding(30px 0);
+		}
 	} 
 	 
 	 
@@ -40,6 +42,7 @@
 		color:@dark-grey;
 		.margin-bottom(15px);
 		.lato;
+		display:block;
 	}
 	
 	a.post-meta {
@@ -85,26 +88,42 @@
 		.font-size(16px);
 		line-height:1.5;
 		.merriweather;
-		.margin-bottom(15px);
+		.margin-bottom(30px);
 	}
 	
 	.read-more {
 		a {
-			color:@aqua;
+			color:@white;
 			text-decoration:none;
+			.padding(8px);
+			background-color:@orange;
+			.standard-transition;
 			&:hover {
-				text-decoration:underline;
+				background-color:lighten(@orange, 10%);
 			}
 		}
-		
 	}
+	
+	footer.strip {
+		.margin-top(30px);
+		@media @mobile {
+			.margin-top(0);
+		}
+	}
+	
+	.strip--scroll {
+		@media @mobile {
+			.margin-top(30px);
+		}
+	}
+	
 	
 	// Individual blog post layout
 	// ------------------------------------------------------
 	
 	.strip--article-content {
 		
-		.padding(100px 0);
+		.padding(100px 0 0);
 		
 		.post-title {
 			.blog-wide-title-style;
@@ -156,7 +175,8 @@ color:@dark-aqua;
 			img {
 				max-width:100%;
 				text-align:center;
-				.margin-bottom(-15px);
+				//.margin-bottom(-15px);
+				display:block;
 			}
 			
 			img.large { // this makes the image 1200px wide and overflows the 800px container around it
@@ -175,6 +195,23 @@ color:@dark-aqua;
 				.margin-bottom(45px);
 				border-bottom:1px solid @grey;
 			}
+			
+			
+			// Individual blog post elements
+			// ------------------------------------------------------
+			
+			/*
+img.wordpress-user-flow {
+				.margin(0 auto);
+			}
+*/
+			
+			
+			
+			
+			
+			
+			
 		}			
 	}	 
  }
