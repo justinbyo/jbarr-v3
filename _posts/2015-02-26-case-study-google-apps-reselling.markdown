@@ -21,7 +21,7 @@ Mindmapping how user stories will translate into features and how those features
 Image of mind mapped whiteboard features.
 
 
-<img class="large" src="/images/google-apps-mindmapping.jpg" />
+<img class="" src="/images/google-apps-mindmapping.jpg" />
 
 <p class="caption">Sketch with sticky notes</p>
 
