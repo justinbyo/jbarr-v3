@@ -2549,6 +2549,10 @@ color:@dark-aqua;
   margin-bottom: 2.8125rem;
   border-bottom: 1px solid #989898;
 }
+.page--blog .strip--article-content .content p.caption strong {
+  font-style: italic;
+  font-weight: 700;
+}
 /* Styles for home page
  * ____________________________________________________________ */
 .page--home {
@@ -2938,7 +2942,7 @@ color:@dark-aqua;
 }
 @media (min-width: 531px) {
   .page--home .icon--container .projects:hover p {
-    border-bottom: 6px solid transparent;
+    border-bottom: 6px solid #7fadc6;
   }
   .page--home .icon--container .projects:hover .icon .paper {
     left: 3px;

@@ -2,7 +2,6 @@
 layout: post
 title:  "Google Apps reseller case study"
 date:   2015-02-25 17:39:21
-categories: jekyll update
 ---
 
 Introduction yay!

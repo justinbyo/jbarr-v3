@@ -2,27 +2,32 @@
 layout: post
 title:  "WordPress Hosting case study"
 date:   2015-02-26 17:39:21
-categories: jekyll update
 ---
 
-Introduction yay!
+
+
+<h3>Retrofitting a strong foundation</h3>
+
+In 2014, Media Temple added [WordPress Hosting][mtwordpress] to its suite of hosting and cloud solutions. The product included a custom control panel &mdash; within the scope of the larger Media Temple control panel &mdash; that made it easy for users to create and manage their WordPress sites, and offered tools and extras like automated backups, staging sites, git integration, and custom themes.
+
+While the product was performant and had a strong adoption rate, it needed some serious improvement. For one, the control panel never underwent a serious UX process before it was built. There was no on-boarding process for new users and &mdash; worse yet &mdash; there wasn&rsquo;t a strong foundation to incorporate new features into the control panel.
+
+With the introduction of a new on-boarding flow, along with a slate of new features, I had the opportunity to seriously reevaluate the product&rsquo;s UX. I designed a friendly on-boarding process, reorganized the navigation and features in the control panel, and planned the product&rsquo;s information architecture to accommodate future features.
 
 
 
 
 
 
-<h3>Researching the product requirements</h3>
+<h3>Mind-mapping the product requirements</h3>
 
-Evaluation of the product requirements and how they translate into user stories.
+The UX process started with a hefty set of user stories. During the on-boarding process, users would now have the option to create a brand new WordPress site, import a WordPress site from another hosting service, or migrate a WordPress site from another Media Temple service. This product update also bundled a few services like 1-click SSL certificate installations, a domain name, [Google Apps for Work][googleappscasestudy] inboxes, and Media Temple&rsquo;s proprietary security monitoring widget. The goal was to create an experience that makes it easy for users to host, manage, and secure their WordPress sites.
 
-Mindmapping how user stories will translate into features and how those features we?ll accommodate through updates in the UI.
-
-Used card sorting with the group
+There was a lot to fit into the control panel. I started by mind-mapping how the user stories translated into features and how those features might be organized in the UI. I also used card sorting with team members to help finesse the control panel&rsquo;s navigation.
 
 <img class="large" src="/images/wordpress-mind-mapping.jpg" />
 
-<p class="caption">Sketch with sticky notes</p>
+<p class="caption"><strong>Left:</strong> Card sorting results. <strong>Right:</strong> Features mind-mapped on a whiteboard.</p>
 
 
 
@@ -32,91 +37,60 @@ Used card sorting with the group
 
 This product posed two big challenges:
 
-First, we had to facilitate the user in creating or migrating their WordPress site on our platform. The onboarding experience had to describe and solicit  &mdash; in a friendly, human way &mdash; technical information like installation directories and FTP credentials. It also had to communicate the platform's architecture to the user. We took care to make sure the user understood how their WordPress sites and credentials are organized under their Media Temple account.
+First, we had to facilitate the user in creating or migrating their WordPress site on our platform. The onboarding experience had to describe and solicit  &mdash; in a friendly, human way &mdash; technical information like installation directories and FTP credentials. It also had to communicate the platform&rsquo;s architecture to the user. We took care to make sure the user understood how their WordPress sites and credentials are organized under their Media Temple account.
     
-Second, the control panel was challenging simply because we were adding a number of features and bundling the WordPress hosting with other products like SSL and Google Apps.
+Second, the control panel was challenging simply because the various features were dissimilar enough to complicate the control panel&rsquo;s information architecture. For example, two included SSL certificates are installed on a per-site basis, but Google Apps inboxes are tied to a single domain and on-boarded separately.
 
-With this in mind, I started exploring the user flow by first researching how other services did it, like [Flywheel][flywheel] or [WPEngine][wpengine]. Taking my findings and combined it with my understanding of how our backend works.
+With this in mind, I started exploring the user flow by consulting with our engineers to fully understand how our back-end provisions and connects our WordPress Hosting with the rest of our services. I also took a look at the on-boarding and control panels of competitor services, like [Flywheel][flywheel] or [WPEngine][wpengine]. I synthesized this info into a comprehensive user flow that accommodated engineering requirements.
 
 <img class="large" src="/images/wordpress-user-flow.png" />
 
-I then used card sorting with the projects devs and visual designer to organize the features and their navigation.
 
-I then did some hi-fidelity sketching of the control panel
+Once the user flow was finalized, I moved on to one of my favorite steps: sketching. I moved quickly to sketching the UI in high-fidelity, which made it easy to communicate my thinking to team members and stakeholders. It also served as a strong start to my wireframing process.
 
 <img class="" src="/images/wordpress-panel-sketch.jpg" />
 
-<p class="caption">Sketch with sticky notes</p>
+<p class="caption">I used sticky notes to map out and reorganize interactions in the control panel.</p>
+
+
 
 
 
 <h3>Wireframing and prototyping</h3>
 
-Used UXPin to create high-fidelity wireframes of both the onboarding and control panel, based off my sketches. This included a multi-step tour of the product.
+I used [UXPin][uxpin] to create high-fidelity wireframes of both the on-boarding and control panel with extensive notations, based off my sketches. This included a multi-step tour of the product&rsquo;s control panels. UXPin wireframes are web-based, and I prefer them as deliverables since stakeholders can easily share on comment on them.
 
 <img class="large" src="/images/wordpress-onboard-wireframes.png" />
 
-<p class="caption">Sketch with sticky notes</p>
+<p class="caption"><strong>Above:</strong> Three on-boarding paths. From left to right, create a new site, import a site, migrate a site.</p>
 
 <img class="large" src="/images/wordpress-my-site-control-panel.png" />
 
-<p class="caption">Sketch with sticky notes</p>
+<p class="caption"><strong>Above:</strong> The control panel to manage a single WordPress site, with notations.</p>
 
 
-
-<h3>The waiting game</h3>
-
-We knew the user would wait 30 seconds and occasionally up to two minutes for their new WordPress site to provision on our servers. So our developer Ara and I [link to Ara] decided to include a short game he had built into the onboarding experience. We let the user play a custom version of Galaga while during the site's provisioning. Currently the high score is 1200000 in two minutes.
-
-<img class="large" src="/images/test-dashboard.jpg" />
-
-<p class="caption">Ara's badass game</p>
 
 
 
 <h3>Visual design and UI</h3>
 
-I worked closely with our visual designer Ryan when he transformed my wires and prototypes into full-fidelity mockups of the onboarding and control panel.
-
-
-
-<img class="large" src="/images/wordpress-my-site-ui.png" />
-
-<p class="caption">Sketch with sticky notes</p>
-
-
-
-<h3>Artifacts</h3>
+I worked closely with our visual designer [Ryan Morgan][ryanmorgan] as he transformed my wires and prototypes into full-fidelity mockups of the on-boarding experience and the control panel UI. We developed a card-based style that would allow for future extensibility when new features are eventually added the panel. As the user experience became increasingly vivid, we challenged some assumptions I had and continued to finesse the finer points of the more complicated interactions, like SSL installation.
 
 <img class="large" src="/images/wordpress-onboard-ui.png" />
 
-<p class="caption"> UI</p>
+<p class="caption"><strong>Above:</strong> Steps in the on-boarding process.</p>
+
+<img class="large" src="/images/wordpress-my-site-ui.png" />
+
+<p class="caption"><strong>Above:</strong> Managing a single WordPress site.</p>
 
 <img class="large" src="/images/wordpress-all-sites-ui.png" />
 
-<p class="caption">Sketch with sticky notes</p>
+<p class="caption"><strong>Above:</strong> High-level management of all hosted WordPress sites, with bundled services on the left.</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Asymmetrical selvage craft beer, put [Jekyll's GitHub repo][jekyll-gh] a bird on it paleo small batch Portland jean shorts Williamsburg aesthetic shabby chic Tumblr stumptown chambray. Post-ironic cray before they sold out shabby chic, fap sriracha narwhal trust fund bespoke organic lo-fi photo booth selfies. Slow-carb kogi master cleanse, tilde tote bag lumbersexual readymade shabby chic Carles. Paleo four loko pickled wolf retro. Vice pour-over fingerstache, selfies listicle disrupt McSweeney's [Jekyll's GitHub repo][jekyll-gh] heirloom raw denim lo-fi. Mumblecore photo booth Tumblr bitters, Marfa cold-pressed art party hoodie skateboard Brooklyn. Wayfarers four dollar toast gluten-free, kogi Bushwick kale chips narwhal flannel leggings organic fixie messenger bag keffiyeh heirloom.
-
-
-
-Flexitarian locavore small batch, food truck mixtape Shoreditch listicle [Jekyll's GitHub repo][jekyll-gh] sustainable trust fund flannel Tumblr. Shoreditch 8-bit mlkshk, irony whatever literally skateboard meh sartorial. Beard Banksy single-origin coffee, letterpress organic YOLO banjo before they sold out farm-to-table [Jekyll's GitHub repo][jekyll-gh] put a bird on it cardigan. Keffiyeh salvia irony, cliche hella Wes Anderson XOXO. Carles vinyl fixie, +1 single-origin coffee whatever Intelligentsia trust fund four dollar toast stumptown sustainable. Next level PBR YOLO 90's, post-ironic Godard PBR&B bicycle rights. Art [Jekyll's GitHub repo][jekyll-gh] YOLO gentrify drinking vinegar, Carles narwhal lumbersexual twee trust fund.
-
-
-
-
+[mtwordpress]: http://mediatemple.net/wordpress/
+[googleappscasestudy]: /case-study-google-apps-reselling.html
 [flywheel]: https://getflywheel.com/
 [wpengine]:    http://wpengine.com/
+[ryanmorgan]: http://900rpm.com/
+[uxpin]: http://uxpin.com/

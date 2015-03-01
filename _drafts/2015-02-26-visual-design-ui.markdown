@@ -2,7 +2,6 @@
 layout: post
 title:  "Visual and UI Design"
 date:   2015-02-24 17:39:21
-categories: jekyll update
 ---
 
 Introduction yay!
