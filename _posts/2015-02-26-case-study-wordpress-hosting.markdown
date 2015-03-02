@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "WordPress Hosting case study"
+title:  "WordPress Hosting"
 date:   2015-02-26 17:39:21
+subtitle: "UX Research and UI Design"
 ---
 
-
+<p class="subtitle"><strong>Case study:</strong> UX Research and UI Design</p>
 
 <h3>Retrofitting a strong foundation</h3>
 
@@ -39,7 +40,7 @@ This product posed two big challenges:
 
 First, we had to facilitate the user in creating or migrating their WordPress site on our platform. The onboarding experience had to describe and solicit  &mdash; in a friendly, human way &mdash; technical information like installation directories and FTP credentials. It also had to communicate the platform&rsquo;s architecture to the user. We took care to make sure the user understood how their WordPress sites and credentials are organized under their Media Temple account.
     
-Second, the control panel was challenging simply because the various features were dissimilar enough to complicate the control panel&rsquo;s information architecture. For example, two included SSL certificates are installed on a per-site basis, but Google Apps inboxes are tied to a single domain and on-boarded separately.
+Second, the control panel was challenging because the various features were dissimilar enough to complicate the control panel&rsquo;s information architecture. For example, two included SSL certificates are installed on a per-site basis, but Google Apps inboxes are tied to a single domain and on-boarded separately.
 
 With this in mind, I started exploring the user flow by consulting with our engineers to fully understand how our back-end provisions and connects our WordPress Hosting with the rest of our services. I also took a look at the on-boarding and control panels of competitor services, like [Flywheel][flywheel] or [WPEngine][wpengine]. I synthesized this info into a comprehensive user flow that accommodated engineering requirements.
 
@@ -58,7 +59,7 @@ Once the user flow was finalized, I moved on to one of my favorite steps: sketch
 
 <h3>Wireframing and prototyping</h3>
 
-I used [UXPin][uxpin] to create high-fidelity wireframes of both the on-boarding and control panel with extensive notations, based off my sketches. This included a multi-step tour of the product&rsquo;s control panels. UXPin wireframes are web-based, and I prefer them as deliverables since stakeholders can easily share on comment on them.
+I used [UXPin][uxpin] to create high-fidelity wireframes of both the on-boarding experience and control panel UI with extensive notations, based off my sketches. This included a multi-step tour of the product&rsquo;s control panels. UXPin wireframes are web-based, and I prefer them as deliverables since stakeholders can easily share or comment on them.
 
 <img class="large" src="/images/wordpress-onboard-wireframes.png" />
 
@@ -74,7 +75,7 @@ I used [UXPin][uxpin] to create high-fidelity wireframes of both the on-boarding
 
 <h3>Visual design and UI</h3>
 
-I worked closely with our visual designer [Ryan Morgan][ryanmorgan] as he transformed my wires and prototypes into full-fidelity mockups of the on-boarding experience and the control panel UI. We developed a card-based style that would allow for future extensibility when new features are eventually added the panel. As the user experience became increasingly vivid, we challenged some assumptions I had and continued to finesse the finer points of the more complicated interactions, like SSL installation.
+I worked closely with our visual designer [Ryan Morgan][ryanmorgan] as he transformed my wires and prototypes into full-fidelity mockups. We developed a card-based style that would allow for future extensibility when new features are eventually added the panel. As the user experience became increasingly vivid, we challenged some assumptions I had and continued to finesse the finer points of the more complicated interactions, like SSL installation.
 
 <img class="large" src="/images/wordpress-onboard-ui.png" />
 

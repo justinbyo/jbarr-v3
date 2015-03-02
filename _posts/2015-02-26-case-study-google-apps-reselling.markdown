@@ -1,28 +1,28 @@
 ---
 layout: post
-title:  "Google Apps reseller case study"
+title:  "Google Apps Hosting Package"
 date:   2015-02-25 17:39:21
+subtitle: "UX Research and UI Design"
 ---
 
-Introduction yay!
+<p class="subtitle"><strong>Case study:</strong> UX research and UI design</p>
 
+<h3>A one-stop-shop for your web presence</h3>
 
+In response to user demand for a better, cloud-driven email product, Media Temple in 2014 introduced a [Google Apps for Work bundle][mtgoogleapps]. The idea was to create a one-stop-shop for setting up your web presence. Through a single purchase from the Media Temple control panel, a user could set up both a website and their company's Google Apps service at one time, all with a unique domain name.
 
-
+The product called for an on-boarding experience and control panel UI, through which the user would: <strong>1.</strong> select a domain to use with their Gmail address and <strong>2.</strong> create and manage Gmail accounts for their team-members. A major goal of the product was to transition customers that use Media Temple's aging proprietary email service to the industry-leading Gmail, while improving their workflow. We built the on-boarding and control panel experience using the Google Apps reseller API. 
 
 
 <h3>Researching the product requirements</h3>
 
-Evaluation of the product requirements and how they translate into user stories.
+The UX process started with the user stories necessary to ship an MVP. This was a new product for Media Temple, and before we committed to an expansive list of features, we wanted to prove our hypotheses &mdash; that existing users want to migrate to Gmail and that new customers want our one-stop-shop solution.
 
-Mindmapping how user stories will translate into features and how those features we?ll accommodate through updates in the UI.
-
-Image of mind mapped whiteboard features.
-
+I started by breaking down user stories into features, and mind-mapping them into what I considered intuitive groupings. In the on-boarding experience, users only had to select the domain they want to use and then create their first administrator account. In the control panel, users were limited to creating, editing, and deleting Gmail users and groups.
 
 <img class="" src="/images/google-apps-mindmapping.jpg" />
 
-<p class="caption">Sketch with sticky notes</p>
+<p class="caption">Features mind-mapped on a whiteboard.</p>
 
 
 
@@ -30,59 +30,67 @@ Image of mind mapped whiteboard features.
 
 <h3>Sketching and iteration</h3>
 
-The bulk of the work was designing a user flow that incorporated an onboarding process and control panel, in which the user would create and manage a Google Apps accounts for their entire organization through our interface.
+I already knew a few things when I started crafted the experience:
+
+First, I wanted the on-boarding process to be linear, conversational, and short. It had to communicate that the user was purchasing and creating Google Apps accounts through their Media Temple account, which are different. The process also had to conserve the user's cognitive bandwidth (and patience) for what might be really tricky: updating DNS records.
+
+Second, I wanted the control panel to include as few distinct screens as possible. This was an MVP and we certainly weren't recreating the wheel Google built. We used Angular.js to create an app-like experience that revolves around three screens: user management, group management, and company/organization management.
+
+I started exploring the user flow by consulting with both Media Temple and Google engineers to understand how our provisioning systems work together. I stressed that we do as much as possible for the user on their behalf, especially when it comes to filling out form fields or polling their DNS records. I also took a look at the on-boarding and control panels of competitor services, like [Pop.co][popco] or [GoDaddy][godaddyoffice]. I synthesized this info into a comprehensive user flow that accommodated engineering requirements.
 
 <img class="large" src="/images/google-apps-flow-whiteboard.jpg" />
 
-<p class="caption">Sketch with sticky notes</p>
+<p class="caption"><strong>Above:</strong> Whiteboard sketch of the purchase and on-board flow.</p>
 
 <img class="large" src="/images/google-apps-ac-whiteboard.jpg" />
 
-<p class="caption">Sketch with sticky notes</p>
+<p class="caption"><strong>Above:</strong> Some initial thoughts on organizing the control panel, sketched on a whiteboard.</p>
 
-The biggest challenge &mdash; one that is reflective of the more complex problems that come with web hosting &mdash; dealt with guiding the user in updating their DNS records to allow them to use their personal domain as their Gmail address.
+
+
+The biggest challenge &mdash; one that is reflective of the more complex problems that come with UX for web hosting &mdash; dealt with guiding the user in updating their DNS records in order to use their personal domain name as their Gmail address. The process is easy if the user purchased their domain directly from Media Temple, but if the user purchased from a third party like Hover or Namecheap, then some technical work was involved on their part. We wanted to make this as easy as possible by providing a step-by-step flow as well as links to the Media Temple KnowledgeBase for additional help.
 
 <img class="" src="/images/google-apps-dns-whiteboard.jpg" />
 
 <p class="caption">Sketches of the DNS flow that I put together with our software developer, Nate.</p>
 
-The Media Temple team consulted with engineers and reps from Google's Apps reseller team to determine the best flow for account creation, while navigating the technical limitations of both Google's reseller API and our own provisioning system.
+With the Media Temple and Google engineers, I got into the technical details of both Google's reseller API and our own provisioning system to determine the best flow for account creation.
 
 <img class="large" src="/images/google-apps-user-flow.png" />
 
-<p class="caption">Sketches of the DNS flow that I put together with our software developer, Nate.</p>
+<p class="caption">The user flow from start to finish.</p>
 
 
 
 
 <h3>Wireframing and prototyping</h3>
 
-Used UXPin to create high-fidelity wireframes of both the onboarding and control panel, based off my sketches. This included a multi-step tour of the product.
+I used [UXPin][uxpin] to create high-fidelity wireframes of both the on-boarding experience and control panel UI, with extensive notations. This included a multi-step tour of the product&rsquo;s control panels. UXPin wireframes are web-based, and I prefer them as deliverables since stakeholders can easily share or comment on them.
 
-I conducted user tests to validate the painstaking work we did in our onboarding flow to make DNS migration easy. Using InVision, I created a simple, clickable prototype of the domain search and purchase process, user onboarding, and a short tour of the control panel. I used five people [include link to piece about 5 users] from various departments, including support, sales, and HR and offered them Starbucks as a thank you. We made some improvements based off their mostly positive feedback.
+I conducted user tests to validate the painstaking work we did in our on-boarding flow to make DNS migration easy. Using [InVision][invision], I created a simple, clickable prototype of the domain search and purchase process, user on-boarding, and a short tour of the control panel. I recruited [five people][usertests] from various departments, including support, sales, and HR and offered them Starbucks as a thank you for participating. We made some immediate improvements based off their mostly positive feedback.
 
 <img class="large" src="/images/google-apps-control-panel.png" />
 
-<p class="caption">Sketch with sticky notes</p>
+<p class="caption"><strong>Above:</strong> User management in the control panel.</p>
 
 <img class="large" src="/images/google-apps-ui-detail.png" />
 
-<p class="caption">Sketch with sticky notes</p>
+<p class="caption"><strong>Above:</strong> Notations that detail a user interaction in the wireframes.</p>
 
 
 
 <h3>Visual design and UI</h3>
 
-I worked closely with our visual designer Ryan when he transformed my wires and prototypes into full-fidelity mockups of the onboarding and control panel.
+I worked closely with our visual designer [Ryan Morgan][ryanmorgan] as he transformed my wires and prototypes into full-fidelity mockups. From the start, we wanted the visual design to stress simplicity.
 
 <img class="" src="/images/google-apps-onboard-ui.png" />
 
-<p class="caption">Ara's badass game</p>
+<p class="caption"><strong>Above:</strong> Steps in the on-boarding process.</p>
 
 
 <img class="" src="/images/google-apps-manage-user.png" />
 
-<p class="caption">Ara's badass game</p>
+<p class="caption"><strong>Above:</strong> Control panel for managing Google Apps users.</p>
 
 
 
@@ -90,5 +98,12 @@ I worked closely with our visual designer Ryan when he transformed my wires and 
 
 
 
-[flywheel]: https://getflywheel.com/
-[wpengine]:    http://wpengine.com/
+[mtgoogleapps]: http://mediatemple.net/services/googleapps/
+[popco]:    http://pop.co/
+[godaddyoffice]: https://www.godaddy.com/business/office-365.aspx
+[usertests]: http://www.nngroup.com/articles/how-many-test-users/
+[uxpin]: http://uxpin.com/
+[ryanmorgan]: http://900rpm.com/
+[invision]: http://invisionapp.com/
+
+
