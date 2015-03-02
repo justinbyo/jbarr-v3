@@ -2262,6 +2262,9 @@ header.strip .nav-link a:hover {
   color: #e66705;
 }
 @media (max-width: 767px) {
+  header.strip .grid-col--nav--title {
+    display: none;
+  }
   header.strip .nav-link {
     width: 50%;
     float: left;
@@ -2366,8 +2369,10 @@ footer.strip .contact p a {
 .page--blog .strip--blog-hero {
   margin-top: 90px;
   margin-top: 5.625rem;
+  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
-@media (max-width: 880px) {
+@media (max-width: 767px) {
   .page--blog .strip--blog-hero {
     margin-top: 60px;
     margin-top: 3.75rem;
@@ -2382,14 +2387,14 @@ footer.strip .contact p a {
   color: #222222;
   font-weight: 900;
 }
-@media (max-width: 880px) {
+@media (max-width: 767px) {
   .page--blog .strip--blog-hero h1,
   .page--blog .strip--blog-hero .h1 {
-    font-size: 28px;
-    font-size: 1.75rem;
-    margin-bottom: 15px;
-    margin-bottom: 0.9375rem;
-    text-align: center;
+    font-size: 30px;
+    font-size: 1.875rem;
+    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
+    text-align: left;
   }
 }
 .page--blog .strip--blog-hero p {
@@ -2399,6 +2404,8 @@ footer.strip .contact p a {
   color: #222222;
   font-weight: 300;
   line-height: 1.5;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 .page--blog .strip--blog-hero p a {
   /*
@@ -2409,7 +2416,6 @@ color:@dark-aqua;
 				}
 */
   font-weight: 700;
-  border-bottom: 3px solid #ff9900;
   display: inline;
   text-decoration: none;
   color: #222222;
@@ -2417,24 +2423,26 @@ color:@dark-aqua;
 .page--blog .strip--blog-hero p a:hover {
   color: #ff9900;
 }
-@media (max-width: 880px) {
+.page--blog .strip--blog-hero p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
   .page--blog .strip--blog-hero p {
-    font-size: 20px;
-    font-size: 1.25rem;
-    text-align: center;
+    font-size: 16px;
+    font-size: 1rem;
   }
 }
-@media (max-width: 880px) {
+@media (max-width: 767px) {
   .page--blog .strip--blog-hero {
-    padding: 0 30px;
+    padding: 0;
   }
 }
 .page--blog .strip--article-list {
-  padding: 60px 0;
+  padding: 0 0 60px 0;
 }
 @media (max-width: 767px) {
   .page--blog .strip--article-list {
-    padding: 30px 0;
+    padding: 0 0 30px 0;
   }
 }
 .page--blog .stripes {
@@ -2615,6 +2623,8 @@ color:@dark-aqua;
 }
 .page--blog .strip--work-content p.subtitle {
   line-height: 1;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 .page--blog .strip--article-content {
   padding: 100px 0 0;
@@ -2664,8 +2674,8 @@ color:@dark-aqua;
 */
 }
 .page--home .strip {
-  margin-bottom: 60px;
-  margin-bottom: 3.75rem;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 .page--home .strip:last-child {
   margin-bottom: 0;
