@@ -2,16 +2,17 @@
 layout: post
 title:  "Google Apps Hosting Package"
 date:   2015-02-25 17:39:21
-subtitle: "UX Research and UI Design"
+subtitle: "UX Research, IA, and UI Design"
+description: "Media Temple created a hosting packing that integrates Google Apps for Work to create a one-stop-shop for setting up a web presence. Through a single purchase from the Media Temple control panel, a user could set up both a website and their company&rsquo;s Google Apps service at one time, all with a unique domain name. I designed an on-boarding experience and control panel UI that makes this entire process simple."
 ---
 
 <p class="subtitle"><strong>Case study:</strong> UX research and UI design</p>
 
 <h3>A one-stop-shop for your web presence</h3>
 
-In response to user demand for a better, cloud-driven email product, Media Temple in 2014 introduced a [Google Apps for Work bundle][mtgoogleapps]. The idea was to create a one-stop-shop for setting up your web presence. Through a single purchase from the Media Temple control panel, a user could set up both a website and their company's Google Apps service at one time, all with a unique domain name.
+In response to user demand for a better, cloud-driven email product, Media Temple in 2014 introduced a [Google Apps for Work bundle][mtgoogleapps]. The idea was to create a one-stop-shop for setting up your web presence. Through a single purchase from the Media Temple control panel, a user could set up both a website and their company&rsquo;s Google Apps service at one time, all with a unique domain name.
 
-The product called for an on-boarding experience and control panel UI, through which the user would: <strong>1.</strong> select a domain to use with their Gmail address and <strong>2.</strong> create and manage Gmail accounts for their team-members. A major goal of the product was to transition customers that use Media Temple's aging proprietary email service to the industry-leading Gmail, while improving their workflow. We built the on-boarding and control panel experience using the Google Apps reseller API. 
+The product called for an on-boarding experience and control panel UI, through which the user would: <strong>1.</strong> select a domain to use with their Gmail address and <strong>2.</strong> create and manage Gmail accounts for their team-members. A major goal of the product was to transition customers that use Media Temple&rsquo;s aging proprietary email service to the industry-leading Gmail, while improving their workflow. We built the on-boarding and control panel experience using the Google Apps reseller API. 
 
 
 <h3>Researching the product requirements</h3>
@@ -32,9 +33,9 @@ I started by breaking down user stories into features, and mind-mapping them int
 
 I already knew a few things when I started crafted the experience:
 
-First, I wanted the on-boarding process to be linear, conversational, and short. It had to communicate that the user was purchasing and creating Google Apps accounts through their Media Temple account, which are different. The process also had to conserve the user's cognitive bandwidth (and patience) for what might be really tricky: updating DNS records.
+First, I wanted the on-boarding process to be linear, conversational, and short. It had to communicate that the user was purchasing and creating Google Apps accounts through their Media Temple account, which are different. The process also had to conserve the user&rsquo;s cognitive bandwidth (and patience) for what might be really tricky: updating DNS records.
 
-Second, I wanted the control panel to include as few distinct screens as possible. This was an MVP and we certainly weren't recreating the wheel Google built. We used Angular.js to create an app-like experience that revolves around three screens: user management, group management, and company/organization management.
+Second, I wanted the control panel to include as few distinct screens as possible. This was an MVP and we certainly weren&rsquo;t recreating the wheel Google built. We used Angular.js to create an app-like experience that revolves around three screens: user management, group management, and company/organization management.
 
 I started exploring the user flow by consulting with both Media Temple and Google engineers to understand how our provisioning systems work together. I stressed that we do as much as possible for the user on their behalf, especially when it comes to filling out form fields or polling their DNS records. I also took a look at the on-boarding and control panels of competitor services, like [Pop.co][popco] or [GoDaddy][godaddyoffice]. I synthesized this info into a comprehensive user flow that accommodated engineering requirements.
 
@@ -54,7 +55,7 @@ The biggest challenge &mdash; one that is reflective of the more complex problem
 
 <p class="caption">Sketches of the DNS flow that I put together with our software developer, Nate.</p>
 
-With the Media Temple and Google engineers, I got into the technical details of both Google's reseller API and our own provisioning system to determine the best flow for account creation.
+With the Media Temple and Google engineers, I got into the technical details of both Google&rsquo;s reseller API and our own provisioning system to determine the best flow for account creation.
 
 <img class="large" src="/images/google-apps-user-flow.png" />
 

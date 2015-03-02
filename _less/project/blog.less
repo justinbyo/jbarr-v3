@@ -16,12 +16,61 @@
 	// Main blog page at /blog, with the list of articles
 	// ------------------------------------------------------
 	 
-	.strip--blog-hero {
-		// .padding(100px 0 60px 0);
-		// background-color:@aqua;
-		
-	}
 	 
+	.strip--blog-hero {
+		
+		.margin-top(90px);
+		@media (max-width: 880px) {
+			.margin-top(60px);
+		}
+		
+		h1, .h1 {
+			.margin-bottom(30px);
+			.font-size(48px);
+			color:@black;
+			font-weight:900;
+			
+			@media (max-width: 880px) {
+				.font-size(28px);
+				.margin-bottom(15px);
+				text-align:center;
+			}
+			
+		}
+		p {
+			.merriweather;
+			.font-size(18px);
+			color: @black;
+			font-weight:300;
+			line-height:1.5;
+			a {
+				/*
+color:@dark-aqua;
+				text-decoration:underline;
+				&:hover {
+					color:@aqua;
+				}
+*/
+				font-weight:700;
+				border-bottom: 3px solid @orange;
+				display: inline;
+				text-decoration:none;
+				color:@black;
+				&:hover {
+					color:@orange;
+				}
+			}
+			
+			@media (max-width: 880px) {
+				.font-size(20px);
+				text-align:center;
+			}
+		}
+		@media (max-width: 880px) {
+			.padding(0 30px);
+		}
+	}
+
 	 
 	.strip--article-list {
 		
@@ -60,7 +109,7 @@
 		color:@black;
 		text-decoration:none;
 		font-weight:700;
-		.margin-bottom(15px);
+		.margin-bottom(10px);
 		.font-size(30px);
 		.padding-bottom(15px);
 		// border-bottom:@standard-border-size solid @orange;
@@ -69,6 +118,7 @@
 	
 	
 	.post-title {
+		
 		
 		a {
 			.blog-wide-title-style;
@@ -83,7 +133,8 @@
 	p.subtitle {
 		.lato;
 		color:@dark-grey;
-		.margin-bottom(15px);
+		.margin-bottom(30px);
+		line-height:1;
 		strong {
 			font-weight:700;
 		}
@@ -126,25 +177,7 @@
 		}
 	}
 	
-	
-	// Individual blog post layout
-	// ------------------------------------------------------
-	
-	.strip--article-content {
-		
-		.padding(100px 0 0);
-		
-		.post-title {
-			.blog-wide-title-style;
-			.font-size(36px);
-			.margin-bottom(0);
-		}
-		
-		.read-more {
-			.margin-bottom(30px);
-		}
-		
-		.content {
+	.content {
 			p {
 				.font-size(16px);
 				line-height:1.75;
@@ -177,13 +210,7 @@ color:@dark-aqua;
 				}
 			}
 			
-			h3, .h3 {
-				.lato;
-				.font-size(30px);
-				color:@black;
-				font-weight:700;
-				.margin-bottom(30px);
-			}
+			
 			
 			p.subtitle {
 				.lato;
@@ -223,22 +250,45 @@ color:@dark-aqua;
 				}
 			}
 			
-			
-			// Individual blog post elements
-			// ------------------------------------------------------
-			
-			/*
-img.wordpress-user-flow {
-				.margin(0 auto);
-			}
-*/
-			
-			
-			
-			
-			
-			
-			
 		}			
-	}	 
+
+	// List of extra content at bottom of main work page
+	// ------------------------------------------------------
+
+	.strip--work-content {
+		.post-title {
+			.blog-wide-title-style;
+		}
+		p.subtitle {
+			line-height:1;
+		}
+	}
+	
+	// Individual blog post layout
+	// ------------------------------------------------------
+	
+	.strip--article-content {
+		
+		.padding(100px 0 0);
+		
+		.post-title {
+			.blog-wide-title-style;
+			.font-size(36px);
+			.margin-bottom(0);
+		}
+		
+		.read-more {
+			.margin-bottom(30px);
+		}
+		
+		h3, .h3 {
+			.lato;
+			.font-size(30px);
+			color:@black;
+			font-weight:700;
+			.margin-bottom(30px);
+		}
+		
+	}
+	
  }
