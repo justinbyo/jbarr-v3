@@ -3,7 +3,7 @@ layout: post
 title:  "WordPress Hosting"
 date:   2015-02-26 17:39:21
 subtitle: "UX Research, IA, and UI Design"
-description: "When Media Temple improved their WordPress hosting product with a new on-boarding flow and a slate of new features, I had the opportunity to seriously reevaluate the product&rsquo;s UX. I designed a friendly on-boarding process, reorganized the navigation and features in the control panel, and planned the product&rsquo;s information architecture to accommodate future features."
+description: "When Media Temple improved their WordPress hosting platform with a new on-boarding flow and a slate of new features, I had the opportunity to seriously reevaluate the product&rsquo;s UX. I designed a friendly on-boarding process, reorganized the navigation and features in the control panel, and planned the product&rsquo;s information architecture to accommodate future features."
 ---
 
 <p class="subtitle"><strong>Case study:</strong> UX Research and UI Design</p>
@@ -76,7 +76,7 @@ I used [UXPin][uxpin] to create high-fidelity wireframes of both the on-boarding
 
 <h3>Visual design and UI</h3>
 
-I worked closely with our visual designer [Ryan Morgan][ryanmorgan] as he transformed my wires and prototypes into full-fidelity mockups. We developed a card-based style that would allow for future extensibility when new features are eventually added the panel. As the user experience became increasingly vivid, we challenged some assumptions I had and continued to finesse the finer points of the more complicated interactions, like SSL installation.
+I worked closely with our visual designer [Ryan Morgan][ryanmorgan] as he transformed my wires and prototypes into full-fidelity mockups. We developed a card-based style that would allow for future extensibility when new features are eventually added to the panel. As the user experience became increasingly vivid, we challenged some assumptions I had and continued to finesse the finer points of the more complicated interactions, like SSL installation.
 
 <img class="large" src="/images/wordpress-onboard-ui.png" />
 

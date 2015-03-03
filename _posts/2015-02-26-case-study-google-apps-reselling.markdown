@@ -31,7 +31,7 @@ I started by breaking down user stories into features, and mind-mapping them int
 
 <h3>Sketching and iteration</h3>
 
-I already knew a few things when I started crafted the experience:
+I already knew a few things as I started crafting the experience:
 
 First, I wanted the on-boarding process to be linear, conversational, and short. It had to communicate that the user was purchasing and creating Google Apps accounts through their Media Temple account, which are different. The process also had to conserve the user&rsquo;s cognitive bandwidth (and patience) for what might be really tricky: updating DNS records.
 
