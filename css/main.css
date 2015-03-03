@@ -2048,6 +2048,9 @@ html {
   -webkit-text-size-adjust: none;
   /* don't allow iphone to resize this at landscape */
 }
+a {
+  outline: 0;
+}
 h1,
 .h1 {
   font-family: 'Lato', sans-serif;
@@ -2782,8 +2785,8 @@ color:@dark-aqua;
   }
 }
 .page--home .strip--icon {
-  margin-bottom: 60px;
-  margin-bottom: 3.75rem;
+  margin-bottom: 45px;
+  margin-bottom: 2.8125rem;
 }
 @media (max-width: 880px) {
   .page--home .strip--icon {
@@ -2835,6 +2838,7 @@ color:@dark-aqua;
 }
 .page--home .icon--container .icon--unit {
   display: block;
+  outline: 0;
   text-decoration: none;
   position: relative;
   width: 80px;
@@ -2997,6 +3001,65 @@ color:@dark-aqua;
     background-size: 80px;
   }
 }
+.page--home .icon--container .twitter .icon {
+  height: 92px;
+  /*
+	.back-bottom {
+					.standard-background("../img/2012/github-back.png");
+					background-position:center bottom;
+					height:27px;
+					// top:77px;
+					top:auto;
+					bottom:0;
+				}
+	*/
+}
+.page--home .icon--container .twitter .icon div {
+  position: absolute;
+  width: 80px;
+  left: 0;
+  top: 0;
+}
+.page--home .icon--container .twitter .icon .back {
+  background: url("../img/2012/twitter-back.png") center center no-repeat transparent;
+  background-position: center top;
+  height: 92px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5) {
+  .page--home .icon--container .twitter .icon .back {
+    background-image: url("../img/2012/retina/twitter-back-2x.png");
+    background-size: 80px;
+  }
+}
+.page--home .icon--container .twitter .icon .bird {
+  background: url("../img/2012/twitter-bird.png") center center no-repeat transparent;
+  background-position: center top;
+  height: 92px;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5) {
+  .page--home .icon--container .twitter .icon .bird {
+    background-image: url("../img/2012/retina/twitter-bird-2x.png");
+    background-size: 80px;
+  }
+}
+.page--home .icon--container .twitter .icon .wing {
+  background: url("../img/2012/twitter-wing.png") center center no-repeat transparent;
+  height: 92px;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5) {
+  .page--home .icon--container .twitter .icon .wing {
+    background-image: url("../img/2012/retina/twitter-wing-2x.png");
+    background-size: 80px;
+  }
+}
 .page--home .icon--container .projects {
   /*
 			@media (max-width:530px){
@@ -3078,6 +3141,27 @@ color:@dark-aqua;
   .page--home .icon--container .github:hover .icon .bubbles {
     top: -10px;
     height: 87px;
+  }
+}
+.page--home .icon--container .twitter .icon {
+  bottom: -12px;
+}
+@media (min-width: 531px) {
+  .page--home .icon--container .twitter:hover .icon {
+    bottom: 2px;
+  }
+  .page--home .icon--container .twitter:hover .icon .bird {
+    top: -5px;
+    height: 92px;
+  }
+  .page--home .icon--container .twitter:hover .icon .wing {
+    top: -5px;
+    height: 92px;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
   }
 }
 @media (min-width: 531px) {
