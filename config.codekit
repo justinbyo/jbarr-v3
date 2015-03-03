@@ -497,6 +497,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/images\/blog-header.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 164875,
+		"inputAbbreviatedPath": "\/_site\/images\/blog-header.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/blog-header.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/images\/google-apps-ac-whiteboard.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -944,6 +955,72 @@
 		"initialSize": 754,
 		"inputAbbreviatedPath": "\/_site\/img\/2012\/retina\/projects-paper-2x.png",
 		"outputAbbreviatedPath": "\/_site\/img\/2012\/retina\/projects-paper-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/2012\/retina\/twitter-back-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4949,
+		"inputAbbreviatedPath": "\/_site\/img\/2012\/retina\/twitter-back-2x.png",
+		"outputAbbreviatedPath": "\/_site\/img\/2012\/retina\/twitter-back-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/2012\/retina\/twitter-bird-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3158,
+		"inputAbbreviatedPath": "\/_site\/img\/2012\/retina\/twitter-bird-2x.png",
+		"outputAbbreviatedPath": "\/_site\/img\/2012\/retina\/twitter-bird-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/2012\/retina\/twitter-wing-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2539,
+		"inputAbbreviatedPath": "\/_site\/img\/2012\/retina\/twitter-wing-2x.png",
+		"outputAbbreviatedPath": "\/_site\/img\/2012\/retina\/twitter-wing-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/2012\/twitter-back.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2246,
+		"inputAbbreviatedPath": "\/_site\/img\/2012\/twitter-back.png",
+		"outputAbbreviatedPath": "\/_site\/img\/2012\/twitter-back.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/2012\/twitter-bird.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1441,
+		"inputAbbreviatedPath": "\/_site\/img\/2012\/twitter-bird.png",
+		"outputAbbreviatedPath": "\/_site\/img\/2012\/twitter-bird.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/2012\/twitter-wing.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1168,
+		"inputAbbreviatedPath": "\/_site\/img\/2012\/twitter-wing.png",
+		"outputAbbreviatedPath": "\/_site\/img\/2012\/twitter-wing.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1684,6 +1761,83 @@
 		"initialSize": 754,
 		"inputAbbreviatedPath": "\/img\/2012\/retina\/projects-paper-2x.png",
 		"outputAbbreviatedPath": "\/img\/2012\/retina\/projects-paper-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/2012\/retina\/twitter-back-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4949,
+		"inputAbbreviatedPath": "\/img\/2012\/retina\/twitter-back-2x.png",
+		"outputAbbreviatedPath": "\/img\/2012\/retina\/twitter-back-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/2012\/retina\/twitter-bird-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3171,
+		"inputAbbreviatedPath": "\/img\/2012\/retina\/twitter-bird-2x.png",
+		"outputAbbreviatedPath": "\/img\/2012\/retina\/twitter-bird-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/2012\/retina\/twitter-bird.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1412,
+		"inputAbbreviatedPath": "\/img\/2012\/retina\/twitter-bird.png",
+		"outputAbbreviatedPath": "\/img\/2012\/retina\/twitter-bird.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/2012\/retina\/twitter-wing-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2539,
+		"inputAbbreviatedPath": "\/img\/2012\/retina\/twitter-wing-2x.png",
+		"outputAbbreviatedPath": "\/img\/2012\/retina\/twitter-wing-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/2012\/twitter-back.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2246,
+		"inputAbbreviatedPath": "\/img\/2012\/twitter-back.png",
+		"outputAbbreviatedPath": "\/img\/2012\/twitter-back.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/2012\/twitter-bird.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1441,
+		"inputAbbreviatedPath": "\/img\/2012\/twitter-bird.png",
+		"outputAbbreviatedPath": "\/img\/2012\/twitter-bird.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/2012\/twitter-wing.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1168,
+		"inputAbbreviatedPath": "\/img\/2012\/twitter-wing.png",
+		"outputAbbreviatedPath": "\/img\/2012\/twitter-wing.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

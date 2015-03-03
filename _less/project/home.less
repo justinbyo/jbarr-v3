@@ -84,7 +84,7 @@
 		// top:50%;
 		// .margin-top(-50%);
 		
-		.margin-bottom(60px);
+		.margin-bottom(45px);
 		
 		@media (max-width: 880px) {
 			.padding(0 30px);
@@ -140,6 +140,7 @@
 		.icon--unit {
 			
 			display:block;
+			outline: 0;
 		
 			@media (min-width: 531px) {
 				// .icon are all evenly spaced with this method http://css-tricks.com/equidistant-objects-with-css/
@@ -336,6 +337,65 @@
 			
 		}
 		
+		.twitter {
+			.icon {
+				height:92px;
+				div {
+					position:absolute;
+					width:80px;
+					left:0;
+					top:0;
+				}
+				.back { // used to be back-top
+					.standard-background("../img/2012/twitter-back.png");
+					@media @retina {
+						background-image:url("../img/2012/retina/twitter-back-2x.png");
+						background-size:80px;
+					}
+					
+					background-position:center top;
+					height:92px;
+					// height:77px;
+				}
+				.bird {
+					.standard-background("../img/2012/twitter-bird.png");
+					
+					@media @retina {
+						background-image:url("../img/2012/retina/twitter-bird-2x.png");
+						background-size:80px;
+					}
+					
+					background-position:center top;
+					height:92px;
+					.standard-transition;
+				}
+				
+				/*
+	.back-bottom {
+					.standard-background("../img/2012/github-back.png");
+					background-position:center bottom;
+					height:27px;
+					// top:77px;
+					top:auto;
+					bottom:0;
+				}
+	*/
+				.wing {
+					.standard-background("../img/2012/twitter-wing.png");
+					height:92px;
+					.standard-transition;
+					@media @retina {
+						background-image:url("../img/2012/retina/twitter-wing-2x.png");
+						background-size:80px;
+					}
+					
+					
+					
+				}
+			}
+			
+		}
+		
 		.projects {
 		
 			// Under construction
@@ -438,6 +498,27 @@
 						.bubbles {
 							top:-10px;
 							height:87px;
+						}
+					}
+				}
+			}
+		}
+		.twitter {
+			.icon {
+				bottom:-12px;
+			}
+			&:hover {
+				@media (min-width:531px){
+					.icon {
+						bottom:2px;
+						.bird {
+							top:-5px;
+							height:92px;
+						}
+						.wing {
+							top:-5px;
+							height:92px;
+							.transform(rotate(10deg));
 						}
 					}
 				}
