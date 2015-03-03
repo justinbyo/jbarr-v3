@@ -17,64 +17,86 @@
 	// ------------------------------------------------------
 	 
 	 
-	.strip--blog-hero {
-		
-		.margin-top(90px);
-		.margin-bottom(60px);
-		@media @mobile {
-			.margin-top(60px);
+ 	// Hero section
+	// Main pieces are located in components.less
+	// --------------------------------------
+	 
+	.strip--hero {
+	
+		h1 {
+			.lato;
 		}
-		
-		h1, .h1 {
-			.margin-bottom(30px);
-			.font-size(48px);
-			color:@black;
-			font-weight:900;
-			
-			@media @mobile {
-				.font-size(30px);
-				.margin-bottom(30px);
-				text-align:left;
-			}
-			
-		}
+	
 		p {
 			.merriweather;
 			.font-size(18px);
-			color: @black;
 			font-weight:300;
-			line-height:1.5;
 			.margin-bottom(30px);
+			.padding-bottom(5px);
+			
+/*
 			a {
-				/*
-color:@dark-aqua;
 				text-decoration:underline;
 				&:hover {
-					color:@aqua;
+					color:@orange;
 				}
-*/
-				font-weight:700;
+			}
+*/			a {
+				border-bottom: 3px solid @orange;
 				display: inline;
 				text-decoration:none;
 				color:@black;
 				&:hover {
 					color:@orange;
 				}
-				
 			}
 			
+			
 			&:last-child {
-					.margin-bottom(0);
-				}
+				.margin-bottom(0);
+			}
 			
 			@media @mobile {
 				.font-size(16px);
-				// text-align:center;
 			}
 		}
 		
-		@media @mobile {
-			.padding(0);
+		ul {
+			list-style-type:disc;
+			list-style-position:outside;
+			.padding-left(30px);
+			li {
+				.merriweather;
+				.font-size(16px);
+				font-weight:300;
+				.margin-bottom(10px);
+				.padding-bottom(5px);
+				line-height:1.5;
+				&:last-child {
+					.padding-bottom(0);
+					.margin-bottom(0);
+				}
+/*
+				a {
+					color:@black;
+					font-weight:700;
+					text-decoration:none;
+					&:hover {
+						color:@orange;
+					}
+				}
+*/				a {
+					color:@black;
+					font-weight:700;
+					border-bottom: 3px solid @orange;
+					display: inline;
+					text-decoration:none;
+					color:@black;
+					&:hover {
+						color:@orange;
+					}
+				}
+			}
 		}
 	}
 
@@ -263,6 +285,7 @@ color:@dark-aqua;
 	// ------------------------------------------------------
 
 	.strip--work-content {
+		.padding-bottom(0);
 		.post-title {
 			.blog-wide-title-style;
 		}

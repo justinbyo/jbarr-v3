@@ -1,6 +1,57 @@
 /* Styles for site-wide components
  * ____________________________________________________________ */
  
+
+.strip--hero {
+		
+	.margin-top(90px);
+	.margin-bottom(60px);
+	@media @mobile {
+		.margin-top(60px);
+	}
+	
+	h1, .h1 {
+		.margin-bottom(30px);
+		.font-size(48px);
+		color:@black;
+		font-weight:900;
+		
+		@media @mobile {
+			.font-size(30px);
+			.margin-bottom(30px);
+		}
+		
+	}
+
+	
+	// --------
+	// Inserted
+	
+	p, .p {
+		
+		color: @black;
+		font-weight:300;
+		line-height:1.5;
+		a {
+			color:@black;
+			font-weight:700;
+			text-decoration:none;
+		}
+		
+		@media (max-width: @mobile) {
+			.font-size(20px);
+		}
+	}
+	
+	// ---------
+	
+	@media @mobile {
+		.padding(0);
+	}
+}
+
+
+
 p.related-article-link {
 	display:block;
 	text-align:center;
