@@ -2778,6 +2778,9 @@ color:@dark-aqua;
     font-size: 1.125rem;
     padding: 0;
   }
+  .page--home .strip--hero h1.p br {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .page--home .strip--hero {
