@@ -8,36 +8,36 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }} | Justin Barr Young</title>
-        
-        
+
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <meta name="description" content="User experience and information architecture by Justin Barr Young, a designer and developer in Los Angeles.">
-        
+
+        <meta name="description" content="Product design and UX by Justin Barr Young, a designer and developer in Los Angeles.">
+
         <meta property="og:image" content="http://jay-bee-why.com/img/linkedin.png" />
 		<meta property="og:title" content="{{ page.title }} | Justin Barr Young" />
 		<meta property="og:site_name" content="Justin Barr Young" />
-		
+
 		<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-        
+
         <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
 
     </head>
     <body class="page--{{ page.pagetype }}  {% if layout == 'post' %}  post--{{ page.slug }}{% endif %}"  ontouchstart="">
-    
+
     	<!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-		
+
 	    {% include header-3.html %}
-		
+
 		{{ content }}
-	    
+
 	    {% include footer.html %}
-		
+
 		{% include scripts.html %}
 
     </body>
