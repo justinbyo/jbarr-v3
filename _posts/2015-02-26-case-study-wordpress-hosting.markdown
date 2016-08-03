@@ -1,5 +1,6 @@
 ---
 layout: post
+pagetype: blog
 title:  "WordPress Hosting"
 date:   2015-02-26 17:39:21
 subtitle: "UX Research, IA, and UI Design"
@@ -40,7 +41,7 @@ There was a lot to fit into the control panel. I started by mind-mapping how the
 This product posed two big challenges:
 
 First, we had to facilitate the user in creating or migrating their WordPress site on our platform. The onboarding experience had to describe and solicit  &mdash; in a friendly, human way &mdash; technical information like installation directories and FTP credentials. It also had to communicate the platform&rsquo;s architecture to the user. We took care to make sure the user understood how their WordPress sites and credentials are organized under their Media Temple account.
-    
+
 Second, the control panel was challenging because the various features were dissimilar enough to complicate the control panel&rsquo;s information architecture. For example, two included SSL certificates are installed on a per-site basis, but Google Apps inboxes are tied to a single domain and on-boarded separately.
 
 With this in mind, I started exploring the user flow by consulting with our engineers to fully understand how our back-end provisions and connects our WordPress Hosting with the rest of our services. I also took a look at the on-boarding and control panels of competitor services, like [Flywheel][flywheel] or [WPEngine][wpengine]. I synthesized this info into a comprehensive user flow that accommodated engineering requirements.

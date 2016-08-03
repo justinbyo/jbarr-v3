@@ -1,5 +1,6 @@
 ---
 layout: post
+pagetype: blog
 title:  "Google Apps Hosting Package"
 date:   2015-02-25 17:39:21
 subtitle: "UX Research, IA, and UI Design"
@@ -12,7 +13,7 @@ description: "Media Temple created a hosting packing that integrates Google Apps
 
 In response to user demand for a better, cloud-driven email product, Media Temple in 2014 introduced a [Google Apps for Work bundle][mtgoogleapps]. The idea was to create a one-stop-shop for setting up your web presence. Through a single purchase from the Media Temple control panel, a user could set up both a website and their company&rsquo;s Google Apps service at one time, all with a unique domain name.
 
-The product called for an on-boarding experience and control panel UI, through which the user would: <strong>1.</strong> select a domain to use with their Gmail address and <strong>2.</strong> create and manage Gmail accounts for their team-members. A major goal of the product was to transition customers that use Media Temple&rsquo;s aging proprietary email service to the industry-leading Gmail, while improving their workflow. We built the on-boarding and control panel experience using the Google Apps reseller API. 
+The product called for an on-boarding experience and control panel UI, through which the user would: <strong>1.</strong> select a domain to use with their Gmail address and <strong>2.</strong> create and manage Gmail accounts for their team-members. A major goal of the product was to transition customers that use Media Temple&rsquo;s aging proprietary email service to the industry-leading Gmail, while improving their workflow. We built the on-boarding and control panel experience using the Google Apps reseller API.
 
 
 <h3>Researching the product requirements</h3>
@@ -106,5 +107,3 @@ I worked closely with our visual designer [Ryan Morgan][ryanmorgan] as he transf
 [uxpin]: http://uxpin.com/
 [ryanmorgan]: http://900rpm.com/
 [invision]: http://invisionapp.com/
-
-
