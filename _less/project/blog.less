@@ -1,39 +1,40 @@
 /* Blog-specific styles
  * Everything blog related goes here
  * ____________________________________________________________ */
- 
+
  .page--blog {
-	 
+
 	.wrapper {
 		width:auto;
-	} 
-	 
+	}
+
 	@background:#f9f9f9;
 	background-color:@background;
-	 
-	
-		
+
+
+
 	// Main blog page at /blog, with the list of articles
 	// ------------------------------------------------------
-	 
-	 
+
+
  	// Hero section
 	// Main pieces are located in components.less
 	// --------------------------------------
-	 
+
 	.strip--hero {
-	
+
 		h1 {
 			.lato;
 		}
-		
+
 		p {
 			.merriweather;
 			.font-size(18px);
 			font-weight:300;
 			.margin-bottom(30px);
 			.padding-bottom(5px);
-			
+      line-height: 1.75;
+
 /*
 			a {
 				text-decoration:underline;
@@ -50,17 +51,17 @@
 					color:@orange;
 				}
 			}
-			
-			
+
+
 			&:last-child {
 				.margin-bottom(0);
 			}
-			
+
 			@media @mobile {
 				.font-size(16px);
 			}
 		}
-		
+
 		ul {
 			list-style-type:disc;
 			list-style-position:outside;
@@ -100,21 +101,21 @@
 		}
 	}
 
-	 
+
 	.strip--article-list {
-		
+
 		.padding(0 0 60px 0);
-		
+
 		@media @mobile {
 			.padding(0 0 30px 0);
 		}
-	} 
-	 
-	 
+	}
+
+
 	.stripes {
 		height:@standard-border-size;
 	}
-	 
+
 	.post-meta {
 		.font-size(14px);
 		color:@dark-grey;
@@ -122,7 +123,7 @@
 		.lato;
 		display:block;
 	}
-	
+
 	a.post-meta {
 		color:@grey;
 		text-decoration:none;
@@ -132,7 +133,7 @@
 			color:@orange;
 		}
 	}
-	
+
 	.blog-wide-title-style {
 		display:inline-block;
 		color:@black;
@@ -144,21 +145,21 @@
 		// border-bottom:@standard-border-size solid @orange;
 		.lato;
 	}
-	
-	
+
+
 	.post-title {
-		
-		
+
+
 		a {
 			.blog-wide-title-style;
-			
+
 			&:hover {
 				color:@orange;
 				// border-bottom:@standard-border-size solid @orange;
 			}
 		}
 	}
-	
+
 	p.subtitle {
 		.lato;
 		color:@dark-grey;
@@ -168,18 +169,18 @@
 			font-weight:700;
 		}
 	}
-	
+
 	.post-link {
-		
+
 	}
-	
+
 	.post-description {
 		.font-size(16px);
-		line-height:1.5;
+		line-height:1.75;
 		.merriweather;
 		.margin-bottom(30px);
 	}
-	
+
 	.read-more {
 		a {
 			color:@white;
@@ -192,35 +193,35 @@
 			}
 		}
 	}
-	
+
 	footer.strip {
 		.margin-top(30px);
 		@media @mobile {
 			.margin-top(0);
 		}
 	}
-	
+
 	.strip--scroll {
 		@media @mobile {
 			.margin-top(30px);
 		}
 	}
-	
+
 	.content {
 			p {
 				.font-size(16px);
 				line-height:1.75;
 				.merriweather;
 				.margin-bottom(30px);
-				
+
 				strong {
 					font-weight:700;
 				}
-				
+
 				&:last-child {
 					.margin-bottom(0);
 				}
-				
+
 				a {
 					/*
 color:@dark-aqua;
@@ -238,9 +239,9 @@ color:@dark-aqua;
 					}
 				}
 			}
-			
-			
-			
+
+
+
 			p.subtitle {
 				.lato;
 				color:@dark-grey;
@@ -249,14 +250,14 @@ color:@dark-aqua;
 					font-weight:700;
 				}
 			}
-			
+
 			img {
 				max-width:100%;
 				text-align:center;
 				//.margin-bottom(-15px);
 				display:block;
 			}
-			
+
 			img.large { // this makes the image 1200px wide and overflows the 800px container around it
 				@media (min-width: 1200px) {
 					max-width:none;
@@ -265,21 +266,21 @@ color:@dark-aqua;
 					.margin-left(-(@image-width - @max-width) / 2);
 				}
 			}
-			
+
 			p.caption {
 				font-style:italic;
 				color:@dark-grey;
 				.padding-bottom(15px);
 				.margin-bottom(45px);
 				border-bottom:1px solid @grey;
-				
+
 				strong {
 					font-style:italic;
 					font-weight:700;
 				}
 			}
-			
-		}			
+
+		}
 
 	// List of extra content at bottom of main work page
 	// ------------------------------------------------------
@@ -294,24 +295,24 @@ color:@dark-aqua;
 			.margin-bottom(30px);
 		}
 	}
-	
+
 	// Individual blog post layout
 	// ------------------------------------------------------
-	
+
 	.strip--article-content {
-		
+
 		.padding(100px 0 0);
-		
+
 		.post-title {
 			.blog-wide-title-style;
 			.font-size(36px);
 			.margin-bottom(0);
 		}
-		
+
 		.read-more {
 			.margin-bottom(30px);
 		}
-		
+
 		h3, .h3 {
 			.lato;
 			.font-size(30px);
@@ -319,7 +320,7 @@ color:@dark-aqua;
 			font-weight:700;
 			.margin-bottom(30px);
 		}
-		
+
 	}
-	
+
  }
