@@ -2364,11 +2364,11 @@ footer.strip p {
   color: #ffffff;
   font-family: 'Merriweather', serif;
   font-weight: 500;
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   margin-bottom: 20px;
   margin-bottom: 1.25rem;
-  line-height: 1.5;
+  line-height: 1.65;
 }
 footer.strip p a {
   text-decoration: none;
