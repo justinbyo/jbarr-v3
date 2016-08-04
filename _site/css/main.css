@@ -5,7 +5,7 @@
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
  * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Arimo:400,700|Droid+Serif:400,700|Roboto+Slab|Merriweather:400italic,400,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Merriweather:400italic,400,700,700italic);
 html,
 body {
   margin: 0;
@@ -2019,29 +2019,11 @@ textarea {
 /* Project-specific styles
  * This is where site wide, general stuff goes
  * ____________________________________________________________ */
-.roboto-slab {
-  font-family: 'Roboto Slab', helvetica, arial, sans-serif;
-}
 .lato {
   font-family: 'Lato', sans-serif;
 }
-.arimo {
-  font-family: 'Arimo', sans-serif;
-}
-.droid-serif {
-  font-family: 'Droid Serif', serif;
-}
 .merriweather {
   font-family: 'Merriweather', serif;
-}
-.futura-pt {
-  font-family: "futura-pt", helvetica, arial, sans-serif;
-}
-.skolar {
-  font-family: "skolar", georgia, serif;
-}
-.brandon {
-  font-family: "brandon-grotesque", sans-serif;
 }
 html {
   font-size: 16px;
@@ -2112,13 +2094,13 @@ body {
   margin: 0;
 }
 .stripes div:nth-child(1) {
-  background-color: #E66705;
+  background-color: #e66705;
 }
 .stripes div:nth-child(2) {
-  background-color: #FF9900;
+  background-color: #ff9900;
 }
 .stripes div:nth-child(3) {
-  background-color: #FFD79C;
+  background-color: #ffd79c;
 }
 .stripes div:nth-child(4) {
   background-color: #6f6c7d;
@@ -2127,7 +2109,7 @@ body {
   background-color: #7fadc6;
 }
 .stripes div:nth-child(6) {
-  background-color: #E8F5F7;
+  background-color: #e8f5f7;
 }
 /* Styles for site-wide components
  * ____________________________________________________________ */
@@ -2198,7 +2180,7 @@ p.related-article-link a {
   font-size: 1rem;
 }
 p.related-article-link a:hover {
-  color: #FF9900;
+  color: #ff9900;
 }
 p.cta {
   display: block;
@@ -2208,7 +2190,7 @@ p.cta a {
   margin: 60px auto 30px auto;
   padding: 30px;
   padding: 1.875rem;
-  background-color: #FF9900;
+  background-color: #ff9900;
   color: #ffffff;
   display: inline-block;
   text-align: center;
@@ -2243,7 +2225,7 @@ p.cta--right a:hover span {
 /* Styles for header
  * ____________________________________________________________ */
 .active-nav-link {
-  color: #E66705;
+  color: #e66705;
 }
 header.strip {
   background-color: transparent;
@@ -2316,7 +2298,7 @@ header.strip .nav-link a {
   display: inline-block;
 }
 header.strip .nav-link a:hover {
-  color: #E66705;
+  color: #e66705;
 }
 @media (max-width: 767px) {
   header.strip .grid-col--nav--title {
@@ -2332,10 +2314,10 @@ header.strip .nav-link a:hover {
   }
 }
 .page--home header.strip .nav-link--about a {
-  color: #E66705;
+  color: #e66705;
 }
 .page--blog header.strip .nav-link--work a {
-  color: #E66705;
+  color: #e66705;
 }
 /* Styles for footer
  * ____________________________________________________________ */
@@ -2347,7 +2329,7 @@ footer.strip {
 footer.strip h3,
 footer.strip .h3 {
   text-transform: uppercase;
-  color: #E8F5F7;
+  color: #e8f5f7;
   font-size: 12px;
   font-size: 0.75rem;
   font-family: 'Lato', sans-serif;
@@ -2375,7 +2357,7 @@ footer.strip p a {
   color: #7fadc6;
 }
 footer.strip p a:hover {
-  color: #E8F5F7;
+  color: #e8f5f7;
 }
 footer.strip p:last-child {
   margin-bottom: 0;
@@ -2409,7 +2391,7 @@ footer.strip .contact p a {
   color: #ffffff;
 }
 .strip--scroll:active {
-  background-color: #E8F5F7;
+  background-color: #e8f5f7;
 }
 .strip--scroll:active p {
   color: #7fadc6;
@@ -2446,13 +2428,13 @@ footer.strip .contact p a {
 */
 }
 .page--blog .strip--hero p a {
-  border-bottom: 3px solid #FF9900;
+  border-bottom: 3px solid #ff9900;
   display: inline;
   text-decoration: none;
   color: #222222;
 }
 .page--blog .strip--hero p a:hover {
-  color: #FF9900;
+  color: #ff9900;
 }
 .page--blog .strip--hero p:last-child {
   margin-bottom: 0;
@@ -2496,13 +2478,13 @@ footer.strip .contact p a {
 }
 .page--blog .strip--hero ul li a {
   font-weight: 700;
-  border-bottom: 3px solid #FF9900;
+  border-bottom: 3px solid #ff9900;
   display: inline;
   text-decoration: none;
   color: #222222;
 }
 .page--blog .strip--hero ul li a:hover {
-  color: #FF9900;
+  color: #ff9900;
 }
 .page--blog .strip--article-list {
   padding: 0 0 60px 0;
@@ -2531,7 +2513,7 @@ footer.strip .contact p a {
   bottom: 30px;
 }
 .page--blog a.post-meta:hover {
-  color: #FF9900;
+  color: #ff9900;
 }
 .page--blog .blog-wide-title-style {
   display: inline-block;
@@ -2560,7 +2542,7 @@ footer.strip .contact p a {
   font-family: 'Lato', sans-serif;
 }
 .page--blog .post-title a:hover {
-  color: #FF9900;
+  color: #ff9900;
 }
 .page--blog p.subtitle {
   font-family: 'Lato', sans-serif;
@@ -2585,7 +2567,7 @@ footer.strip .contact p a {
   text-decoration: none;
   padding: 8px;
   padding: 0.5rem;
-  background-color: #FF9900;
+  background-color: #ff9900;
   -webkit-transition: all 0.15s linear;
   -moz-transition: all 0.15s linear;
   -o-transition: all 0.15s linear;
@@ -2631,13 +2613,13 @@ color:@dark-aqua;
 						color:@aqua;
 					}
 */
-  border-bottom: 3px solid #FF9900;
+  border-bottom: 3px solid #ff9900;
   display: inline;
   text-decoration: none;
   color: #222222;
 }
 .page--blog .content p a:hover {
-  color: #FF9900;
+  color: #ff9900;
 }
 .page--blog .content p.subtitle {
   font-family: 'Lato', sans-serif;
@@ -2771,7 +2753,7 @@ color:@dark-aqua;
   padding-bottom: 0.3125rem;
 }
 .page--home .strip--hero h1.p a:hover {
-  border-bottom: 6px solid #FF9900;
+  border-bottom: 6px solid #ff9900;
 }
 @media (max-width: 767px) {
   .page--home .strip--hero h1.p {
