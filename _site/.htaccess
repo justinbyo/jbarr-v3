@@ -1,9 +1,0 @@
-# Redirects traffic through www for CloudFlare
-Options +FollowSymLinks
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^example.com [NC]
-RewriteRule ^(.*)$ http://www.example.com/$1 [R=301,L]
-
-# This allows you to redirect example.html to a specific subfolder
-Redirect /projects.html /index.html
-Redirect /projects/index.html /index.html

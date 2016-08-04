@@ -2,7 +2,7 @@
 ############################
 config.codekit
 .htaccess
-
+_site/.htaccess
 
 # Compiled source #
 ###################
