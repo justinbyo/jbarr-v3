@@ -1,6 +1,7 @@
 # Project-specific ignores #
 ############################
 config.codekit
+.htaccess
 
 
 # Compiled source #
