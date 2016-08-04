@@ -1,7 +1,11 @@
 /* Styles for home page
  * ____________________________________________________________ */
 
+
+
 .page--home {
+
+	
 
 	position:relative;
 	
@@ -18,7 +22,7 @@
 	
 	
 	.strip {
-		.margin-bottom(60px);
+		.margin-bottom(30px);
 		
 		&:last-child {
 			.margin-bottom(0);
@@ -26,84 +30,64 @@
 		
 	}
 	
-	.home--above-fold {	
-		position:relative;
-		.padding-top(60px);
-		height:100%;
+	// Footer overrides
+	// ---------------------
+	
+	footer.strip {
 		.margin-bottom(0);
-		.border-box;
-		
-		@media (max-width: 880px) {
-			.padding-top(60px);
-			
-		}
-		
 	}
 	
-	// Controlled with JS to make better on laptops, etc.
-	
-	.js-bigPadding {
-		@media (min-width: 531px) {
-			.padding-top(200px);
-		}
-		@media (max-width: 880px) {
-			.padding-top(60px);
-		}
-		
+	.strip--scroll {
+		.margin-bottom(0);
 	}
 	
-	.js-mediumPadding {
-		@media (min-width: 531px) {
-			.padding-top(100px);
-		}
-		@media (max-width: 880px) {
-			.padding-top(60px);
-		}
-	}
+	// Hero section
+	// Main pieces are located in components.less
+	// --------------------------------------
 	
 	.strip--hero {
-		.h1 {
-			.margin-bottom(30px);
-			.font-size(36px);
-			color:#333333;
-			
-			@media (max-width: 880px) {
-				.font-size(28px);
-				.margin-bottom(15px);
-				text-align:center;
-			}
-			
+	
+		p.h1 { // This is the "Hey, I'm justin"
+			.lato;
+			//.font-size(24px);
 		}
-		.p {
+	
+		h1.p { // This is the subtitle
+			.lato;
 			.font-size(24px);
-			color: #333333;
-			font-weight:300;
-			line-height:1.5;
 			a {
-				color:#333333;
-				font-weight:700;
-				.padding-bottom(5px);
 				border-bottom:6px solid transparent;
-				text-decoration:none;
+				display: inline;
+				.padding-bottom(5px);
 				&:hover {
 					border-bottom:6px solid @orange;
 				}
 			}
 			
-			@media (max-width: 880px) {
-				.font-size(20px);
-				text-align:center;
+			@media @mobile {
+				.font-size(18px);
+				.padding(0);
+				br {
+					display:none;
+				}
 			}
+		}	
+		
+		@media @mobile {
+			.padding(0);
 		}
-		@media (max-width: 880px) {
-			.padding(0 30px);
-		}
+
 	}
+
 	
+	
+		
 	.strip--icon{
 		// position:absolute;
 		// top:50%;
 		// .margin-top(-50%);
+		
+		.margin-bottom(45px);
 		
 		@media (max-width: 880px) {
 			.padding(0 30px);
@@ -118,21 +102,23 @@
 	.strip--intro {
 		.intro--container {
 			.border-box;
-			background-color:lighten(@light-blue, 3%);
-			.padding(20px);
+			// background-color:lighten(@light-blue, 3%);
+			// .padding(20px);
+/*
 			@media (max-width:530px){
 				.padding(40px 20px;)
 			}
+*/
 		}
 		p {
 			.font-size(18px);
-			color: #444444;
+			color: @black;
 			font-weight:300;
 			line-height:1.75;
 			a {
 				text-decoration:none;
 				font-weight:700;
-				color:#444444;
+				color:@black;
 				&:hover {
 					color:@aqua;
 				}
@@ -143,64 +129,7 @@
 		}
 	}
 	
-	.strip--intro.v2 {
-		.intro--container {
-			.border-box;
-			// border-top: @standard-border-size solid @aqua;
-			// border-bottom: @standard-border-size solid @aqua;
-			// background-color:lighten(@light-blue, 3%);
-			@paddingSize: 60px;
-			background-color:#ffffff;
-			.padding(@paddingSize 0);
-			&:before {
-				content: '';
-				display:block;
-				position:relative;
-				width:33.33%;
-				.margin(0 auto);
-				border-top: @2x-standard-border-size solid darken(@light-blue, 1%);
-				.bottom(@paddingSize);
-			}
-			&:after {
-				content: '';
-				display:block;
-				position:relative;
-				width:33.33%;
-				.margin(0 auto);
-				border-bottom: @2x-standard-border-size solid darken(@light-blue, 1%);
-				.top(@paddingSize);
-			}
-		}
-		
-		display:none;
-	}
 	
-	.v1 {
-		// display:none;
-	}
-	
-	.strip--footer { // it's a link... I know, I know
-		@media (min-width:530px){
-			display:none;
-		}
-		bottom:0;
-		display:block;
-		.padding(30px);
-		p {
-			.roboto-slab;
-			.font-size(16px);
-			.padding(0);
-			width:100%;
-			color:#989898;
-			text-align:center;
-		}
-		&:active {
-			background-color:@aqua;
-			p {
-				color:@white;
-			}
-		}
-	}
 	
 	.icon--container {
 		
@@ -214,6 +143,7 @@
 		.icon--unit {
 			
 			display:block;
+			outline: 0;
 		
 			@media (min-width: 531px) {
 				// .icon are all evenly spaced with this method http://css-tricks.com/equidistant-objects-with-css/
@@ -264,9 +194,9 @@
 			.margin-top(20px);
 			//text-align:center;
 			color:@black;
-			// font-weight:bold;
+			font-weight:700;
 			letter-spacing:1px;
-			.font-size(19px);
+			.font-size(16px);
 			
 			padding-bottom: 10px;
 			border-bottom: @standard-border-size solid transparent;
@@ -410,13 +340,74 @@
 			
 		}
 		
+		.twitter {
+			.icon {
+				height:92px;
+				div {
+					position:absolute;
+					width:80px;
+					left:0;
+					top:0;
+				}
+				.back { // used to be back-top
+					.standard-background("../img/2012/twitter-back.png");
+					@media @retina {
+						background-image:url("../img/2012/retina/twitter-back-2x.png");
+						background-size:80px;
+					}
+					
+					background-position:center top;
+					height:92px;
+					// height:77px;
+				}
+				.bird {
+					.standard-background("../img/2012/twitter-bird.png");
+					
+					@media @retina {
+						background-image:url("../img/2012/retina/twitter-bird-2x.png");
+						background-size:80px;
+					}
+					
+					background-position:center top;
+					height:92px;
+					.standard-transition;
+				}
+				
+				/*
+	.back-bottom {
+					.standard-background("../img/2012/github-back.png");
+					background-position:center bottom;
+					height:27px;
+					// top:77px;
+					top:auto;
+					bottom:0;
+				}
+	*/
+				.wing {
+					.standard-background("../img/2012/twitter-wing.png");
+					height:92px;
+					.standard-transition;
+					@media @retina {
+						background-image:url("../img/2012/retina/twitter-wing-2x.png");
+						background-size:80px;
+					}
+					
+					
+					
+				}
+			}
+			
+		}
+		
 		.projects {
 		
 			// Under construction
 		
+/*
 			@media (max-width:530px){
 				.margin-bottom(50px);
 			}
+*/
 		
 			.icon {
 				
@@ -463,7 +454,7 @@
 					-webkit-transform: translateZ(0); /* Fix blurry issue */
 				}
 				
-				.grayscale;
+				// .grayscale;
 				
 			}
 		}
@@ -515,11 +506,32 @@
 				}
 			}
 		}
+		.twitter {
+			.icon {
+				bottom:-12px;
+			}
+			&:hover {
+				@media (min-width:531px){
+					.icon {
+						bottom:2px;
+						.bird {
+							top:-5px;
+							height:92px;
+						}
+						.wing {
+							top:-5px;
+							height:92px;
+							.transform(rotate(10deg));
+						}
+					}
+				}
+			}
+		}
 		.projects {
 			&:hover {
 				@media (min-width:531px){
 					p {
-						border-bottom:  @standard-border-size solid transparent;
+						border-bottom:  @standard-border-size solid @aqua;
 					}
 					.icon {
 						.paper {	

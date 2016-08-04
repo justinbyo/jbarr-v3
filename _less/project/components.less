@@ -1,0 +1,123 @@
+/* Styles for site-wide components
+ * ____________________________________________________________ */
+ 
+
+.strip--hero {
+		
+	.margin-top(90px);
+	.margin-bottom(60px);
+	@media @mobile {
+		.margin-top(60px);
+	}
+	
+	h1, .h1 {
+		.margin-bottom(30px);
+		.font-size(48px);
+		color:@black;
+		font-weight:900;
+		
+		@media @mobile {
+			.font-size(30px);
+			.margin-bottom(30px);
+		}
+		
+	}
+
+	
+	// --------
+	// Inserted
+	
+	p, .p {
+		
+		color: @black;
+		font-weight:300;
+		line-height:1.5;
+		a {
+			color:@black;
+			font-weight:700;
+			text-decoration:none;
+		}
+		
+		@media (max-width: @mobile) {
+			.font-size(20px);
+		}
+	}
+	
+	// ---------
+	
+	@media @mobile {
+		.padding(0);
+	}
+}
+
+
+
+p.related-article-link {
+	display:block;
+	text-align:center;
+	.margin-top(60px);
+	a {
+		color:@grey;
+		text-decoration:none;
+		.font-size(16px);
+		&:hover {
+			color:@orange;
+		}
+	}
+}
+
+p.cta {
+	
+	display:block;
+	text-align:center;
+	
+	a {
+		.margin(60px auto 30px auto);
+		.padding(30px);
+		background-color:@orange;
+		color:@white;
+		display:inline-block;
+		text-align:center;
+		text-decoration:none;
+		// .standard-transition;
+		
+		span {
+			.standard-transition;
+			position:relative;
+			display:inline-block;
+		}
+		
+		 &:hover {
+			 background-color:lighten(@orange, 10%);
+			 span {
+				 right:10px;
+			 }
+		 }
+	}
+}
+
+p.cta--left {
+	a {
+		span {
+			right:0;
+		}
+		&:hover {
+			 span {
+				 right:10px;
+			 }
+		}
+	}
+}
+
+p.cta--right {
+	a {
+		span {
+			left:0;
+		}
+		&:hover {
+			span {
+			 left:10px;
+			}
+		}
+	}	
+}

@@ -1,0 +1,85 @@
+/* Styles for footer
+ * ____________________________________________________________ */
+
+footer.strip {
+
+	background-color:#333333;
+	.margin-bottom(0);
+	.padding(60px 0);
+
+	h3, .h3 {
+		text-transform: uppercase;
+		color:@light-blue;
+		.font-size(12px);
+		.lato;
+		.margin-bottom(20px);
+	}
+
+	.wrapper {
+		div {
+			@media @small {
+				.margin-bottom(20px);
+			}
+		}
+	}
+
+	p {
+		color:@white;
+		.merriweather;
+		font-weight:500;
+		.font-size(14px);
+		.margin-bottom(20px);
+		line-height:1.65;
+
+		a {
+			text-decoration:none;
+			color:@aqua;
+
+			&:hover {
+				color:@light-blue;
+			}
+		}
+
+		&:last-child {
+			.margin-bottom(0);
+		}
+	}
+
+	.contact {
+		p {
+			a {
+				display:inline-block;
+				.margin-bottom(10px);
+			}
+		}
+	}
+
+}
+
+// Sitwide footer
+
+.strip--scroll { // it's a link... I know, I know
+	@media (min-width:530px){
+		display:none;
+	}
+	bottom:0;
+	display:block;
+	.padding(30px);
+	background-color:@aqua;
+	.margin-bottom(0);
+	p {
+		.lato;
+		.font-size(16px);
+		.padding(0);
+		width:100%;
+		color:#989898;
+		text-align:center;
+		color:@white;
+	}
+	&:active {
+		background-color:@light-blue;
+		p {
+			color:@aqua;
+		}
+	}
+}

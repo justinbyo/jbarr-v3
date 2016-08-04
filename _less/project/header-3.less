@@ -1,0 +1,124 @@
+/* Styles for header
+ * ____________________________________________________________ */
+
+.active-nav-link {
+	// color:@black;
+	// border-bottom:@standard-border-size solid @light-blue;
+	color:@dark-orange;
+}
+
+header.strip {
+	
+	.grid-col--nav{
+		height:24px;
+		position:relative;
+	}
+	
+	background-color:transparent;
+	border-bottom:@standard-border-size solid @aqua;
+	
+	.strip {
+		// .height(60px);
+		.padding(20px 0);
+	}
+	
+	
+	p {
+		color:@white;
+		.lato;
+		font-weight:700;
+		.font-size(12px);
+		text-transform:uppercase;
+	}
+
+
+	.h1, h1 {
+		.font-size(24px);
+	}
+	
+	
+	.small-header-text {
+		
+		//.font-size(18px);
+		color:@dark-grey;
+		font-weight:500;
+		.lato;
+	}
+	
+	h1, .h1, h1 > a, .h1 > a {
+		.lato;
+		color:@black;
+		font-weight:900;
+		text-decoration:none;
+		
+		
+		span {
+			.small-header-text;
+			.font-size(18px);
+			.margin-left(10px);
+			display:inline-block;
+		}
+	}
+	
+	.nav-link {
+		text-align:right;
+	}
+	
+	.nav-link a {
+		.small-header-text;
+		.font-size(16px);
+		text-decoration:none;
+		vertical-align:bottom;
+		// bottom:0;
+		position:relative;
+		.top(8px);
+		.padding-bottom(20px);
+		// float:right;
+		text-align:right;
+		display:inline-block;
+		// border-bottom:@standard-border-size solid @aqua;
+		
+		&:hover {
+			.active-nav-link;
+		}
+	}
+	
+	@media @mobile {
+		
+		.grid-col--nav--title {
+			display:none;
+		}
+		.nav-link {
+			width: 50%;
+			float: left;
+			a {
+				display:block;
+				text-align:center;
+			}
+		}
+	}
+}
+
+.page--home {
+	
+	header.strip {
+	
+		.nav-link--about a {
+			.active-nav-link;
+		}
+		
+	}
+
+}
+
+.page--blog {
+	
+	header.strip {
+	
+		.nav-link--work a {
+			.active-nav-link;
+		}
+		
+	}
+
+}
