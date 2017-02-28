@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Farmers Insurance App Rebuild | Justin Barr Young</title>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="Product design and UX by Justin Barr Young, a designer and developer in Los Angeles.">
+
+        <meta property="og:image" content="http://jay-bee-why.com/img/linkedin.png" />
+		<meta property="og:title" content="Farmers Insurance App Rebuild | Justin Barr Young" />
+		<meta property="og:site_name" content="Justin Barr Young" />
+
+		<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+        <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+
+    </head>
+    <body class="page--blog  "  ontouchstart="">
+
+    	<!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+	    <header class="strip">
+
+	<div class="strip">
+		<div class="wrapper  grid">
+			<div class="grid-col  span10  grid-col--nav  grid-col--nav--title">
+				<h1><a href="/" onclick="_gaq.push(['_trackEvent', 'blog--header-home-link', 'clicked'])">Product Design <span>Justin Barr Young</span></a></h1>
+			</div>
+			<div class="grid-col  span1  grid-col--nav  nav-link  nav-link--about">
+				<a href="/" class="">About</a>
+			</div>
+			<div class="grid-col  span1  grid-col--nav  nav-link  nav-link--work">
+				<a href="/work" class="">Work</a>
+			</div>
+		</div>
+	</div>
+
+
+</header>
+
+
+		<div class="strip  strip--article-content">
+		
+	<div class="wrapper grid">
+		
+		<div class="grid-col  span12">
+		
+			<!-- <p class="read-more"><a href="/work">&larr; Back to blog</a></p> -->
+		
+			<a href="/work" class="post-meta">&#8592; Back to Work</a>
+		
+			
+
+	        <h2 class="post  post-title">
+	          Farmers Insurance App Rebuild
+	        </h2>
+	        
+	        <div class="content"><p class="subtitle"><strong>Case study:</strong> Visual design, project management, Agile methodology</p>
+
+<h3>Managing design debt with an Agile process</h3>
+
+<p>At Carbon Five, we partner with clients who not only want their project to be designed and developed with a high level of craftsmanship, but who want to improve their team’s process by being immersed in an Agile environment.</p>
+
+<p>Farmers Insurance had an existing app in production for both Android and iOS, and they wanted Carbon Five to train their new team in Agile by kickstarting a complete rebuild of both apps’ codebases. (Note: I’ll refer to both the apps singularly as “the app” out of convenience.)</p>
+
+<p>The original Farmers app was built over the course of at least two years, by a few different third-party designers and developers, and it encompassed some complex customer-facing business functions: insurance policy details, billing accounts and payments, agent interactions, etc.</p>
+
+<p>The staggered engagements with third-party vendors put the codebase in a bad state of technical debt. And like the codebase, the design was messy and saddled with debt: design elements were inconsistent not only between Android and iOS, but between devices on the same platform.</p>
+
+<p>I led the design team, which had the challenge ahead of us to reconcile the design inconsistencies across every version of the app and create a brand new style guide which would serve as the source of truth for design on the project moving forward. Most importantly, we had to establish a design process that not only complemented the cadence of the developers’ Agile practice, but improved knowledge transfer between the disciplines.</p>
+
+<h3>Small, quick releases</h3>
+
+<p>The development team had a head start on the project, so we made the decision early on to map our design tasks to the limited scope of the user stories, helped us prioritize and produce designs quickly. If specific content or an interaction wasn’t specified in the user story’s acceptance criteria, it wasn’t necessary to include it in our designs yet. We worked closely with the team to determine the smallest and simplest component we could design that satisfies the story. We only worried about what the developers needed to worry about.</p>
+
+<h3>Living style guide</h3>
+
+<p>We built our style guide as a Sketch document and maintained it using git. This approach complemented our small release strategy and allowed us to incrementally add new components to the style guide as they were introduced by our stories.</p>
+
+<p>Ideally, we wanted to set up a design delivery system akin to a <a href="https://www.smashingmagazine.com/2015/04/an-in-depth-overview-of-living-style-guide-tools/">living style guide</a>, a type of UI pattern library used in web development. In a living style guide, UI components are defined (or updated) in one place and automatically applied project-wide thanks to CSS styles and automated compiling tools. We aimed to apply this model to our Sketch workflow.</p>
+
+<p>[screenshot of farmers style guide]</p>
+
+<p>As we built components and layouts, we were thoughtful to construct them as <a href="http://bradfrost.com/blog/post/atomic-web-design/">atomic objects</a>. Since there is no notion of classes in Sketch, we aggressively leveraged the app’s <a href="https://www.sketchapp.com/learn/documentation/07-symbols/">symbols feature</a> as an analog. As a rule, if we ever used more than one instance of a particular element, we turned it into a Sketch symbol for easy re-use and organization.</p>
+
+<p>[symbols close up]</p>
+
+<p>The developers had access to our design repo and the Sketch document. Our symbol collection provided a quick way for them to determine how to code repeatable UI patterns.</p>
+
+<h3>Responsive app design</h3>
+
+<p>In creating the style guide, we needed to keep our designs scalable. One of the big failures of the original app development was that the layout was implemented separately at every device size. Assets for the iPhone 5 were exported and laid out independent of the iPhone 6, and the iPhone 6 Plus, etc. This is the main reason for visual inconsistency across devices. Rather than coding an element like a button to allow it to “flex” and fit variable screen sizes, the original developers sliced a different button image for every screen size.</p>
+
+<p>[measurements illustration]</p>
+
+<p>We wanted to fix this. Informed by front-end web design, we wanted to programmatically create elements that flexed to fit the device’s screen. Using the concept of responsive web design as a mental model, we explored how to best implement the idea of a responsive app with the input of our developers.</p>
+
+<p>[measurements screenshot]</p>
+
+<p>We had to retrofit an existing design pattern to work fluidly on every screen design. We determined the best way to do this would be to completely avoid fixed measurements of a given element’s width and height. Instead, we specified the measurements of an element’s padding and margin on an iPhone 5, our smallest device. Now, an element like a container can scale up on any screen size without requiring device-specific dimensions or image assets.</p>
+
+<h3>Design once, measure twice</h3>
+
+<p>We made the choice early on to consolidate all our design specs for both platforms and all device sizes into a single style guide. We didn’t want to spend unnecessary time recreating the same documentation twice. Since both the Android and iOS developers would be referencing the same document, we devised an annotation method to accommodate both platforms.</p>
+
+<p>[screenshot of notation system]</p>
+
+<p>To make our design specs as clear and simple as possible for developers, we decided to measure visual elements in both dp and pt. To make things even clearer, we wanted all measurements to have a 1 dp to 1 pt ratio, meaning we’d have a single value for a given element on both Android and iOS. Now whether a developer is inspecting the Sketch document or the product owner is referencing an exported PNG, everyone on the team is speaking the same language when it comes to measurements.</p>
+
+<h3>Takeaways</h3>
+
+<p>Embracing Agile methodology allowed our design team to quickly and continually produce the most important design work every week. By consciously building our style guide in an atomic, incremental, and platform-flexible way, we optimized the knowledge transfer between the design, development, and product teams. Most importantly, Farmers Insurance left our engagement with a maintainable and repeatable system for integrating design into their development process.</p>
+</div>
+	        
+	        
+	        <!-- Found this online -->
+	        <!-- https://groups.google.com/forum/#!topic/jekyll-rb/W8gP94wV0jU -->
+	        <p class="related-article-link">
+		         
+		                <a href="/case-study-wordpress-hosting.html" title="Next case study: 
+		WordPress Hosting" onclick="_gaq.push(['_trackEvent', 'next-case-study', 'clicked'])">Read the next case study <span>&#8594;</span></a> 
+		         
+	        </p>
+	        
+	        <p class="cta  cta--left">
+		        <a href="/work" onclick="_gaq.push(['_trackEvent', 'back-to-work', 'clicked'])"><span>&#8592;</span> Back to work</a>
+	        </p>
+	        
+		</div>
+		
+	</div>
+	
+	
+</div>
+
+	    <!-- Send the user to the top -->
+<!-- Style's in blog.less -->
+
+<a class="strip  strip--scroll" id="scroll-top" onclick="_gaq.push(['_trackEvent', 'scroll-to-top', 'clicked'])">
+	<p>Scroll to top &#8593;</p>
+</a>
+
+<!-- Begin footer -->
+
+<footer class="strip">
+	<div class="wrapper  grid">
+		<div class="grid-col  span6  bio">
+			<h3>Info</h3>
+			<p>
+				<a href="/" title="Home">Justin Barr Young</a> is a product designer
+				pushing pixels and code in sunny Los Angeles. He's been working, learning,
+				and mentoring in the sweet spot where design and dev meet since 2006.
+				Currently, he’s a Product Designer at <a href="http://carbonfive.com" title="Carbon Five">Carbon Five</a>.
+				In his (rare) time away from his computer, he's out gardening, sampling
+				local beers, reading nonfiction, or making sandwiches.
+			</p>
+			<p>He built this site using <a href="http://lesscss.org/" title="LESS">LESS</a>, <a href="http://jekyllrb.com/" title="Jekyll framework">Jekyll</a>, <a href="https://incident57.com/codekit/" title="CodeKit">CodeKit</a>, and parts of <a href="https://css-tricks.com/design-systems-building-future/"  title="CSS-Tricks article">Novastrap</a> by <a href="https://twitter.com/itsmeara"  title="Ara Abcarians twitter">@itsmeara</a>.</p>
+		</div>
+		<div class="grid-col  span1  push1  contact">
+			<h3>Contact</h3>
+			<p>
+				<a href="http://twitter.com/theJayBeeWhy" onclick="_gaq.push(['_trackEvent', 'twitter-footer', 'clicked'])">Twitter</a><br />
+				<a href="mailto:justin@jbarr.co"  onclick="_gaq.push(['_trackEvent', 'email-footer', 'clicked'])">Email</a>
+			</p>
+		</div>
+		<div class="grid-col  span1  push1  contact">
+			<h3>Links</h3>
+			<p>
+				<a href="http://www.linkedin.com/in/justinbarryoung" onclick="_gaq.push(['_trackEvent', 'linkedin-footer', 'clicked'])">LinkedIn</a><br />
+				<a href="https://dribbble.com/jay-bee-why" onclick="_gaq.push(['_trackEvent', 'dribbble-footer', 'clicked'])">dribbble</a><br />
+				<a href="https://github.com/jay-bee-why" onclick="_gaq.push(['_trackEvent', 'github-footer', 'clicked'])">Github</a><br />
+				<a href="http://codepen.io/jay-bee-why/" onclick="_gaq.push(['_trackEvent', 'codepen-footer', 'clicked'])">CodePen</a>
+			</p>
+		</div>
+	</div>
+</footer>
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="/js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-34232313-1');ga('send','pageview');
+</script>
+
+    </body>
+</html>
