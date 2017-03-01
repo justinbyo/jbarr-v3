@@ -64,7 +64,7 @@ With these learnings, I designed and built a high-fidelity prototype to test wit
 
 I used Sketch to design the app and learned [Framer JS][framerjs] to produce an interactive iOS prototype that could be displayed on a mobile device. This included building a custom view controller and implementing animated transitions.
 
-The prototype consisted of four user flows that linked together as a narrative.
+The prototype consisted of four user flows that linked together as a narrative:
 
 <ol>
   <li>The user opens the app and immediately sees the location of the shared vehicle.</li>
