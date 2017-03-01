@@ -70,6 +70,8 @@
 	        
 	        <div class="content"><p class="subtitle"><strong>Case study:</strong> Visual design, project management, Agile methodology</p>
 
+<p><img src="/images/farmers-app.png" /></p>
+
 <h3>Managing design debt with an Agile process</h3>
 
 <p>At Carbon Five, we partner with clients who not only want their project to be designed and developed with a high level of craftsmanship, but who want to improve their team’s process by being immersed in an Agile environment.</p>
@@ -86,17 +88,21 @@
 
 <p>The development team had a head start on the project, so we made the decision early on to map our design tasks to the limited scope of the user stories, helped us prioritize and produce designs quickly. If specific content or an interaction wasn’t specified in the user story’s acceptance criteria, it wasn’t necessary to include it in our designs yet. We worked closely with the team to determine the smallest and simplest component we could design that satisfies the story. We only worried about what the developers needed to worry about.</p>
 
+<p><img class="" src="/images/farmers-small-releases.png" /></p>
+
 <h3>Living style guide</h3>
 
 <p>We built our style guide as a Sketch document and maintained it using git. This approach complemented our small release strategy and allowed us to incrementally add new components to the style guide as they were introduced by our stories.</p>
 
 <p>Ideally, we wanted to set up a design delivery system akin to a <a href="https://www.smashingmagazine.com/2015/04/an-in-depth-overview-of-living-style-guide-tools/">living style guide</a>, a type of UI pattern library used in web development. In a living style guide, UI components are defined (or updated) in one place and automatically applied project-wide thanks to CSS styles and automated compiling tools. We aimed to apply this model to our Sketch workflow.</p>
 
-<p>[screenshot of farmers style guide]</p>
+<p><img class="large" src="/images/farmers-styleguide.png" />
+<p class="caption">We created new components, like buttons, only as we needed them.</p></p>
 
 <p>As we built components and layouts, we were thoughtful to construct them as <a href="http://bradfrost.com/blog/post/atomic-web-design/">atomic objects</a>. Since there is no notion of classes in Sketch, we aggressively leveraged the app’s <a href="https://www.sketchapp.com/learn/documentation/07-symbols/">symbols feature</a> as an analog. As a rule, if we ever used more than one instance of a particular element, we turned it into a Sketch symbol for easy re-use and organization.</p>
 
-<p>[symbols close up]</p>
+<p><img class="" src="/images/farmers-symbols.png" />
+<p class="caption">Virtually every component was made up of Sketch symbols, which allowed for consistent updating.</p></p>
 
 <p>The developers had access to our design repo and the Sketch document. Our symbol collection provided a quick way for them to determine how to code repeatable UI patterns.</p>
 
@@ -104,11 +110,12 @@
 
 <p>In creating the style guide, we needed to keep our designs scalable. One of the big failures of the original app development was that the layout was implemented separately at every device size. Assets for the iPhone 5 were exported and laid out independent of the iPhone 6, and the iPhone 6 Plus, etc. This is the main reason for visual inconsistency across devices. Rather than coding an element like a button to allow it to “flex” and fit variable screen sizes, the original developers sliced a different button image for every screen size.</p>
 
-<p>[measurements illustration]</p>
+<p><img class="" src="/images/farmers-responsive.png" /></p>
 
 <p>We wanted to fix this. Informed by front-end web design, we wanted to programmatically create elements that flexed to fit the device’s screen. Using the concept of responsive web design as a mental model, we explored how to best implement the idea of a responsive app with the input of our developers.</p>
 
-<p>[measurements screenshot]</p>
+<p><img class="" src="/images/farmers-spacing.png" />
+<p class="caption">By specifying the space between elements, we ensured that components fit every screen size.</p></p>
 
 <p>We had to retrofit an existing design pattern to work fluidly on every screen design. We determined the best way to do this would be to completely avoid fixed measurements of a given element’s width and height. Instead, we specified the measurements of an element’s padding and margin on an iPhone 5, our smallest device. Now, an element like a container can scale up on any screen size without requiring device-specific dimensions or image assets.</p>
 
@@ -116,9 +123,8 @@
 
 <p>We made the choice early on to consolidate all our design specs for both platforms and all device sizes into a single style guide. We didn’t want to spend unnecessary time recreating the same documentation twice. Since both the Android and iOS developers would be referencing the same document, we devised an annotation method to accommodate both platforms.</p>
 
-<p>[screenshot of notation system]</p>
-
-<p>To make our design specs as clear and simple as possible for developers, we decided to measure visual elements in both dp and pt. To make things even clearer, we wanted all measurements to have a 1 dp to 1 pt ratio, meaning we’d have a single value for a given element on both Android and iOS. Now whether a developer is inspecting the Sketch document or the product owner is referencing an exported PNG, everyone on the team is speaking the same language when it comes to measurements.</p>
+<p><img class="" src="/images/farmers-notation.png" />
+<p class="caption">We used CSS-style notations and the entire team spoke the same design language.</p></p>
 
 <h3>Takeaways</h3>
 

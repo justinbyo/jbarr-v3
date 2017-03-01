@@ -3,7 +3,7 @@ layout: post
 pagetype: blog
 title:  "Nissan Living Lab"
 date:   2017-02-28 17:39:21
-subtitle: "User research, product validation, prototyping"
+subtitle: "User research, product validation, and prototyping"
 description: "###"
 ---
 
