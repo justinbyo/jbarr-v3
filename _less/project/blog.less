@@ -55,6 +55,21 @@
     }
   }
 
+  img {
+    max-width:100%;
+    text-align:center;
+    display:block;
+  }
+
+  img.large { // this makes the image 1200px wide and overflows the 800px container around it
+    @media (min-width: 1200px) {
+      max-width:none;
+      @image-width:1000px;
+      .width(@image-width);
+      .margin-left(-(@image-width - @max-width) / 2);
+    }
+  }
+
 	.strip--hero {
 
 		h1 {
@@ -104,8 +119,30 @@
 		@media @mobile {
 			.padding(0 0 30px 0);
 		}
-	}
 
+    .wrapper {
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;;
+        height: 0;
+        border-top: 1px solid lighten(@grey, 20%);
+        margin: 0 auto;
+
+        .margin(0 auto 60px auto);
+
+    		@media @mobile {
+    			.margin(0 auto 30px auto);
+    		}
+      }
+
+      &:last-of-type {
+        &:after {
+          border: none;
+        }
+      }
+    }
+	}
 	.stripes {
 		height:@standard-border-size;
 	}
@@ -180,6 +217,7 @@
 			text-decoration:none;
 			.padding(8px);
 			background-color:@orange;
+      display: inline-block;
 			.standard-transition;
 			&:hover {
 				background-color:lighten(@orange, 10%);
@@ -241,22 +279,6 @@ color:@dark-aqua;
 				.margin-bottom(45px);
 				strong {
 					font-weight:700;
-				}
-			}
-
-			img {
-				max-width:100%;
-				text-align:center;
-				//.margin-bottom(-15px);
-				display:block;
-			}
-
-			img.large { // this makes the image 1200px wide and overflows the 800px container around it
-				@media (min-width: 1200px) {
-					max-width:none;
-					@image-width:1000px;
-					.width(@image-width);
-					.margin-left(-(@image-width - @max-width) / 2);
 				}
 			}
 
