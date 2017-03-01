@@ -41,17 +41,17 @@ Ideally, we wanted to set up a design delivery system akin to a [living style gu
 As we built components and layouts, we were thoughtful to construct them as [atomic objects][atomic]. Since there is no notion of classes in Sketch, we aggressively leveraged the app’s [symbols feature][symbols] as an analog. As a rule, if we ever used more than one instance of a particular element, we turned it into a Sketch symbol for easy re-use and organization.
 
 <img class="" src="/images/farmers-symbols.png" />
-<p class="caption">Virtually every component was made up of Sketch symbols, which allowed for consistent updating.</p>
+<p class="caption">Virtually every component was made up of re-usable Sketch symbols.</p>
 
 The developers had access to our design repo and the Sketch document. Our symbol collection provided a quick way for them to determine how to code repeatable UI patterns.
 
 <h3>Responsive app design</h3>
 
-In creating the style guide, we needed to keep our designs scalable. One of the big failures of the original app development was that the layout was implemented separately at every device size. Assets for the iPhone 5 were exported and laid out independent of the iPhone 6, and the iPhone 6 Plus, etc. This is the main reason for visual inconsistency across devices. Rather than coding an element like a button to allow it to “flex” and fit variable screen sizes, the original developers sliced a different button image for every screen size.
+In creating the style guide, we needed to keep our designs scalable. One of the big failures of the original app development was that the layout was implemented separately at every device size. Assets for the iPhone 5 were exported as static assets and laid out independent of the iPhone 6, and the iPhone 6 Plus, etc. This was the main reason for visual inconsistency across devices.We wanted to fix this.
 
 <img class="" src="/images/farmers-responsive.png" />
 
-We wanted to fix this. Informed by front-end web design, we wanted to programmatically create elements that flexed to fit the device’s screen. Using the concept of responsive web design as a mental model, we explored how to best implement the idea of a responsive app with the input of our developers.
+ Informed by front-end web design, we wanted to programmatically create elements that flexed to fit the device’s screen. Using the concept of responsive web design as a mental model, we explored how to best implement the idea of a responsive app with the input of our developers.
 
 <img class="" src="/images/farmers-spacing.png" />
 <p class="caption">By specifying the space between elements, we ensured that components fit every screen size.</p>
