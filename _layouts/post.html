@@ -4,40 +4,36 @@ pagetype: blog
 ---
 
 <div class="strip  strip--article-content">
-		
+
 	<div class="wrapper grid">
-		
+
 		<div class="grid-col  span12">
-		
+
 			<!-- <p class="read-more"><a href="/work">&larr; Back to blog</a></p> -->
-		
+
 			<a href="/work" class="post-meta">&#8592; Back to Work</a>
-		
-			
 
 	        <h2 class="post  post-title">
 	          {{ page.title }}
 	        </h2>
-	        
+
 	        <div class="content">{{ content }}</div>
-	        
-	        
+
 	        <!-- Found this online -->
 	        <!-- https://groups.google.com/forum/#!topic/jekyll-rb/W8gP94wV0jU -->
 	        <p class="related-article-link">
-		        {% if page.previous.url %} 
-		                <a href="{{page.previous.url}}" title="Next case study: 
-		{{page.previous.title}}" onclick="_gaq.push(['_trackEvent', 'next-case-study', 'clicked'])">Read the next case study <span>&#8594;</span></a> 
-		        {% endif %} 
+		        {% if page.previous.url %}
+		                <a href="{{page.previous.url}}" title="Next case study:
+		{{page.previous.title}}" onclick="_gaq.push(['_trackEvent', 'next-case-study', 'clicked'])">Read the next case study <span>&#8594;</span></a>
+		        {% endif %}
 	        </p>
-	        
+
 	        <p class="cta  cta--left">
 		        <a href="/work" onclick="_gaq.push(['_trackEvent', 'back-to-work', 'clicked'])"><span>&#8592;</span> Back to work</a>
 	        </p>
-	        
+
 		</div>
-		
+
 	</div>
-	
-	
+
 </div>

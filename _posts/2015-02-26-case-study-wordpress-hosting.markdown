@@ -17,11 +17,6 @@ While the product was performant and had a strong adoption rate, it needed some 
 
 With the introduction of a new on-boarding flow, along with a slate of new features, I had the opportunity to seriously reevaluate the product&rsquo;s UX. I designed a friendly on-boarding process, reorganized the navigation and features in the control panel, and planned the product&rsquo;s information architecture to accommodate future features.
 
-
-
-
-
-
 <h3>Mind-mapping the product requirements</h3>
 
 The UX process started with a hefty set of user stories. During the on-boarding process, users would now have the option to create a brand new WordPress site, import a WordPress site from another hosting service, or migrate a WordPress site from another Media Temple service. This product update also bundled a few services like 1-click SSL certificate installations, a domain name, [Google Apps for Work][googleappscasestudy] inboxes, and Media Temple&rsquo;s proprietary security monitoring widget. The goal was to create an experience that makes it easy for users to host, manage, and secure their WordPress sites.
@@ -31,10 +26,6 @@ There was a lot to fit into the control panel. I started by mind-mapping how the
 <img class="large" src="/images/wordpress-mind-mapping.jpg" />
 
 <p class="caption"><strong>Left:</strong> Card sorting results. <strong>Right:</strong> Features mind-mapped on a whiteboard.</p>
-
-
-
-
 
 <h3>Sketching and iteration</h3>
 
