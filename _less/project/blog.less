@@ -9,9 +9,7 @@
 	}
 
 	@background:#f9f9f9;
-	background-color:@background;
-
-
+	background-color: @background;
 
 	// Main blog page at /blog, with the list of articles
 	// ------------------------------------------------------
@@ -20,6 +18,37 @@
  	// Hero section
 	// Main pieces are located in components.less
 	// --------------------------------------
+
+  ul {
+    list-style-type:disc;
+    list-style-position:outside;
+    .padding-left(30px);
+    .margin-bottom(30px);
+    li {
+      .merriweather;
+      .font-size(16px);
+      font-weight:300;
+      .margin-bottom(10px);
+      .padding-bottom(5px);
+      line-height:1.5;
+      &:last-child {
+        .padding-bottom(0);
+        .margin-bottom(0);
+      }
+
+    a {
+        color:@black;
+        font-weight:700;
+        border-bottom: 3px solid @orange;
+        display: inline;
+        text-decoration:none;
+        color:@black;
+        &:hover {
+          color:@orange;
+        }
+      }
+    }
+  }
 
 	.strip--hero {
 
@@ -32,17 +61,9 @@
 			.font-size(18px);
 			font-weight:300;
 			.margin-bottom(30px);
-			.padding-bottom(5px);
       line-height: 1.75;
 
-/*
-			a {
-				text-decoration:underline;
-				&:hover {
-					color:@orange;
-				}
-			}
-*/			a {
+    a {
 				border-bottom: 3px solid @orange;
 				display: inline;
 				text-decoration:none;
@@ -62,45 +83,14 @@
 			}
 		}
 
-		ul {
-			list-style-type:disc;
-			list-style-position:outside;
-			.padding-left(30px);
-			li {
-				.merriweather;
-				.font-size(16px);
-				font-weight:300;
-				.margin-bottom(10px);
-				.padding-bottom(5px);
-				line-height:1.5;
-				&:last-child {
-					.padding-bottom(0);
-					.margin-bottom(0);
-				}
-/*
-				a {
-					color:@black;
-					font-weight:700;
-					text-decoration:none;
-					&:hover {
-						color:@orange;
-					}
-				}
-*/				a {
-					color:@black;
-					font-weight:700;
-					border-bottom: 3px solid @orange;
-					display: inline;
-					text-decoration:none;
-					color:@black;
-					&:hover {
-						color:@orange;
-					}
-				}
-			}
-		}
+    ul {
+      li {
+        a {
+          font-weight: 700;
+        }
+      }
+    }
 	}
-
 
 	.strip--article-list {
 
@@ -110,7 +100,6 @@
 			.padding(0 0 30px 0);
 		}
 	}
-
 
 	.stripes {
 		height:@standard-border-size;
@@ -145,7 +134,6 @@
 		// border-bottom:@standard-border-size solid @orange;
 		.lato;
 	}
-
 
 	.post-title {
 

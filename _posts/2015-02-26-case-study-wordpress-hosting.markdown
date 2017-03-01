@@ -3,7 +3,7 @@ layout: post
 pagetype: blog
 title:  "WordPress Hosting"
 date:   2015-02-26 17:39:21
-subtitle: "UX research, Information Architecture, and UI design"
+subtitle: "UX research, information architecture, and UI design"
 description: "When Media Temple improved their WordPress hosting platform with a new on-boarding flow and a slate of new features, I had the opportunity to seriously reevaluate the product&rsquo;s UX. I designed a friendly on-boarding process, reorganized the navigation and features in the control panel, and planned the product&rsquo;s information architecture to accommodate future features."
 ---
 

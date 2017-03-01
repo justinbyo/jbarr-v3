@@ -2405,6 +2405,39 @@ footer.strip .contact p a {
 .page--blog .wrapper {
   width: auto;
 }
+.page--blog ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 30px;
+  padding-left: 1.875rem;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+}
+.page--blog ul li {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.3125rem;
+  line-height: 1.5;
+}
+.page--blog ul li:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.page--blog ul li a {
+  font-weight: 700;
+  border-bottom: 3px solid #ff9900;
+  display: inline;
+  text-decoration: none;
+  color: #222222;
+}
+.page--blog ul li a:hover {
+  color: #ff9900;
+}
 .page--blog .strip--hero h1 {
   font-family: 'Lato', sans-serif;
 }
@@ -2415,17 +2448,7 @@ footer.strip .contact p a {
   font-weight: 300;
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
-  padding-bottom: 5px;
-  padding-bottom: 0.3125rem;
   line-height: 1.75;
-  /*
-			a {
-				text-decoration:underline;
-				&:hover {
-					color:@orange;
-				}
-			}
-*/
 }
 .page--blog .strip--hero p a {
   border-bottom: 3px solid #ff9900;
@@ -2445,46 +2468,8 @@ footer.strip .contact p a {
     font-size: 1rem;
   }
 }
-.page--blog .strip--hero ul {
-  list-style-type: disc;
-  list-style-position: outside;
-  padding-left: 30px;
-  padding-left: 1.875rem;
-}
-.page--blog .strip--hero ul li {
-  font-family: 'Merriweather', serif;
-  font-size: 16px;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-bottom: 10px;
-  margin-bottom: 0.625rem;
-  padding-bottom: 5px;
-  padding-bottom: 0.3125rem;
-  line-height: 1.5;
-  /*
-				a {
-					color:@black;
-					font-weight:700;
-					text-decoration:none;
-					&:hover {
-						color:@orange;
-					}
-				}
-*/
-}
-.page--blog .strip--hero ul li:last-child {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
 .page--blog .strip--hero ul li a {
   font-weight: 700;
-  border-bottom: 3px solid #ff9900;
-  display: inline;
-  text-decoration: none;
-  color: #222222;
-}
-.page--blog .strip--hero ul li a:hover {
-  color: #ff9900;
 }
 .page--blog .strip--article-list {
   padding: 0 0 60px 0;
