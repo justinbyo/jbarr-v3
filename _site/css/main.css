@@ -2405,37 +2405,42 @@ footer.strip .contact p a {
 .page--blog .wrapper {
   width: auto;
 }
-.page--blog ul {
-  list-style-type: disc;
+.page--blog ul,
+.page--blog ol {
   list-style-position: outside;
   padding-left: 30px;
   padding-left: 1.875rem;
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
 }
-.page--blog ul li {
+.page--blog ul {
+  list-style-type: disc;
+}
+.page--blog ol {
+  list-style-type: decimal;
+}
+.page--blog li {
   font-family: 'Merriweather', serif;
   font-size: 16px;
   font-size: 1rem;
-  font-weight: 300;
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
   padding-bottom: 5px;
   padding-bottom: 0.3125rem;
   line-height: 1.5;
 }
-.page--blog ul li:last-child {
+.page--blog li:last-child {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-.page--blog ul li a {
+.page--blog li a {
   font-weight: 700;
   border-bottom: 3px solid #ff9900;
   display: inline;
   text-decoration: none;
   color: #222222;
 }
-.page--blog ul li a:hover {
+.page--blog li a:hover {
   color: #ff9900;
 }
 .page--blog .strip--hero h1 {

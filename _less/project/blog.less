@@ -19,33 +19,38 @@
 	// Main pieces are located in components.less
 	// --------------------------------------
 
-  ul {
-    list-style-type:disc;
-    list-style-position:outside;
+  ul,
+  ol {
+    list-style-position: outside;
     .padding-left(30px);
     .margin-bottom(30px);
-    li {
-      .merriweather;
-      .font-size(16px);
-      font-weight:300;
-      .margin-bottom(10px);
-      .padding-bottom(5px);
-      line-height:1.5;
-      &:last-child {
-        .padding-bottom(0);
-        .margin-bottom(0);
-      }
+  }
+  ul {
+    list-style-type: disc;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+  li {
+    .merriweather;
+    .font-size(16px);
+    .margin-bottom(10px);
+    .padding-bottom(5px);
+    line-height:1.5;
+    &:last-child {
+      .padding-bottom(0);
+      .margin-bottom(0);
+    }
 
-    a {
-        color:@black;
-        font-weight:700;
-        border-bottom: 3px solid @orange;
-        display: inline;
-        text-decoration:none;
-        color:@black;
-        &:hover {
-          color:@orange;
-        }
+  a {
+      color:@black;
+      font-weight:700;
+      border-bottom: 3px solid @orange;
+      display: inline;
+      text-decoration:none;
+      color:@black;
+      &:hover {
+        color:@orange;
       }
     }
   }
