@@ -4,7 +4,7 @@ pagetype: blog
 title:  "Nissan Living Lab"
 date:   2017-02-28 17:39:21
 subtitle: "User research, product validation, and prototyping"
-description: "Carbon Five was hired by Nissan Motor Company to test an early-stage product concept based on shared car ownership. Along with Nissan&rsquo;s innovation group, we conducted a research experiment with real families sharing vehicles for month. I designed digital and physical tools to aid the experiment and built an app prototype based on our learnings."
+description: "Nissan Motor Company hired Carbon Five to test an early-stage product concept based on shared car ownership. Along with Nissan&rsquo;s innovation group, we conducted a research experiment with real families sharing vehicles for month. I designed digital and physical tools to aid the experiment and built an app prototype based on our learnings."
 ---
 
 <p class="subtitle"><strong>Case study:</strong> User research, product validation, prototyping</p>
