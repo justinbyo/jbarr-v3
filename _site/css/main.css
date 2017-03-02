@@ -2757,15 +2757,6 @@ color:@dark-aqua;
  * ____________________________________________________________ */
 .page--home {
   position: relative;
-  /*
-.h1 {
-		.font-size(36px);
-	}
-
-	.p {
-		.font-size(24px);
-	}
-*/
 }
 .page--home .strip {
   margin-bottom: 30px;
@@ -2831,11 +2822,6 @@ color:@dark-aqua;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /*
-			@media (max-width:530px){
-				.padding(40px 20px;)
-			}
-*/
 }
 .page--home .strip--intro p {
   font-size: 18px;
@@ -3032,16 +3018,6 @@ color:@dark-aqua;
 }
 .page--home .icon--container .twitter .icon {
   height: 92px;
-  /*
-	.back-bottom {
-					.standard-background("../img/2012/github-back.png");
-					background-position:center bottom;
-					height:27px;
-					// top:77px;
-					top:auto;
-					bottom:0;
-				}
-	*/
 }
 .page--home .icon--container .twitter .icon div {
   position: absolute;
@@ -3088,13 +3064,6 @@ color:@dark-aqua;
     background-image: url("../img/2012/retina/twitter-wing-2x.png");
     background-size: 80px;
   }
-}
-.page--home .icon--container .projects {
-  /*
-			@media (max-width:530px){
-				.margin-bottom(50px);
-			}
-*/
 }
 .page--home .icon--container .projects .icon div {
   position: absolute;
