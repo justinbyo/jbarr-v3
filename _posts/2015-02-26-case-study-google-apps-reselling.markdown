@@ -4,7 +4,7 @@ pagetype: blog
 title:  "Google Apps Hosting Package"
 date:   2015-02-25 17:39:21
 subtitle: "UX research, information architecture, and UI design"
-description: "Media Temple released a hosting package that integrates Google Apps for Work – a one-stop shop for setting up a web presence. From the Media Temple control panel, a user can set up both a website and their company&rsquo;s Google Apps service at the same time, all with a unique domain name. I designed an on-boarding experience and control panel UI that makes this entire process simple."
+description: "Media Temple launched a new hosting package integrating Google Apps for Work. It&rsquo;s a one-stop shop for setting up a web presence, including a website and Google Apps using a custom domain name. I designed an on-boarding experience and control panel UI intended to make the entire process simple and easy."
 ---
 
 <p class="subtitle"><strong>Case study:</strong> UX research and UI design</p>
