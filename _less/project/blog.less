@@ -339,3 +339,35 @@ color:@dark-aqua;
 	}
 
  }
+
+.portfolio {
+  .post-title {
+    display: inline-block;
+    .margin-top(25px);
+    a {
+      .margin-bottom(0);
+    }
+  }
+  .image {
+    width:100%;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    .margin(0 auto);
+    background-color:@dark-grey;
+    border: @standard-border-size solid #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,.25);
+
+    @media (min-width:530px) {
+      .margin-right(30px);
+      width: (300px + (2 * @standard-border-size));
+      float: left;
+      .standard-transition;
+      bottom: 0;
+
+      &:hover {
+        bottom: 3px;
+      }
+  	}
+  }
+}

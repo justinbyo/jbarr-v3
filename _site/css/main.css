@@ -2094,13 +2094,13 @@ body {
   margin: 0;
 }
 .stripes div:nth-child(1) {
-  background-color: #e66705;
+  background-color: #E66705;
 }
 .stripes div:nth-child(2) {
-  background-color: #ff9900;
+  background-color: #FF9900;
 }
 .stripes div:nth-child(3) {
-  background-color: #ffd79c;
+  background-color: #FFD79C;
 }
 .stripes div:nth-child(4) {
   background-color: #6f6c7d;
@@ -2109,7 +2109,7 @@ body {
   background-color: #7fadc6;
 }
 .stripes div:nth-child(6) {
-  background-color: #e8f5f7;
+  background-color: #E8F5F7;
 }
 /* Styles for site-wide components
  * ____________________________________________________________ */
@@ -2180,7 +2180,7 @@ p.related-article-link a {
   font-size: 1rem;
 }
 p.related-article-link a:hover {
-  color: #ff9900;
+  color: #FF9900;
 }
 p.cta {
   display: block;
@@ -2190,7 +2190,7 @@ p.cta a {
   margin: 60px auto 30px auto;
   padding: 30px;
   padding: 1.875rem;
-  background-color: #ff9900;
+  background-color: #FF9900;
   color: #ffffff;
   display: inline-block;
   text-align: center;
@@ -2225,7 +2225,7 @@ p.cta--right a:hover span {
 /* Styles for header
  * ____________________________________________________________ */
 .active-nav-link {
-  color: #e66705;
+  color: #E66705;
 }
 header.strip {
   background-color: transparent;
@@ -2298,7 +2298,7 @@ header.strip .nav-link a {
   display: inline-block;
 }
 header.strip .nav-link a:hover {
-  color: #e66705;
+  color: #E66705;
 }
 @media (max-width: 767px) {
   header.strip .grid-col--nav--title {
@@ -2314,10 +2314,10 @@ header.strip .nav-link a:hover {
   }
 }
 .page--home header.strip .nav-link--about a {
-  color: #e66705;
+  color: #E66705;
 }
 .page--blog header.strip .nav-link--work a {
-  color: #e66705;
+  color: #E66705;
 }
 /* Styles for footer
  * ____________________________________________________________ */
@@ -2329,7 +2329,7 @@ footer.strip {
 footer.strip h3,
 footer.strip .h3 {
   text-transform: uppercase;
-  color: #e8f5f7;
+  color: #E8F5F7;
   font-size: 12px;
   font-size: 0.75rem;
   font-family: 'Lato', sans-serif;
@@ -2357,7 +2357,7 @@ footer.strip p a {
   color: #7fadc6;
 }
 footer.strip p a:hover {
-  color: #e8f5f7;
+  color: #E8F5F7;
 }
 footer.strip p:last-child {
   margin-bottom: 0;
@@ -2391,7 +2391,7 @@ footer.strip .contact p a {
   color: #ffffff;
 }
 .strip--scroll:active {
-  background-color: #e8f5f7;
+  background-color: #E8F5F7;
 }
 .strip--scroll:active p {
   color: #7fadc6;
@@ -2435,13 +2435,13 @@ footer.strip .contact p a {
 }
 .page--blog li a {
   font-weight: 700;
-  border-bottom: 3px solid #ff9900;
+  border-bottom: 3px solid #FF9900;
   display: inline;
   text-decoration: none;
   color: #222222;
 }
 .page--blog li a:hover {
-  color: #ff9900;
+  color: #FF9900;
 }
 .page--blog img {
   max-width: 100%;
@@ -2470,13 +2470,13 @@ footer.strip .contact p a {
   line-height: 1.75;
 }
 .page--blog .strip--hero p a {
-  border-bottom: 3px solid #ff9900;
+  border-bottom: 3px solid #FF9900;
   display: inline;
   text-decoration: none;
   color: #222222;
 }
 .page--blog .strip--hero p a:hover {
-  color: #ff9900;
+  color: #FF9900;
 }
 .page--blog .strip--hero p:last-child {
   margin-bottom: 0;
@@ -2534,7 +2534,7 @@ footer.strip .contact p a {
   bottom: 30px;
 }
 .page--blog a.post-meta:hover {
-  color: #ff9900;
+  color: #FF9900;
 }
 .page--blog .blog-wide-title-style {
   display: inline-block;
@@ -2563,7 +2563,7 @@ footer.strip .contact p a {
   font-family: 'Lato', sans-serif;
 }
 .page--blog .post-title a:hover {
-  color: #ff9900;
+  color: #FF9900;
 }
 .page--blog p.subtitle {
   font-family: 'Lato', sans-serif;
@@ -2588,7 +2588,7 @@ footer.strip .contact p a {
   text-decoration: none;
   padding: 8px;
   padding: 0.5rem;
-  background-color: #ff9900;
+  background-color: #FF9900;
   display: inline-block;
   -webkit-transition: all 0.15s linear;
   -moz-transition: all 0.15s linear;
@@ -2635,13 +2635,13 @@ color:@dark-aqua;
 						color:@aqua;
 					}
 */
-  border-bottom: 3px solid #ff9900;
+  border-bottom: 3px solid #FF9900;
   display: inline;
   text-decoration: none;
   color: #222222;
 }
 .page--blog .content p a:hover {
-  color: #ff9900;
+  color: #FF9900;
 }
 .page--blog .content p.subtitle {
   font-family: 'Lato', sans-serif;
@@ -2719,6 +2719,40 @@ color:@dark-aqua;
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
 }
+.portfolio .post-title {
+  display: inline-block;
+  margin-top: 25px;
+  margin-top: 1.5625rem;
+}
+.portfolio .post-title a {
+  margin-bottom: 0;
+}
+.portfolio .image {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background-color: #666666;
+  border: 6px solid #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 530px) {
+  .portfolio .image {
+    margin-right: 30px;
+    margin-right: 1.875rem;
+    width: 312px;
+    float: left;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+    bottom: 0;
+  }
+  .portfolio .image:hover {
+    bottom: 3px;
+  }
+}
 /* Styles for home page
  * ____________________________________________________________ */
 .page--home {
@@ -2761,7 +2795,7 @@ color:@dark-aqua;
   padding-bottom: 0.3125rem;
 }
 .page--home .strip--hero h1.p a:hover {
-  border-bottom: 6px solid #ff9900;
+  border-bottom: 6px solid #FF9900;
 }
 @media (max-width: 767px) {
   .page--home .strip--hero h1.p {
