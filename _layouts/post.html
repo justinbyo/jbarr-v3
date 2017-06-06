@@ -23,7 +23,7 @@ pagetype: blog
 	        <!-- https://groups.google.com/forum/#!topic/jekyll-rb/W8gP94wV0jU -->
 	        <p class="related-article-link">
 		        {% if page.previous.url %}
-		                <a href="{{ site.github.url }}{{page.previous.url}}" title="Next case study:
+		                <a href="{{page.previous.url  | prepend:site.github.url }}" title="Next case study:
 		{{page.previous.title}}" onclick="_gaq.push(['_trackEvent', 'next-case-study', 'clicked'])">Read the next case study <span>&#8594;</span></a>
 		        {% endif %}
 	        </p>
