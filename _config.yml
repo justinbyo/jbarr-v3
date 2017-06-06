@@ -1,4 +1,4 @@
 name: Your New Jekyll Site
 highlighter: pygments
-baseurl: ""
+# baseurl: "/jbarr-v3"
 permalink: /:categories/:title.html
