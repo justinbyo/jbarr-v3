@@ -23,7 +23,7 @@ The UX process started with a hefty set of user stories. During the on-boarding 
 
 There was a lot to fit into the control panel. I started by mind-mapping how the user stories translated into features and how those features might be organized in the UI. I also used card sorting with team members to help finesse the control panel&rsquo;s navigation.
 
-<img class="large" src="/images/wordpress-mind-mapping.jpg" />
+<img class="large" src="{{ site.github.url }}/images/wordpress-mind-mapping.jpg" />
 
 <p class="caption"><strong>Left:</strong> Card sorting results. <strong>Right:</strong> Features mind-mapped on a whiteboard.</p>
 
@@ -37,12 +37,12 @@ Second, the various features were dissimilar enough to complicate the control pa
 
 With this in mind, I started exploring the user flow by consulting with our engineers to fully understand how our back-end provisions and connects our WordPress Hosting with the rest of our services.
 
-<img class="large" src="/images/wordpress-user-flow.png" />
+<img class="large" src="{{ site.github.url }}/images/wordpress-user-flow.png" />
 
 
 Once the user flow was finalized, I moved on to one of my favorite steps: sketching. I moved quickly to sketching the UI in high-fidelity, which made it easy to communicate my thinking to team members and stakeholders. It also served as a strong start to my wireframing process.
 
-<img class="" src="/images/wordpress-panel-sketch.jpg" />
+<img class="" src="{{ site.github.url }}/images/wordpress-panel-sketch.jpg" />
 
 <p class="caption">I used sticky notes to map out and reorganize interactions in the control panel.</p>
 
@@ -50,11 +50,11 @@ Once the user flow was finalized, I moved on to one of my favorite steps: sketch
 
 I used [UXPin][uxpin] to create high-fidelity wireframes of both the on-boarding experience and control panel UI with extensive notations, based off my sketches. This included a multi-step tour of the product&rsquo;s control panels. UXPin wireframes are web-based, and I prefer them as deliverables since stakeholders can easily share or comment on them.
 
-<img class="large" src="/images/wordpress-onboard-wireframes.png" />
+<img class="large" src="{{ site.github.url }}/images/wordpress-onboard-wireframes.png" />
 
 <p class="caption"><strong>Above:</strong> Three on-boarding paths. From left to right, create a new site, import a site, migrate a site.</p>
 
-<img class="large" src="/images/wordpress-my-site-control-panel.png" />
+<img class="large" src="{{ site.github.url }}/images/wordpress-my-site-control-panel.png" />
 
 <p class="caption"><strong>Above:</strong> The control panel to manage a single WordPress site, with notations.</p>
 
@@ -62,15 +62,15 @@ I used [UXPin][uxpin] to create high-fidelity wireframes of both the on-boarding
 
 I worked closely with our visual designer [Ryan Morgan][ryanmorgan] as he transformed my wireframes and prototypes into full-fidelity mockups. We developed a card-based style that would allow for future extensibility when new features are eventually added to the panel.
 
-<img class="large" src="/images/wordpress-onboard-ui.png" />
+<img class="large" src="{{ site.github.url }}/images/wordpress-onboard-ui.png" />
 
 <p class="caption"><strong>Above:</strong> Steps in the on-boarding process.</p>
 
-<img class="large" src="/images/wordpress-my-site-ui.png" />
+<img class="large" src="{{ site.github.url }}/images/wordpress-my-site-ui.png" />
 
 <p class="caption"><strong>Above:</strong> Managing a single WordPress site.</p>
 
-<img class="large" src="/images/wordpress-all-sites-ui.png" />
+<img class="large" src="{{ site.github.url }}/images/wordpress-all-sites-ui.png" />
 
 <p class="caption"><strong>Above:</strong> High-level management of all hosted WordPress sites, with bundled services on the left.</p>
 

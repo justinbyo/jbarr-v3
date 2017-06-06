@@ -22,7 +22,7 @@ The UX process started with the user stories necessary to ship an MVP. This was 
 
 I started by breaking down user stories into features, and mind-mapping them into what I considered intuitive groupings. In the on-boarding experience, users only had to select the domain they want to use and then create their first administrator account. In the control panel, users were limited to creating, editing, and deleting Gmail users and groups.
 
-<img class="" src="/images/google-apps-mindmapping.jpg" />
+<img class="" src="{{ site.github.url }}/images/google-apps-mindmapping.jpg" />
 <p class="caption">Features mind-mapped on a whiteboard.</p>
 
 <h3>Sketching and iteration</h3>
@@ -35,22 +35,22 @@ Second, I wanted the control panel to include as few distinct screens as possibl
 
 I started exploring the user flow by consulting with both Media Temple and Google engineers to understand how our provisioning systems work together. I stressed that we do as much as possible for the user on their behalf, especially when it comes to filling out form fields or polling their DNS records.
 
-<img class="large" src="/images/google-apps-flow-whiteboard.jpg" />
+<img class="large" src="{{ site.github.url }}/images/google-apps-flow-whiteboard.jpg" />
 
 <p class="caption"><strong>Above:</strong> Whiteboard sketch of the purchase and on-board flow.</p>
 
-<img class="large" src="/images/google-apps-ac-whiteboard.jpg" />
+<img class="large" src="{{ site.github.url }}/images/google-apps-ac-whiteboard.jpg" />
 
 <p class="caption"><strong>Above:</strong> Some initial thoughts on organizing the control panel, sketched on a whiteboard.</p>
 
 The biggest challenge &mdash; typical of UX design for web hosting &mdash; dealt with guiding the user in updating their DNS records in order to use their personal domain name as their Gmail address. We wanted to make this as easy as possible by providing a step-by-step flow as well as links to the Media Temple KnowledgeBase for additional help.
 
-<img class="" src="/images/google-apps-dns-whiteboard.jpg" />
+<img class="" src="{{ site.github.url }}/images/google-apps-dns-whiteboard.jpg" />
 <p class="caption">Sketches of the DNS flow that I put together with our software developer, Nate.</p>
 
 With the Media Temple and Google engineers, I got into the technical details of both Google&rsquo;s reseller API and our own provisioning system to determine the best flow for account creation.
 
-<img class="large" src="/images/google-apps-user-flow.png" />
+<img class="large" src="{{ site.github.url }}/images/google-apps-user-flow.png" />
 <p class="caption">The user flow from start to finish.</p>
 
 <h3>Wireframing and prototyping</h3>
@@ -59,11 +59,11 @@ I used [UXPin][uxpin] to create high-fidelity wireframes of both the on-boarding
 
 I conducted user tests to validate the painstaking work we did in our on-boarding flow to make DNS migration easy. Using [InVision][invision], I created a simple, clickable prototype of the domain search and purchase process, user on-boarding, and a short tour of the control panel. I recruited [five people][usertests] from various departments, including support, sales, and HR and offered them Starbucks as a thank you for participating. We made some immediate improvements based off their mostly positive feedback.
 
-<img class="large" src="/images/google-apps-control-panel.png" />
+<img class="large" src="{{ site.github.url }}/images/google-apps-control-panel.png" />
 
 <p class="caption"><strong>Above:</strong> User management in the control panel.</p>
 
-<img class="large" src="/images/google-apps-ui-detail.png" />
+<img class="large" src="{{ site.github.url }}/images/google-apps-ui-detail.png" />
 
 <p class="caption"><strong>Above:</strong> Notations that detail a user interaction in the wireframes.</p>
 
@@ -73,12 +73,12 @@ I conducted user tests to validate the painstaking work we did in our on-boardin
 
 I worked closely with our visual designer [Ryan Morgan][ryanmorgan] as he transformed my wires and prototypes into full-fidelity mockups. From the start, we wanted the visual design to stress simplicity.
 
-<img class="" src="/images/google-apps-onboard-ui.png" />
+<img class="" src="{{ site.github.url }}/images/google-apps-onboard-ui.png" />
 
 <p class="caption"><strong>Above:</strong> Steps in the on-boarding process.</p>
 
 
-<img class="" src="/images/google-apps-manage-user.png" />
+<img class="" src="{{ site.github.url }}/images/google-apps-manage-user.png" />
 
 <p class="caption"><strong>Above:</strong> Control panel for managing Google Apps users.</p>
 
