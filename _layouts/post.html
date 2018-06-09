@@ -19,23 +19,23 @@ pagetype: blog
 
 	        <div class="content">{{ content }}</div>
 
-					<p class="related-article-link">
-		        <a href="{{ site.github.url }}/work" onclick="_gaq.push(['_trackEvent', 'back-to-work', 'clicked'])"><span>&#8592;</span> Back to Work</a>
-	        </p>
+					<!-- CTA -->
 
-	        <!-- Found this online -->
-	        <!-- https://groups.google.com/forum/#!topic/jekyll-rb/W8gP94wV0jU -->
-	        <p class="cta  cta--right">
-		        {% if page.previous.url %}
-		                <a href="{{page.previous.url  | prepend:site.github.url }}" title="Next case study:
-		{{page.previous.title}}" onclick="_gaq.push(['_trackEvent', 'next-case-study', 'clicked'])">Read the next case study <span>&#8594;</span></a>
-		        {% endif %}
-	        </p>
+					<div class="strip strip--cta">
+						<p class="related-article-link">
+			        <a href="{{ site.github.url }}/work" onclick="_gaq.push(['_trackEvent', 'back-to-work', 'clicked'])"><span>&#8592;</span> Back to Work</a>
+		        </p>
 
-
+		        <!-- Found this online -->
+		        <!-- https://groups.google.com/forum/#!topic/jekyll-rb/W8gP94wV0jU -->
+		        <p class="cta  cta--right">
+			        {% if page.previous.url %}
+			                <a href="{{page.previous.url  | prepend:site.github.url }}" title="Next case study:
+			{{page.previous.title}}" onclick="_gaq.push(['_trackEvent', 'next-case-study', 'clicked'])">Read the next case study <span>&#8594;</span></a>
+			        {% endif %}
+		        </p>
+					</div>
 
 		</div>
-
 	</div>
-
 </div>

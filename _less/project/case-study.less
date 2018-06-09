@@ -1,0 +1,76 @@
+// Individual case study layout
+// ------------------------------------------------------
+
+.strip--article-content {
+
+	.padding(100px 0 0);
+
+	.post-title {
+		.blog-wide-title-style;
+		.font-size(36px);
+		.margin-bottom(0);
+	}
+
+	.read-more {
+		.margin-bottom(30px);
+	}
+
+	h3, .h3 {
+		.lato;
+		.font-size(30px);
+		color:@black;
+		font-weight:700;
+		.margin-bottom(30px);
+	}
+
+}
+
+.content {
+		p {
+			.font-size(16px);
+			line-height:1.75;
+			.merriweather;
+			.margin-bottom(30px);
+
+			strong {
+				font-weight:700;
+			}
+
+			&:last-child {
+				.margin-bottom(0);
+			}
+
+			a {
+				border-bottom: 3px solid @orange;
+				display: inline;
+				text-decoration:none;
+				color:@black;
+				&:hover {
+					color:@orange;
+				}
+			}
+		}
+
+		p.subtitle {
+			.lato;
+			color:@dark-grey;
+			.margin-bottom(45px);
+			strong {
+				font-weight:700;
+			}
+		}
+
+		p.caption {
+			font-style:italic;
+			color:@dark-grey;
+			.padding-bottom(15px);
+			.margin-bottom(45px);
+			border-bottom:1px solid @grey;
+
+			strong {
+				font-style:italic;
+				font-weight:700;
+			}
+		}
+
+	}
