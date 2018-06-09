@@ -109,3 +109,57 @@ body {
 	margin:0 auto;
 	.border-box;
 }
+
+// Site wide styles
+// --------------------------------------
+
+ul,
+ol {
+	list-style-position: outside;
+	.padding-left(30px);
+	.margin-bottom(30px);
+}
+ul {
+	list-style-type: disc;
+}
+ol {
+	list-style-type: decimal;
+}
+li {
+	.merriweather;
+	.font-size(16px);
+	.margin-bottom(10px);
+	.padding-bottom(5px);
+	line-height:1.5;
+	&:last-child {
+		.padding-bottom(0);
+		.margin-bottom(0);
+	}
+
+	a {
+		color:@black;
+		font-weight:700;
+		border-bottom: 3px solid @orange;
+		display: inline;
+		text-decoration:none;
+		color:@black;
+		&:hover {
+			color:@orange;
+		}
+	}
+}
+
+img {
+	max-width:100%;
+	text-align:center;
+	display:block;
+}
+
+img.large { // this makes the image 1200px wide and overflows the 800px container around it
+	@media (min-width: 1200px) {
+		max-width:none;
+		@image-width:1000px;
+		.width(@image-width);
+		.margin-left(-(@image-width - @max-width) / 2);
+	}
+}
