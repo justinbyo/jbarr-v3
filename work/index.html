@@ -30,7 +30,6 @@ title: Design portfolio
 
 {% for post in site.posts %}
 
-
 	<div class="strip  strip--article-list">
 		<div class="wrapper grid">
 			<div class="grid-col  span12">
@@ -39,10 +38,9 @@ title: Design portfolio
 		          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 		        </h2>
 
-		        <p class="subtitle">{{post.subtitle}}</p>
+		        <p class="post-keywords">{{post.subtitle}}</p>
 		        <p class="post-description">{{ post.description }}</p>
 		        <p class="read-more"><a href="{{ post.url | prepend: site.baseurl }}">Read more</a></p>
-
 			</div>
 		</div>
 	</div>
@@ -58,7 +56,7 @@ title: Design portfolio
 			<h2 class="post-title">
 				<a href="{{ site.github.url }}/Justin-Barr-Young-Portfolio.pdf" target="_blank">Portfolio</a>
 			</h2>
-			<p class="subtitle">
+			<p class="post-keywords">
 				PDF, 12mb
 			</p>
 			<p class="read-more"><a href="{{ site.github.url }}/Justin-Barr-Young-Portfolio.pdf" target="_blank">Download &darr;</a></p>
